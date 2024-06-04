@@ -160,5 +160,45 @@
             "ldc_npcf_facas_explosivas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_assault",
+        "name": "Assault",
+        "role": "striker",
+        "info": {
+            "flavor": "Mechs de assalto são os quadros de batalha primários mais comuns encontrados em todo a galáxia. Equipado com um rifle pesado, uma arma e um conjunto de sistemas que melhoram o movimento, o direcionamento e a defensibilidade, eles são diretos, combatentes confiáveis ​​e resistentes. Os pilotos dos mechas de assalto também são os mais baratos para treinar e equipar, mas isso não os torna menos perigosos.",
+            "tactics": "Os ataques são golpes diretos e que causam danos. Coloque-os em algum lugar onde sua resistência e alcance decente possam ser usados ​​de forma eficaz, e PREPARE-SE contra danos para maximizar sua capacidade de sobrevivência."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [15, 18, 21],
+            "armor": [1, 1, 1],
+            "evade": [8, 10, 12],
+            "edef": [8, 9, 10],
+            "heatcap": [8, 8, 8],
+            "hull": [1, 2, 3],
+            "agility": [1, 2, 3],
+            "systems": [1, 2, 3],
+            "engineering": [1, 2, 3],
+            "speed": [4, 4, 4],
+            "sensor": [8, 8, 8],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_rifle_de_assaulto_pesado",
+            "ldc_npcf_faca_de_combate",
+            "ldc_npcf_bloquear"
+        ],
+        "optional_features": [
+            "ldc_npcf_lancadores_de_granadas_suspenso",
+            "ldc_npcf_voleio_de_micro_misseis",
+            "ldc_npcf_tambores_de_alto_impacto",
+            "ldc_npcf_mira_automatica",
+            "ldc_npcf_disciplina_de_classificacao"
+        ],
+        "power": 100
     }
 ]

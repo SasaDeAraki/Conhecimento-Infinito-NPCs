@@ -712,5 +712,185 @@
                 "id": "tg_quick_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_rifle_de_assalto_pesado",
+        "name": "Rifle de Assalto Pesado",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_reliable",
+                "val": [2,3,4]
+            }
+        ],
+        "weapon_type": "Main Rifle",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [6,8,10]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_faca_de_combate",
+        "name": "Faca de Combate",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Auxiliary Melee",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,6,7]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_bloquear",
+        "name": "Bloquear",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um ataque acerta o Assault, mas o dano ainda não foi rolado.",
+        "effect": "Ganha resistência a todo o dano do ataque.",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_lancador_de_granadas_suspenso",
+        "name": "Lançador de Grandas Suspenso",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_arcing"
+            }
+        ],
+        "weapon_type": "Auxiliary Launcher",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [4,6,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            },
+            {
+                "type": "Blast",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_voleio_de_micro_misseis",
+        "name": "Voleio de Micro-Mísseis",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assault lança em line 8 um voleio de micro-mísseis. Todos os personagens na área afetada tem que suceder em um teste de Hull ou recebe {6,8,10} kinetic . Em um sucesso, os alvos recebem metade do dano.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 6
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_tambores_de_alto_impacto",
+        "name": "Tambores de Alto Impacto",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Esses tambores de alto calíbre podem ser usados apenas com o Rifle de Assaulto Pesado. Quando disparando essas munições, os ataques do Assault recebem AP e dão +4 kinetic , mas o Rifle de Assalto Pesado deve ser recarregado antes de ser usado novamente (como se estivese Loading).",
+        "tags": [
+            {
+                "id": "tg_mod"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_mira_automatica",
+        "name": "Mira Automática",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assault ignora cobertura quando atacando, por mais que ainda precise de linha de visão.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_disciplina_de_classificacao",
+        "name": "Disciplina de Classificação",
+        "origin": {
+            "type": "Class",
+            "name": "Assault",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assault recebe +1d6 em todos os ataques, checks e salva-guardas enquanto estiver adjacente a pelo menos um aliado com a tag Mech.",
+        "tags": []
     }
 ]

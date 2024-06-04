@@ -1,0 +1,42 @@
+[
+    {
+        "id": "ldc_npcc_ace",
+        "name": "ACE",
+        "role": "striker",
+        "info": {
+            "flavor": "A primeira pessoa a incorporar o arquétipo “Ace” foi Aisling Jensen, uma piloto auxiliar ativa durante a libertação de Verdana. Cavaleiros do chassi e do céu, Ases como Aisling lançam seus mechas na batalha com ataques em alta velocidade, manobras ágeis e feitos imprudentes de ousadia. Arrogantes e autoconfiantes, os ACEs apreciam um bom duelo.",
+            "tactics": "ACEs são atacantes muito rápidos e reativos que podem usar MANOBRAS EVASIVAS para mitigar ataques perigosos ou de alto dano. MANOBRAS EVASIVAS são mais eficazes contra armas pesadas. Suas armas SEEKING ignoram cobertura e não exigem linha de visão, permitindo que causem danos consistentes. O HP relativamente baixo torna os Ases vulneráveis a danos sustentados e eles são relativamente fracos contra ataques tecnológicos."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [0, 0, 0],
+            "evade": [12, 15, 18],
+            "edef": [10, 12, 14],
+            "heatcap": [8, 8, 8],
+            "hull": [-2, -2, -2],
+            "agility": [3, 4, 6],
+            "systems": [1, 2, 3],
+            "engineering": [0, 1, 1],
+            "speed": [5, 6, 7],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_sistema_de_voo_ssc",
+            "ldc_npcf_lancador_de_misseis",
+            "ldc_npcf_manobras_evasivas"
+        ],
+        "optional_features": [
+            "ldc_npcf_caminho_do_bombardeiro",
+            "ldc_npcf_strafe",
+            "ldc_npcf_enxame_de_misseis",
+            "ldc_npcf_resposta_agil",
+            "ldc_npcf_lancadores_de_palha"
+        ],
+        "power": 100
+    }
+]

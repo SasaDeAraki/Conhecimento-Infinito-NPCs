@@ -1,0 +1,9 @@
+{
+    "name": "NPCs core",
+    "author": "Sasa",
+    "description": "Classes de NPC do core book de Lancer",
+    "item_prefix": "ldc",
+    "version": "0.0.1",
+    "image_url": "",
+    "website": ""
+}

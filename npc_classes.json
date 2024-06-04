@@ -120,5 +120,45 @@
             "ldc_npcf_chuva_de_balas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_assassin",
+        "name": "Assassin",
+        "role": "striker",
+        "info": {
+            "flavor": "Assassinos tendem a agilidade, dano e velocidade. Esses pilotos sacrificam conforto para eficiência, eliminando tudo, desde suporte de vida até comunicações sistemas e substituindo-os por maior poder de processamento e furtividade capacidades. Os assassinos trabalham sozinhos ou em pequenos grupos, pilotando seus pequenos e mechs elegantes através de terreno quase impenetrável para pegar seus alvos desprevenidos.",
+            "tactics": "Os assassinos são verdadeiros especialistas em punir personagens individuais. Use ASSASSIN’S MARK para escolher um alvo e, em seguida, aproveite ao máximo a alta velocidade do Assassino e o SALTO para diminuir a distância. Para uma combinação desagradável, combine um Assassino com NPCs que infligem condições de redução de mobilidade, como ATORDOADO ou PRONADO. Sem sistemas opcionais como a ESPINGARDA “DEVIL’S COUGH”, os Assassinos só têm acesso a ataques corpo a corpo e são bastante vulneráveis ​​a danos sustentados."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [15, 15, 15],
+            "armor": [0, 1, 1],
+            "evade": [12, 15, 17],
+            "edef": [8, 8, 8],
+            "heatcap": [7, 7, 7],
+            "hull": [0, 1, 1],
+            "agility": [2, 3, 4],
+            "systems": [1, 1, 2],
+            "engineering": [-1, 0, 0],
+            "speed": [6, 6, 8],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_bioarmadura_kai",
+            "ldc_npcf_lamina_fervente",
+            "ldc_npcf_salto"
+        ],
+        "optional_features": [
+            "ldc_npcf_shotgun_tosse_do_diabo",
+            "ldc_npcf_exaurir",
+            "ldc_npcf_entrada_dinamica",
+            "ldc_npcf_projetor_de_nuvens",
+            "ldc_npcf_facas_explosivas"
+        ],
+        "power": 100
     }
 ]

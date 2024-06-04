@@ -57,11 +57,11 @@
         "type": "Reaction",
         "tags": [
             {
-                "id": "fg_recharge",
+                "id": "tg_recharge",
                 "val": 5
             },
             {
-                "id": "fg_reaction"
+                "id": "tg_reaction"
             }
         ],
         "trigger": "Um ataque melee ou ranged Acerta o Ace.",
@@ -156,7 +156,7 @@
                 "val": 1
             },
             {
-                "id": "fg_reaction"
+                "id": "tg_reaction"
             }
         ],
         "trigger": "Um personagem inimigo em linha de visão se move.",
@@ -226,7 +226,7 @@
         "effect": "O Aegis espalha um campo de repulsão brilhante e poderoso em uma área de Burst 3. Enquanto estiver ativo o Aegis é Imobilizado, mas todos os ataques ranged, melee, e tech contra personagens ou objetos dentro da área afetada originados de fora recebem -2d6 e não podem ser um ataque crítico. Personagens dentro da área afetada podem atacar personagens fora da área normalmente.<br><br>Personagens aliados dentro da área de efeito também recebem imunidade a Impaired e Slowed, e tem essas condições removidas quando adentram a área ou se já estivessem sendo afligidos.<br><br>Esse efeito dura até que o Aegis o termine como um protocolo, ou até o Aegis ser Stunned, Jammed, ou destruído. Movimento involuntário faz com que o escudo se mova com o Aegis.",
         "tags": [
             {
-                "id": "fg_recharge",
+                "id": "tg_recharge",
                 "val": 4
             },
             {
@@ -302,7 +302,7 @@
         "effect": "Como uma Quick action, posiciona uma parede Duraluz [Line 3]. A parede é imune a dano e efeitos e concede Hard cover. Personagens que recebam essa cobertura também recebem resistência aos danos de: Line, Blase, Burst e Cone.",
         "tags": [
             {
-                "id": "fg_deployable"
+                "id": "tg_deployable"
             },
             {
                 "id": "tg_recharge",
@@ -326,7 +326,7 @@
         "effect": "Como uma Full action, o Aegis gera uma parede completamente escura de pseudo-espaço que tem 5 metros de altura cobrindo [Line 10] em qualquer lugar em [Range 5]. Todos os espaços devem estar livres. A parede boqueia linha de visão, efeitos ou ataques e concede Hard cover. Personagens que começarem o turno na parede ou quando entrarem na parede rola 1d6. Em um +4 eles são removidos do mapa até o fim do seu próximo turno, quando eles reaparecem em um espaço livre a sua escolha em [Range 10] da parede. Se não tiverem estaços livres, eles retornam quando algum espaço ficar livre. A parede dura até o Aegis terminá-la com uma Quick action, ou for destruído. Quando a parede acaba, personagens remanescentes no pseudo-espaço retornam.",
         "tags": [
             {
-                "id": "fg_limited",
+                "id": "tg_limited",
                 "val": 1
             },
             {
@@ -495,7 +495,7 @@
                 "val": 1
             },
             {
-                "id": "fg_reaction"
+                "id": "tg_reaction"
             }
         ],
         "trigger": "Um personagem inimigo em linha de visão se move.",
@@ -528,6 +528,188 @@
             },
             {
                 "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_bioarmadura_kai",
+        "name": "Bioarmadura Kai",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assassin ganha +1d6 em todos os testes de Agility; adicionalmente, ele pode escalar e nada em velocidade normal, ignora terreno difícil, e quando usando seu deslocamento padrão, pode pular horizontalmente até a sua velocidade e verticalmente até a metade da sua velocidade (em qualquer combinação).",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_lamina_fervente",
+        "name": "Lamina Fervente",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Da o dobro de dano a alvos Prone, Shredded, Imobilized ou Stunned.",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [1,2,3],
+        "accuracy": [2,2,2],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,5,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_salto",
+        "name": "Salto",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assassin voa 6 espaços em qualquer direção mas tem que acabar em uma superfície. Quando pousar, personagens adjacentes ao Assassin devem suceder em um teste de Agilidade ou receberão Prone.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_shotgun_tosse_do_diabo",
+        "name": "Shotgun 'Tosse do Diabo'",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 2
+            },
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "weapon_type": "Heavy CQB",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [10,15,20]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_exaurir",
+        "name": "Exaurir",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "effect": "O Assassin escolhe um personagem adjacente a ele: o personagem deve suceder em um teste de Engineering ou ficará Stunned até o fim do seu próximo turno.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 5
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_entrada_dinamica",
+        "name": "Entrada Dinâmica",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assassin escolhe um personagem adjacente a ele: o personagem deve passar em um teste de Hull ou será empurrado 4 espaços pra longe do assassino e receberá Prone.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_projetor_de_nuvens",
+        "name": "Projetor de Nuvens",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Assassino ativa uma carga, criando uma área burst 3 de fumaça, neblina ou algum outro tipo de fumaça ocultadora. O Assassino recebe Soft cover enquanto dentro da área, e os demais personagens completamente dentro ou fora da área não podem traçar linha de visão para dentro ou fora da área. Personagens parcialmente dentro do campo não são afetados. Esse efeito dura até o fim do próxito turno do Assassino ou até o assassino receber esse sistema novamente.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_facas_explosivas",
+        "name": "Facas Explosivas",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Assassino gasta uma carga para arremessar uma faca explosiva em um alvo em range 3, fazendo um ataque ranged {+2,+4,+6}. Em um acerto, a faca se mescla ao algo e explode no fim do seu próximo turno, causando {6,8,10} explosion em área burst 1.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 3
+            },
+            {
+                "id": "tg_quick_action"
             }
         ]
     }

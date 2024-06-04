@@ -4,12 +4,12 @@
         "name": "Sistema de Voo SSC",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": true
         },
         "locked": false,
         "type": "System",
-        "effect": "O ACE pode voar sempre que se mover ou usar Boost.",
+        "effect": "O Ace pode voar sempre que se mover ou usar Boost.",
         "tags": []
     },
     {
@@ -17,7 +17,7 @@
         "name": "Lançador de Mísseis",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": true
         },
         "locked": false,
@@ -56,19 +56,19 @@
         "name": "Manobras Evasivas",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": true
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Trigger: Um ataque melee ou ranged acerta o Ace.\nEffect: O Ace performa Manobras Evasivas, voando 6 espaços em qualquer direção e fazendo o ataque errar. Esse movimento ignora engagement e não provoca reações.",
+        "effect": "Trigger: Um ataque melee ou ranged Acerta o Ace.\nEffect: O Ace performa Manobras Evasivas, voando 6 espaços em qualquer direção e fazendo o ataque errar. Esse movimento ignora engagement e não provoca reações.",
         "tags": [
             {
                 "id": "tg_reaction"
             },
             {
                 "id": "tg_recharge",
-                "value": 5
+                "val": 5
             }
         ]
     },
@@ -77,23 +77,23 @@
         "name": "Caminho do Bombardeiro",
         "origin": {
         "type": "Class",
-        "name": "ACE",
+        "name": "Ace",
         "base": false
         },
         "locked": false,
         "type": "System",
-        "effect": "Se o Ace estiver voando quando se mover ou usar Boost, ele pode derrubar uma bomba em um personagem abaixo ou adjacente ao caminho tomado. Isso causa 1 explosion que deve sobrepor pelo menos 1 espaço ocupado pelo seu alvo. Personagens dentro da área afetada devem realizar um teste de Agility ou recebem 6/8/10 Explosive e recebem Prone.",
+        "effect": "Se o Ace estiver voando quando se mover ou usar Boost, ele pode derrubar uma bomba em um personagem abaixo ou adjAcente ao caminho tomado. Isso causa 1 explosion que deve sobrepor pelo menos 1 espaço ocupado pelo seu alvo. Personagens dentro da área afetada devem realizar um teste de Agility ou recebem 6/8/10 Explosive e recebem Prone.",
         "tags": [
             {
                 "id": "tg_limited",
-                "value": "3"
+                "val": "3"
             },
             {
                 "id": "tg_free_action"
             },
             {
                 "id": "tg_round",
-                "value": 1
+                "val": 1
             }
         ]
     },
@@ -102,12 +102,12 @@
         "name": "Strafe",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": false
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Uma vez por round, como uma Quick Action, o Ace pode voar espaços igual a sua velocidade em qualquer direção, dando automáticamente 3/4/6 Cinético a um personagem abaixo ou adjacente ao caminho tomado.",
+        "effect": "Uma vez por round, como uma Quick Action, o Ace pode voar espaços igual a sua velocidade em qualquer direção, dando automáticamente 3/4/6 Cinético a um personagem abaixo ou adjAcente ao caminho tomado.",
         "tags": []
     },
     {
@@ -115,7 +115,7 @@
         "name": "Enxame de Mísseis",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": false
         },
         "locked": false,
@@ -150,7 +150,7 @@
         "name": "Resposta Ágil",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": false
         },
         "locked": false,
@@ -162,7 +162,7 @@
             },
             {
                 "id": "tg_round",
-                "value": 1
+                "val": 1
             }
         ]
     },
@@ -171,12 +171,165 @@
         "name": "Lançadores de Palha",
         "origin": {
             "type": "Class",
-            "name": "ACE",
+            "name": "Ace",
             "base": false
         },
         "locked": false,
         "type": "Trait",
         "effect": "Após usar Manobras Evasivas o Ace recebe soft cover até o fim do seu próximo turno; Adicionalmente, Manobras Evasivas pode ser usada contra tech attacks.",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_laser_de_luz",
+    "name": "Laser de Luz",
+    "origin": {
+        "type": "Class",
+        "name": "Aegis",
+        "base": true
+    },
+    "locked": false,
+    "type": "Weapon",
+    "effect": "",
+    "tags": [],
+    "weapon_type": "Main Cannon",
+    "attack_bonus": [1,2,3],
+    "damage": [
+        {
+            "type": "Energy",
+            "damage": [3,3,3]
+        },
+        {
+            "type": "Burn",
+            "damage": [2,4,6]
+        }
+    ],
+    "range": [
+        {
+            "type": "Range",
+            "val": 8
+        }
+    ],
+    "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_rede_de_defesa",
+        "name": "Rede de Defesa",
+        "origin": {
+            "type": "Class",
+            "name": "Aegis",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Aegis espalha um campo de repulsão brilhante e poderoso em uma área de Burst 3. Enquanto estiver ativo o Aegis é Imobilizado, mas todos os ataques ranged, melee, e tech contra personagens ou objetos dentro da área afetada originados de fora recebem -2d6 e não podem ser um ataque crítico. Personagens dentro da área afetada podem atacar personagens fora da área normalmente.<br>Personagens aliados dentro da área de efeito também recebem imunidade a Impaired e Slowed, e tem essas condições removidas quando adentram a área ou se já estivessem sendo afligidos.<br>Esse efeito dura até que o Aegis o termine como um protocolo, ou até o Aegis ser Stunned, Jammed, ou destruído. Movimento involuntário faz com que o escudo se mova com o Aegis.",
+        "tags": [
+            {
+                "id": "fg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_shield"
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_escudo_regenerativo",
+        "name": "Escudo Regenerativo",
+        "origin": {
+            "type": "Class",
+            "name": "Aegis",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Aegis tem imunidade a Impaired e Slowed e não pode ser atingido criticamente.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_escudo_adaptativo",
+        "name": "Escudo Adaptativo",
+        "origin": {
+            "type": "Class",
+            "name": "Ace",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A primeira vez em cada rodada que um aliado afetado pela Rede de Defesa receber dano, todos os aliados dentro da rede recebem resistência ao tipode de dano recebido. Isso dura ate o fim do próximo turno do Aegis.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_guardiao",
+        "name": "Guardião",
+        "origin": {
+            "type": "Class",
+            "name": "Ace",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens aliados poder usar o Aegis como Hard cover.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_circulo_de_fogo",
+        "name": "Circulo de Fogo",
+        "origin": {
+            "type": "Class",
+            "name": "Ace",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quaisquer personagens que comecem seu turno dentro da área afetada pela Rede de Defesa ou entrar nela pela primeira vez no round recebe 2 de dano de Calor e se torna Shredded até que saiam da área.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_sistema_de_cobertura_duraluz",
+        "name": "Sistema de Cobertura Duraluz",
+        "origin": {
+            "type": "Class",
+            "name": "Aegis",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Como uma Quick action, posiciona uma parede Duraluz [Line 3]. A parede é imune a dano e efeitos e concede Hard cover. Personagens que recebam essa cobertura também recebem resistência aos danos de: Line, Blase, Burst e Cone.",
+        "tags": [
+            {
+                "id": "fg_deployable"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_shield"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_sistema_de_parede_negra_ha",
+        "name": "Sistema de Parede Negra HA",
+        "origin": {
+            "type": "Class",
+            "name": "Aegis",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Como uma Full action, o Aegis gera uma parede completamente escura de pseudo-espaço que tem 5 metros de altura cobrindo [Line 10] em qualquer lugar em [Range 5]. Todos os espaços devem estar livres. A parede boqueia linha de visão, efeitos ou ataques e concede Hard cover. Personagens que começarem o turno na parede ou quando entrarem na parede rola 1d6. Em um +4 eles são removidos do mapa até o fim do seu próximo turno, quando eles reaparecem em um espaço livre a sua escolha em [Range 10] da parede. Se não tiverem estaços livres, eles retornam quando algum espaço ficar livre. A parede dura até o Aegis terminá-la com uma Quick action, ou for destruído. Quando a parede acaba, personagens remanescentes no pseudo-espaço retornam.",
+        "tags": [
+            {
+                "id": "fg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
     }
 ]

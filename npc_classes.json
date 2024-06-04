@@ -1,7 +1,7 @@
 [
     {
         "id": "ldc_npcc_ace",
-        "name": "ACE",
+        "name": "Ace",
         "role": "striker",
         "info": {
             "flavor": "A primeira pessoa a incorporar o arquétipo “Ace” foi Aisling Jensen, uma piloto auxiliar ativa durante a libertação de Verdana. Cavaleiros do chassi e do céu, Ases como Aisling lançam seus mechas na batalha com ataques em alta velocidade, manobras ágeis e feitos imprudentes de ousadia. Arrogantes e autoconfiantes, os ACEs apreciam um bom duelo.",
@@ -36,6 +36,46 @@
             "ldc_npcf_enxame_de_misseis",
             "ldc_npcf_resposta_agil",
             "ldc_npcf_lancadores_de_palha"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_aegis",
+        "name": "Aegis",
+        "role": "support",
+        "info": {
+            "flavor": "Os mechs do arquétipo Aegis são construídos para manter o terreno, apoiar seus aliados e suprimir inimigos. Usados ​​pela primeira vez com grande efeito durante a Ação Comorrand por uma piloto Karrakin, Lady Gloria da Casa MacLennan, os Aegis são conhecidos por suas poderosas medidas defensivas. Seus pilotos podem habilmente transformar a menor barricada em um baluarte com qualquer coisa, desde ferramentas convencionais até tecnologias de ponta.",
+            "tactics": "Aegis são unidades de apoio resistentes e defensivas. Eles são mais eficazes quando posicionados de modo que a sua REDE DE DEFESA possa cobrir o maior número possível de aliados, uma vez que pode ser difícil redistribuí-los. A PROTEÇÃO REGENERATIVA também protege o Aegis dos efeitos de redução de mobilidade."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [14, 18, 18],
+            "armor": [2, 2, 3],
+            "evade": [7, 8, 8],
+            "edef": [10, 13, 14],
+            "heatcap": [10, 10, 10],
+            "hull": [0, 0, 0],
+            "agility": [-2, -1, -1],
+            "systems": [2, 3, 4],
+            "engineering": [2, 3, 5],
+            "speed": [3, 3, 3],
+            "sensor": [8, 10, 10],
+            "save": [10, 11, 12],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_laser_de_luz",
+            "ldc_npcf_rede_de_defesa",
+            "ldc_npcf_escudo_regenerativo"
+        ],
+        "optional_features": [
+            "ldc_npcf_escudo_adaptativo",
+            "ldc_npcf_guardiao",
+            "ldc_npcf_circulo_de_fogo",
+            "ldc_npcf_sistema_de_cobertura_duraluz",
+            "ldc_npcf_sistema_de_parede_negra_ha"
         ],
         "power": 100
     }

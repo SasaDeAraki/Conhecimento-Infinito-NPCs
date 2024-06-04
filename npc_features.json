@@ -54,35 +54,36 @@
     {
         "id": "ldc_npcf_manobras_evasivas",
         "name": "Manobras Evasivas",
-        "origin": {
-            "type": "Class",
-            "name": "Ace",
-            "base": true
-        },
-        "locked": false,
-        "type": "Trait",
-        "effect": "Trigger: Um ataque melee ou ranged Acerta o Ace.\nEffect: O Ace performa Manobras Evasivas, voando 6 espaços em qualquer direção e fazendo o ataque errar. Esse movimento ignora engagement e não provoca reações.",
+        "type": "Reaction",
         "tags": [
             {
-                "id": "tg_reaction"
+                "id": "fg_recharge",
+                "val": 5
             },
             {
-                "id": "tg_recharge",
-                "val": 5
+                "id": "fg_reaction"
             }
-        ]
+        ],
+        "trigger": "Um ataque melee ou ranged Acerta o Ace.",
+        "effect": "O Ace performa Manobras Evasivas, voando 6 espaços em qualquer direção e fazendo o ataque errar. Esse movimento ignora engagement e não provoca reações.",
+        "origin": {
+        "type": "Class",
+        "name": "Ace",
+        "base": true
+        },
+        "locked": false
     },
     {
         "id": "ldc_npcf_caminho_do_bombardeiro",
         "name": "Caminho do Bombardeiro",
         "origin": {
-        "type": "Class",
-        "name": "Ace",
-        "base": false
+            "type": "Class",
+            "name": "Ace",
+            "base": false
         },
         "locked": false,
         "type": "System",
-        "effect": "Se o Ace estiver voando quando se mover ou usar Boost, ele pode derrubar uma bomba em um personagem abaixo ou adjAcente ao caminho tomado. Isso causa 1 explosion que deve sobrepor pelo menos 1 espaço ocupado pelo seu alvo. Personagens dentro da área afetada devem realizar um teste de Agility ou recebem 6/8/10 Explosive e recebem Prone.",
+        "effect": "Se o Ace estiver voando quando se mover ou usar Boost, ele pode derrubar uma bomba em um personagem abaixo ou adjAcente ao caminho tomado. Isso causa 1 explosion que deve sobrepor pelo menos 1 espaço ocupado pelo seu alvo. Personagens dentro da área afetada devem realizar um teste de Agility ou recebem {6,8,10} explosive e recebem Prone.",
         "tags": [
             {
                 "id": "tg_limited",
@@ -148,23 +149,24 @@
     {
         "id": "ldc_npcf_resposta_agil",
         "name": "Resposta Ágil",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "fg_reaction"
+            }
+        ],
+        "trigger": "Um personagem inimigo em linha de visão se move.",
+        "effect": "O Ace pode usar Boost.",
         "origin": {
             "type": "Class",
             "name": "Ace",
             "base": false
         },
-        "locked": false,
-        "type": "Trait",
-        "effect": "Trigger: Um personagem inimigo em linha de visão se move.\nEffect: O Ace pode usar Boost.",
-        "tags": [
-            {
-                "id": "tg_reaction"
-            },
-            {
-                "id": "tg_round",
-                "val": 1
-            }
-        ]
+        "locked": false
     },
     {
         "id": "ldc_npcf_lancadores_de_palha",
@@ -181,35 +183,35 @@
     },
     {
         "id": "ldc_npcf_laser_de_luz",
-    "name": "Laser de Luz",
-    "origin": {
-        "type": "Class",
-        "name": "Aegis",
-        "base": true
-    },
-    "locked": false,
-    "type": "Weapon",
-    "effect": "",
-    "tags": [],
-    "weapon_type": "Main Cannon",
-    "attack_bonus": [1,2,3],
-    "damage": [
-        {
-            "type": "Energy",
-            "damage": [3,3,3]
+        "name": "Laser de Luz",
+        "origin": {
+            "type": "Class",
+            "name": "Aegis",
+            "base": true
         },
-        {
-            "type": "Burn",
-            "damage": [2,4,6]
-        }
-    ],
-    "range": [
-        {
-            "type": "Range",
-            "val": 8
-        }
-    ],
-    "on_hit": ""
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main Cannon",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [3,3,3]
+            },
+            {
+                "type": "Burn",
+                "damage": [2,4,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "on_hit": ""
     },
     {
         "id": "ldc_npcf_rede_de_defesa",
@@ -221,7 +223,7 @@
         },
         "locked": false,
         "type": "System",
-        "effect": "O Aegis espalha um campo de repulsão brilhante e poderoso em uma área de Burst 3. Enquanto estiver ativo o Aegis é Imobilizado, mas todos os ataques ranged, melee, e tech contra personagens ou objetos dentro da área afetada originados de fora recebem -2d6 e não podem ser um ataque crítico. Personagens dentro da área afetada podem atacar personagens fora da área normalmente.<br>Personagens aliados dentro da área de efeito também recebem imunidade a Impaired e Slowed, e tem essas condições removidas quando adentram a área ou se já estivessem sendo afligidos.<br>Esse efeito dura até que o Aegis o termine como um protocolo, ou até o Aegis ser Stunned, Jammed, ou destruído. Movimento involuntário faz com que o escudo se mova com o Aegis.",
+        "effect": "O Aegis espalha um campo de repulsão brilhante e poderoso em uma área de Burst 3. Enquanto estiver ativo o Aegis é Imobilizado, mas todos os ataques ranged, melee, e tech contra personagens ou objetos dentro da área afetada originados de fora recebem -2d6 e não podem ser um ataque crítico. Personagens dentro da área afetada podem atacar personagens fora da área normalmente.<br><br>Personagens aliados dentro da área de efeito também recebem imunidade a Impaired e Slowed, e tem essas condições removidas quando adentram a área ou se já estivessem sendo afligidos.<br><br>Esse efeito dura até que o Aegis o termine como um protocolo, ou até o Aegis ser Stunned, Jammed, ou destruído. Movimento involuntário faz com que o escudo se mova com o Aegis.",
         "tags": [
             {
                 "id": "fg_recharge",
@@ -331,5 +333,202 @@
                 "id": "tg_full_action"
             }
         ] 
+    },
+    {
+        "id": "ldc_npcf_metralhadora_leve",
+        "name": "Metralhadora Leve",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_reliable",
+                "val": "{3/4/5}"
+            }
+        ],
+        "weapon_type": "Main Cannon",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,7,10]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_suprimir",
+        "name": "Suprimir",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Archer escolhe um alvo com linha de visão e [Range 10]: ele se torna Impaired e o Archer ganha a reaction Alvo em Movimwento.<br><br>Esse efeito dura até que o Archer use Alvo em Movimento; o alvo fere o Archer ou sai da linha de visão do Archer; o Archer é Stunned, Jammed ou destruído; o Archer escsole um novo alvo pra essa ação; ou, o Archer acaba a ação com uma Free action.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_alvo_em_movimento",
+        "name": "Alvo em Movimento",
+        "type": "Reaction",
+        "tags": [],
+        "trigger": "O alvo suprimido do Archer se move.",
+        "effect": "Interrompe com um único ataque de arma.",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_sentinela_superior",
+        "name": "Sentinela Superior",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Archer ganha +1d6 em todos os ataques feitos como reaction (ex.: Overwatch).",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_capsulas_cegantes",
+        "name": "Capsulas Cegantes",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Depois do Archer fazer um ataque bem sucedido, ele pode forçar seu alvo a fazer um teste de Engineering. Em uma falha, o alvo só tem linha de visão dos espaços adjacentes até o final do seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_ameaca_iminente",
+        "name": "Ameaça Iminente",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um personagem hostil com linha de visão e range 10 do Archer se move ou realiza uma ação.",
+        "effect": "O personagem deve escolher: perder a ação ou movimento que estava sendo realizada, ou continuar mas deixar o Archer o atacar com uma única arma.",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_fogo_de_cobertura",
+        "name": "Fogo de Cobertura",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Archer escolhe uma blast 3 area com linha de visão e range 10 e ganha a reação Vai Pela Sombra",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_vai_pela_sombra",
+        "name": "Vai Pela Sombra",
+        "type": "Reaction",
+        "tags": [],
+        "trigger": "Um personagem dentro da área faz um ataque.",
+        "effect": "O Archer pode atacar esse personagem.",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_resposta_agil",
+        "name": "Resposta Ágil",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "fg_reaction"
+            }
+        ],
+        "trigger": "Um personagem inimigo em linha de visão se move.",
+        "effect": "O Ace pode usar Boost.",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_chuva_de_balas",
+        "name": "Chuva de Balas",
+        "origin": {
+            "type": "Class",
+            "name": "Archer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Archer escolhe um personagem inimigo com range 10: eke se torna Immobilized e Impaired até o fim do seu próximo turno, até que o Archer seja Stunned ou Jammed, ou até o alvo permitir o Archer ataca-lo com uma única arma como reação.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
     }
 ]

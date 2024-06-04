@@ -78,5 +78,47 @@
             "ldc_npcf_sistema_de_parede_negra_ha"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_archer",
+        "name": "Archer",
+        "role": "controller",
+        "info": {
+            "flavor": "A base do arquétipo do Arqueiro, Gatekeeper Key-II  da Ursa Major, foi popularizado pelas ações heróicas de Ichabod Carden na Batalha de Terramoto. Os mechs do arquétipo do arqueiro sacrificam a armadura para uma mira poderosa e sistemas de manobras sobreposicionais, tornando-os especialmente populares entre pilotos que preferem ter controle sobre o destino preciso de cada tiro.",
+            "tactics": "Os arqueiros são excelentes em infligir “castigos escolhidos” a seus inimigos – eles fazem os personagens escolherem entre realizar certas ações ou deixar o Arqueiro atacá-los. Use Arqueiros para bloquear PCs móveis ou de grande impacto ou para proteger aliados mais vulneráveis. Lembre-se de que os arqueiros são mais eficazes quando conseguem chegar bem perto de seus alvos, mas não são especialmente duráveis."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [16, 20, 20],
+            "armor": [0, 0, 1],
+            "evade": [8, 10, 12],
+            "edef": [8, 10, 12],
+            "heatcap": [8, 8, 8],
+            "hull": [-1, -1, -1],
+            "agility": [2, 3, 4],
+            "systems": [2, 3, 4],
+            "engineering": [-1, -1, -1],
+            "speed": [5, 5, 6],
+            "sensor": [15, 15, 15],
+            "save": [11, 13, 16],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_metralhadora_leve",
+            "ldc_npcf_suprimir",
+            "ldc_npcf_alvo_em_movimento",
+            "ldc_npcf_sentinela_superior"
+        ],
+        "optional_features": [
+            "ldc_npcf_capsulas_cegantes",
+            "ldc_npcf_ameaca_iminente",
+            "ldc_npcf_fogo_de_cobertura",
+            "ldc_npcf_vai_pela_sombra",
+            "ldc_npcf_resposta_agil",
+            "ldc_npcf_chuva_de_balas"
+        ],
+        "power": 100
     }
 ]

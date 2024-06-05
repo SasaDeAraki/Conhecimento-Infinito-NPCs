@@ -188,12 +188,12 @@
             "size": [[1], [1], [1]]
         },
         "base_features": [
-            "ldc_npcf_rifle_de_assaulto_pesado",
+            "ldc_npcf_rifle_de_assalto_pesado",
             "ldc_npcf_faca_de_combate",
             "ldc_npcf_bloquear"
         ],
         "optional_features": [
-            "ldc_npcf_lancadores_de_granadas_suspenso",
+            "ldc_npcf_lancador_de_granadas_suspenso",
             "ldc_npcf_voleio_de_micro_misseis",
             "ldc_npcf_tambores_de_alto_impacto",
             "ldc_npcf_mira_automatica",
@@ -239,6 +239,47 @@
             "ldc_npcf_erosao",
             "ldc_npcf_lapa_de_fome_perseguicao",
             "ldc_npcf_drone_retentor_de_titas"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_bastion",
+        "name": "Bastion",
+        "role": "defender",
+        "info": {
+            "flavor": "Bastion percorre a borda defensiva pura dos mechs do arquétipo Aegis para obter maior mobilidade. Eles combinam capacidades ofensivas de negação de área com sistemas de defesa reforçados e suítes de comunicação avançadas. Esses mechs são os favoritos de muitos comandantes de esquadrão fortes. Guilda pirata interestelar “Espaço Entre” no sistema Dromeda.",
+            "tactics": "Os bastiões são defensores resistentes que usam seu tamanho e tamanho para proteger a si mesmos e às proximidades. Use SHIELD WALL para se defender contra inimigos distantes, como artilharia e atiradores de elite. Bastiões (e suas proteções) são vulneráveis ​​a KNOCKBACK e movimentos forçados, pois esses efeitos quebram muitas de suas habilidades."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 10, 10],
+            "armor": [3, 3, 4],
+            "evade": [8, 10, 10],
+            "edef": [8, 8, 8],
+            "heatcap": [8, 10, 12],
+            "hull": [2, 4, 6],
+            "agility": [-3, -3, -2],
+            "systems": [0, 0, 0],
+            "engineering": [2, 3, 4],
+            "speed": [4, 4, 4],
+            "sensor": [5, 5, 5],
+            "save": [8, 10, 12],
+            "size": [[2], [2], [2]]
+        },
+        "base_features": [
+            "ldc_npcf_lancador_de_granadas_rotatorio",
+            "ldc_npcf_escudo_de_assalto_pesado",
+            "ldc_npcf_interacao_amigavel",
+            "ldc_npcf_guardiao"
+        ],
+        "optional_features": [
+            "ldc_npcf_sistema_de_negacao_de_ameacas_proximas",
+            "ldc_npcf_guardiao_de_cerco",
+            "ldc_npcf_pausar_sistemas",
+            "ldc_npcf_protetor_destemido",
+            "ldc_npcf_contador_de_mortes"
         ],
         "power": 100
     }

@@ -268,7 +268,7 @@
         "name": "Guardião",
         "origin": {
             "type": "Class",
-            "name": "Ace",
+            "name": "Aegis",
             "base": false
         },
         "locked": false,
@@ -1065,6 +1065,194 @@
             },
             {
                 "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_lancador_de_granadas_rotatorio",
+        "name": "Lançado de Granadas Rotatório",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            },
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "weapon_type": "Main Launcher",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [4,6,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_escudo_de_assalto_pesado",
+        "name": "Escudo de Assalto Pesado",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 1
+            }
+        ],
+        "weapon_type": "Heavy Melee",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [3,6,9]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_interacao_amigavel",
+        "name": "Interação Amigável",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Bastion e um aliado adjacente a ele ganham {resistência} a todo o dano dado por um personagem com linha de visão. O bastion pode escolher um novo aliado ou alvo como um {protocolo}. O aliado perde toda a {resistência} se quebrarem adjacência.",
+        "tags": [
+            {
+                "id": "tg_protocol"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_guardiao",
+        "name": "Guardião",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens aliados poder usar o Bastion como {Hard cover}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_sistema_de_negacao_de_ameacas_proximas",
+        "name": "Sistema de Negação de Ameaças Próximas",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando personagens com {range 3} atacam o Bastionm, eles recebem {2,3,4 AP} explosive antes de rolarem.", 
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_guardiao_de_cerco",
+        "name": "Guardião de Cerco",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Aliados recebem {resistência} a dano de ataques {blast, burst, line} e {cone} enquanto estiverem adjacentes ao Bastion.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_pausar_sistemas",
+        "name": "'Pausar' Sistemas",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Bastion e um aliado adjacente são temporáriamente protegidos por um pane piscante de pseudo-espaço portátil, recebendo {Immunity} a todo dano e efeito até o inicío do próximo turno no Bastion; O aliado perde {Immunity} se quebrar adjacência. No início do próximo turno do Bastion, ele fica {Stunned} até o começo do seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_protetor_destemido",
+        "name": "Protetor Destemido",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um aliado com {range 5} do Bastion recebe dano, e o Bastion não está {Immobilized, Slowed, Stunned} or otherwise cannot move.",
+        "effect": "O Bastion pode se mover para um espaço adjacente e tomar o dano ao invés do alvo.",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_contador_de_mortes",
+        "name": "Contador de Mortes",
+        "origin": {
+            "type": "Class",
+            "name": "Bastion",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Da primeira vez que o Bastion for atingido com sucesso por um ataque ranged ou melee cada round, todo o dano é reduzido a {0}.", 
+        "tags": [
+            {
+                "id": "tg_shield"
             }
         ] 
     }

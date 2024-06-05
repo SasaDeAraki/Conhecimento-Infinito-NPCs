@@ -892,5 +892,180 @@
         "type": "Trait",
         "effect": "O Assault recebe +1d6 em todos os ataques, checks e salva-guardas enquanto estiver adjacente a pelo menos um aliado com a tag Mech.",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_lanca_gravton",
+        "name": "Lança Gravton",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No T2-3, essa arma pode fazer dois ataques de uma vez, acertando um personagem duas vezes ou dois personagens uma vez.",
+        "tags": [],
+        "weapon_type": "Main Cannon",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [2,2,2]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": "O alvo recebe Slowed até o fim do seu próximo turno."
+    },
+    {
+        "id": "ldc_npcf_impressora_movel",
+        "name": "Impressora Móvel",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Barricade imprime um cubo de tamanho 2 em uma área livre adjacente. O cubo provê Hard cover e é um único objeto com 20 HP e Evasion 5.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_protocol"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_armadura_de_impacto",
+        "name": "Armadura de Impacto",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Barricade recebe resistência a dano Kinetic.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_modificacao_de_alicerce",
+        "name": "Modificação de Alicerce",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Barricade ignora terreno difícil e terreno perigoso.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_demolir",
+        "name": "Demolir",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "effect": "O Barricade faz um tech attack contra um personagem dentro de seus sensores. Em um sucesso, o personagem recebe 2 Energy AP por espaço que eles se moverem voluntáriamente até o fim do seu próximo turno.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_repulsor_sismico",
+        "name": "Repulsor Sísmico",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens não voadores dentro de uma área de Burst 3 devem passar em um teste de Hull ou são derrubados 3 espaços para longe do Barricade e recebem Prone. A área afetada se torna terreno difícil pelo resto da cena.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_erosao",
+        "name": "Erosão",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Barricade pode imprimir dois cubos separados com a Impressora Móvel ao invés de um.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_lapa_de_fome_perseguicao",
+        "name": "Lapa de Fome/Perseguição",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Barricade rapidamente imprime e posiciona um campo de pequenas minas móveis em uma área livre de tamanho 4 adjacente a ele. A área afetada se torna terreno difícil; adicionalmente, personagens hostis que entram na área pela primeira vez no round ou iniciam seu turno ali devem suceder em um teste de Systems ou recebe Slowed até o fim do seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_drone_retentor_de_titas",
+        "name": "Drone Retentor de Titãs",
+        "origin": {
+            "type": "Class",
+            "name": "Barricade",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Drones Retentores (Size 1/2, HP {5,10,15}, Evasion {10,12,14}, E-Defense {10,12,14}, tags: Drone) Esse drone pode ser imprimido e posicionado em qualquer espaço livre adjacente. Quando personagens hostis se movem ou iniciam seu turno em range 3 do drone, emite um pulso que os deixa Immobilized até que o drone seja destuído.", 
+        "tags": [
+            {   
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
     }
 ]

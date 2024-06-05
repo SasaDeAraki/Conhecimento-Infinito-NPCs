@@ -200,5 +200,46 @@
             "ldc_npcf_disciplina_de_classificacao"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_barricade",
+        "name": "Barricade",
+        "role": "controller",
+        "info": {
+            "flavor": "O Keeper Pattern 5 da Veld Systems é um mecanismo de guarda comum que ficou famoso após o desempenho da plataforma durante a Batalha de Sing Rama Sing. Durante a batalha, Audrey Reimaus da Companhia dos Serafins usou um Keeper P5 para proteger sozinho a principal torre de elevação da cidade de Rama, garantindo assim um corredor de evacuação para a população civil da cidade.",
+            "tactics": "As barricadas funcionam melhor quando bloqueiam alvos em movimento rápido. Eles podem usar sua IMPRESSORA MÓVEL para criar uma capa dura para aliados ou para evitar que mechas corpo a corpo se movam por uma área."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [12, 16, 20],
+            "armor": [1, 1, 1],
+            "evade": [6, 7, 8],
+            "edef": [9, 11, 13],
+            "heatcap": [10, 11, 12],
+            "hull": [0, 1, 2],
+            "agility": [-2, -2, -2],
+            "systems": [1, 1, 2],
+            "engineering": [3, 5, 6],
+            "speed": [3, 3, 4],
+            "sensor": [15, 15, 15],
+            "save": [12, 15, 18],
+            "size": [[2], [2], [2]]
+        },
+        "base_features": [
+            "ldc_npcf_lanca_gravton",
+            "ldc_npcf_impressora_movel",
+            "ldc_npcf_armadura_de_impacto",
+            "ldc_npcf_modificacao_de_alicerce"
+        ],
+        "optional_features": [
+            "ldc_npcf_demolir",
+            "ldc_npcf_repulsor_sismico",
+            "ldc_npcf_erosao",
+            "ldc_npcf_lapa_de_fome_perseguicao",
+            "ldc_npcf_drone_retentor_de_titas"
+        ],
+        "power": 100
     }
 ]

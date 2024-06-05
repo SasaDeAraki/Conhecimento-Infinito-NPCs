@@ -482,7 +482,8 @@
             "ldc_npcf_ataque_em_arco",
             "ldc_npcf_compensador_cinetico",
             "ldc_npcf_misseis_de_concussao",
-            "ldc_npcf_destruidor_sismico"
+            "ldc_npcf_destruidor_sismico",
+            "ldc_npcf_exaurir"
 
         ],
         "power": 100

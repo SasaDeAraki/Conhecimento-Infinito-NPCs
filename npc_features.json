@@ -1975,5 +1975,174 @@
                 "id": "tg_quick_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_martelo_de_demolicao",
+        "name": "Martelo de Demolição",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "weapon_type": "Superheavy Melee",
+        "attack_bonus": [1,2,3],
+        "accuracy": [-1,-1,-1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [10,14,16]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "on_hit": "Alvos devem suceder em um teste de {Hull} ou recebem {Stunned} até o fim do seu próximo turno." 
+    },
+    {
+        "id": "ldc_npcf_cai_dentro",
+        "name": "Cai Dentro",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um ataque acerta o Demolidor, mas o dano não foi rolado ainda.",
+        "effect": "Ganha {resistência a todo o dano do ataque}, mas recebe {Slowed}.",
+        "origin": {
+        "type": "Class",
+        "name": "Demolisher",
+        "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_armadura_de_choque",
+        "name": "Armadura de Choque",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Demolidor tem {resistência a todo o dano de armas melee}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_frame_pesado",
+        "name": "Frame Pesado",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Demolidor não pode ser empurrado, puxado ou derrubado por personagens menores.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_ataque_em_arco",
+        "name": "Ataque em Arco",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "attack_bonus": [1,2,3],
+        "effect": "O Demolidor faz um ataque em um arco {Burst 2} ao invés de atacar normalmente. Role {ataques melee} contra qualquer personagem da sua escolha dentro da área de efeito. Se acertar, o alvo recebe {4,6,8 explosion} e recebe {Impaired} até o fim do seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_compensador_cinetico",
+        "name": "Compensador Cinético",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Cada vez que o Demolisher erra com o {Martelo de Demolição}, ele recebe {+1d6} em todos os ataques subsequentes até seu próximo acerto. Essa {accuracy} pode ser ganhada multiplas vezes, e stacka.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_misseis_de_concussao",
+        "name": "Mísseis de Concussão",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens da escolha do Demolisher em linha de visão e {range 5} devem suceder em um teste de {Hull} ou se tornam {Slowed} e {Impaired} até o fim de seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_destruidor_sismico",
+        "name": "Destruídor Sísmico",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "A menos que possam voar, todos os personagens em {Cone 3} ou {Line 5} devem suceder em um teste de {Agilty} ou recebem {Stunned} até o final do seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_exaurir",
+        "name": "Exaurir",
+        "origin": {
+            "type": "Class",
+            "name": "Demolisher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "effect": "O Demolisher escolhe um personagem adjacente a ele: o personagem deve suceder em um teste de Engineering ou ficará Stunned até o fim do seu próximo turno.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 5
+        }
+        ],
+        "tech_type": "Quick"
     }
 ]

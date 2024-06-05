@@ -1054,7 +1054,7 @@
         },
         "locked": false,
         "type": "System",
-        "effect": "Drones Retentores (Size 1/2, HP {5,10,15}, Evasion {10,12,14}, E-Defense {10,12,14}, tags: Drone) Esse drone pode ser imprimido e posicionado em qualquer espaço livre adjacente. Quando personagens hostis se movem ou iniciam seu turno em range 3 do drone, emite um pulso que os deixa Immobilized até que o drone seja destuído.", 
+        "effect": "Drones Retentores (Size 1/2, HP {5,10,15}, Evasion {10,12,14}, E-Defense {10,12,14}, tags: Drone)<br>Esse drone pode ser imprimido e posicionado em qualquer espaço livre adjacente. Quando personagens hostis se movem ou iniciam seu turno em range 3 do drone, emite um pulso que os deixa Immobilized até que o drone seja destuído.", 
         "tags": [
             {   
                 "id": "tg_drone"
@@ -1438,5 +1438,190 @@
         "base": false
         },
         "locked": false
+    },
+    {
+        "id": "ldc_npcf_canhao_do_bombardeiro",
+        "name": "Canhão do Bombardeiro",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            },
+            {
+                "id": "tg_ordnance"
+            }
+        ],
+        "weapon_type": "Superheavy Cannon",
+        "attack_bonus": [2,4,6],
+        "accuracy": [-1,-1,-1],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [5,7,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 25
+            },
+            {
+                "type": "Blast",
+                "val": 2
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_explosoes_enclausurados",
+        "name": "Explosões Enclausuradas",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Os ataques do Bombard dão {+2,+3,+4 de dano} a todos os alvos para cada alvo atingido além do primeiro.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_municoes_treme_terra",
+        "name": "Munições Treme-terra",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando atacando com o Canhão do Bombardeiro, o Bombard pode também atirar um munição especial 'Treme-terra'. Em adição a qualquer dano, personagens em {burst 3} do espaço acertado devem suceder um teste de {Hull} ou recebem {Prone}. Destroços ou pedaços de terra são jogados pra cima com o impacto, criando dois segmentos de {Hard cover size 1} em espaços livres da área escolhida do Bombard (dentro da área afetada).", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_free_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_armadura_de_cerco",
+        "name": "Armadura de Cerco",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Bombard, tem {resistência} a todo o dano de ataques originados além de {range 3}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_municoes_de_impacto",
+        "name": "Munições de Impacto",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Em um acerto, o Canhão do Bombardeiro empurra alvos {3 espaços} de distância do Bombardeiro.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_destruidor_de_abrigos",
+        "name": "Destruidor de Abrigos",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Canhão do Bombardeiro dá {10,15,20 Kinetic AP} a todos os objetos e terrenos na área afetada, sem nenhuma rolagem.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_drone_identificador",
+        "name": "Drone Identificador",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Drone Identificador (Size} 1/2, {HP} 10,20,30, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}<br>Esse drone pode ser posicionado em um espaço com linha de visão e {range 25}, onde ele fica suspenso no lugar e começa a projetar luz em uma área de {burst 2}. Todos os personagens na área afetada - incluindo aqueles que se moverem pra dentro da área no incício do turno - perdem {Invisible} e {Hidden}, e não podem usar {Hide} ou ficarem {Invisible} dentro da área. Adicionalmente, o Bombard recebe +1d6 em ataques contra alvos dentro da área afetada. O drono pode receber dano dos ataques do Bombard, e o Bombardo pode ter apenas um drone posicionado por vez; se um novo drone for posicionado o último se desintegra.", 
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_canhao_repetidor",
+        "name": "Canhão Repetidor",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 3
+            },
+            {
+                "id": "tg_loading"
+            },
+            {
+                "id": "tg_ordnance"
+            }
+        ],
+        "weapon_type": "Main Cannon",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Cone",
+                "val": 5
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_bombas_perseguidoras",
+        "name": "Bombas Perseguidoras",
+        "origin": {
+            "type": "Class",
+            "name": "Bombard",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Quando o Bombard ataca com o Canhão do Bombardeiro, três peronagens à escolha com {range 3} do espaço atingido recebem {2,3,4 explosive}, acerte ou não.",
+        "tags": []
     }
 ]

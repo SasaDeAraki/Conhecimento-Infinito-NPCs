@@ -323,5 +323,46 @@
             "ldc_npcf_pegando_fogo"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_bombard",
+        "name": "Bombard",
+        "role": "artillery",
+        "info": {
+            "flavor": "O chassi arquetípico do Bombard da Alta All-Theater Ballistics e seus fac-símiles licenciados são uma visão comum em pontos de inflamação por toda a galáxia. Construídos para manter a potência em implantações de longo tempo de atividade, os mechs do tipo Bombard são uma solução acessível para forças armadas que buscam implantar artilharia rapidamente em um teatro de operações. Os chassis configurados de acordo com os parâmetros desta classe são geralmente posicionados em posições fortificadas, quilômetros atrás da linha; uma estratégia de implantação especialmente assimétrica envolve a colocação de baterias Bombard acima do teatro de operações – normalmente numa lua local, num satélite natural em órbita bloqueada ou numa plataforma orbital construída para esse fim. Do seu ponto de vista, a bateria pode então fazer chover granadas sobre o mundo abaixo, longe dos perigos do combate.",
+            "tactics": "Bombardeios são mecanismos de artilharia de longo alcance projetados para punir personagens que ficam próximos uns dos outros para aproveitar os bônus de adjacência. Eles são relativamente frágeis de perto, mas resistentes à distância, então coloque-os bem atrás para maximizar sua eficácia. Os EARTHSHAKER SHELLS das bombas são ótimos para impedir o movimento do inimigo e fornecer cobertura, mas também podem prejudicar aliados."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 13, 16],
+            "armor": [0, 0, 0],
+            "evade": [7, 8, 8],
+            "edef": [12, 14, 16],
+            "heatcap": [8, 8, 8],
+            "hull": [0, 1, 1],
+            "agility": [-1, -1, -1],
+            "systems": [1, 2, 3],
+            "engineering": [2, 3, 5],
+            "speed": [2, 2, 3],
+            "sensor": [15, 15, 15],
+            "save": [11, 13, 16],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_canhao_do_bombardeiro",
+            "ldc_npcf_explosoes_enclausurados",
+            "ldc_npcf_municoes_treme_terra",
+            "ldc_npcf_armadura_de_cerco"
+        ],
+        "optional_features": [
+            "ldc_npcf_municoes_de_impacto",
+            "ldc_npcf_destruidor_de_abrigos",
+            "ldc_npcf_drone_identificador",
+            "ldc_npcf_canhao_repetidor",
+            "ldc_npcf_bombas_perseguidoras"
+        ],
+        "power": 100
     }
 ]

@@ -404,5 +404,46 @@
             "ldc_npcf_tiro_de_flecha"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_cataphract",
+        "name": "Cataphract",
+        "role": "striker",
+        "info": {
+            "flavor": "Os esquadrões Cataphract são compostos por mecanismos de ataque rápido que enfatizam a mobilidade, o choque e a tenacidade; segue-se, então, que os arquétipos Cataphract são temidos em toda a galáxia por sua capacidade de dominar as defesas em instantes. armas destruindo defensores anteriormente imóveis. O carro-chefe da classe Cataphract é o SineDie Systems END-44, uma besta angular de um equipamento equipado com o temível Canhão Ram da SDS. ina- Proximais.",
+            "tactics": "Catafratas são atacantes móveis. TRAMPLE permite que eles se movam através dos inimigos e os levem para as linhas de retaguarda, onde podem usar IMPALE para forçar alvos vulneráveis ​​a posições desvantajosas. Posicione os Cataphracts para que fiquem mais próximos de personagens hostis individuais, já que o ESCUDO DE DEFESA DE PONTO não funciona se vários inimigos estiverem a uma distância igual. Observe que os Cataphracts ainda provocam reações quando se movem, então use suas habilidades com cuidado."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [15, 17, 20],
+            "armor": [0, 0, 0],
+            "evade": [10, 11, 12],
+            "edef": [8, 8, 8],
+            "heatcap": [6, 7, 8],
+            "hull": [1, 2, 4],
+            "agility": [1, 3, 4],
+            "systems": [0, 0, 0],
+            "engineering": [0, 0, 0],
+            "speed": [8, 8, 8],
+            "sensor": [5, 5, 5],
+            "save": [12, 14, 18],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_lanca_adaptativa",
+            "ldc_npcf_atropelar",
+            "ldc_npcf_empalar",
+            "ldc_npcf_escudo_focal"
+        ],
+        "optional_features": [
+            "ldc_npcf_laco_eletrificado",
+            "ldc_npcf_disparo_de_lanca",
+            "ldc_npcf_saque_eletrificado",
+            "ldc_npcf_descarga_de_capacitores",
+            "ldc_npcf_carga"
+        ],
+        "power": 100
     }
 ]

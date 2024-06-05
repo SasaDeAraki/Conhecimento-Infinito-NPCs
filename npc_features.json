@@ -1795,5 +1795,185 @@
             }
         ],
         "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_lanca_adaptativa",
+        "name": "Lança Adaptativa",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa lança pode ser usada como ranged ou melee, mas não os dois no mesmo turno. No {T2-3}, essa arma pode fazer dois ataques de uma vez, atacando duas vezes um mesmo alvo ou uma vez dois alvos diferentes.",
+        "tags": [],
+        "weapon_type": "Heavy Melee/Heavy Cannon",
+        "accuracy": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,5,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_atropelar",
+        "name": "Atropelar",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Cataphract ignora engagemente e pode passar por - mas não parar em - espaços ocupados por outros personagens, dando {2,3,4 Kinetic} a esses personagens.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_empalar",
+        "name": "Empalar",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Cataphract move até {8 espaços} em linha reta. Escolha um personagem que o Cataphract passou por ou terminou adjacente; eles tem que fazer um teste de {Hull} com {-1d6}. Em uma falha, eles são agarrados pelo Cataphract e são puxados com o Cataphract até o fim do seu movimento.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_escudo_focal",
+        "name": "Escudo Focal",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Cataphract tem {resitência a todo o dano dado pelo personagem hostil mais próximo}. Se multiplos personagens estiverem igualmente próximos, esse efeito não se aplica.", 
+        "tags": [
+            {
+                "id": "tg_shield"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_laco_eletrificado",
+        "name": "Laço Eletrificado",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem com linha de visão e {range 5} deve fazer um teste de {Hull}. Em uma falha, eles são puxados o mais próximo possível ao Cataphract; se eles se tornarem adjacentes, o Cataphract automaticamente agarra o alvo.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_disparo_de_lanca",
+        "name": "Disparo de Lança",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Cataphract dispara uma lança eletrificada em {Line 5}. Todos os personagens dentro da área afetada devem suceder em um teste de {Engineering} ou recebem {Jammed} até o fim do seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_saque_eletrificado",
+        "name": "Saque Eletrificado",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem voador em {range 10} deve fazer um teste de {Agility}. Em um falha, eles devem pousar imediatamente e se tornam {Immobilized} até o final do seu próximo turno. Isso conta como cair mas sem dano.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_descarga_de_capacitores",
+        "name": "Descarga de Capacitores",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Desde que o Cataphract não esteja {Slowed} ou {Immobilized}, ele ganha {resistência a dano de Energy e Heat}. Ao fim dos turnos do Cataphract, ttodos os personagens adjacentes recebem {2,3,4 Heat}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_carga",
+        "name": "Carga",
+        "origin": {
+            "type": "Class",
+            "name": "Cataphract",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Cataphract se move espaços igual a sua {Speed} em linha reta, ignorand {reações} e engagement, então atacando um dentro da {range} da {Lança Adaptativa}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
     }
 ]

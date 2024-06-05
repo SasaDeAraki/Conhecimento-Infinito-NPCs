@@ -364,5 +364,45 @@
             "ldc_npcf_bombas_perseguidoras"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_breacher",
+        "name": "Breacher",
+        "role": "striker",
+        "info": {
+            "flavor": "Notoriamente eficaz em operações de abordagem, o Campbell Orbital Dynamics C-O MkIII é frequentemente visto nos arsenais das forças de defesa planetárias suborbitais e nos seus homólogos piratas. Oficialmente, a designação CO é uma abreviatura de “CombatOrbital”, mas extraoficialmente, o CO3 tem um nome diferente: “Can Opener”, inspirado no indicativo de Valeria Rojas-Sarnik, uma das mais célebres pilotos de CO3.",
+            "tactics": "Os violadores podem causar danos de explosão significativos, mas não são especialmente precisos. Para aumentar suas capacidades, use LOCK ON ou emparelhe-os com NPCs de suporte. A BREACH RAM facilita o trabalho de cobertura; no entanto, falta-lhe velocidade e alcance e corre o risco de provocar reações."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [18, 20, 22],
+            "armor": [1, 1, 1],
+            "evade": [9, 11, 13],
+            "edef": [7, 7, 7],
+            "heatcap": [7, 7, 8],
+            "hull": [2, 3, 4],
+            "agility": [0, 1, 2],
+            "systems": [-1, -1, -1],
+            "engineering": [1, 2, 3],
+            "speed": [3, 4, 5],
+            "sensor": [5, 5, 5],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_shotgun_dupla",
+            "ldc_npcf_investida_implacavel",
+            "ldc_npcf_destruidor_de_armaduras"
+        ],
+        "optional_features": [
+            "ldc_npcf_painmaker",
+            "ldc_npcf_investida_superior",
+            "ldc_npcf_contagem_de_seguidores",
+            "ldc_npcf_carga_termal",
+            "ldc_npcf_tiro_de_flecha"
+        ],
+        "power": 100
     }
 ]

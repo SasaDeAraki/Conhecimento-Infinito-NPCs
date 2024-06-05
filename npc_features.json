@@ -281,12 +281,12 @@
         "name": "Circulo de Fogo",
         "origin": {
             "type": "Class",
-            "name": "Ace",
+            "name": "Aegis",
             "base": false
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Quaisquer personagens que comecem seu turno dentro da área afetada pela Rede de Defesa ou entrar nela pela primeira vez no round recebe 2 de dano de Calor e se torna Shredded até que saiam da área.",
+        "effect": "Quaisquer personagens que comecem seu turno dentro da área afetada pela Rede de Defesa ou entrar nela pela primeira vez no round recebe 2 de dano de Heat e se torna Shredded até que saiam da área.",
         "tags": []
     },
     {
@@ -1431,7 +1431,7 @@
             }
         ],
         "trigger": "O Berserk recebe dano melee.",
-        "effect": "O Berserker ganha resistência ao dano do ataque e o atacante deve suceder um teste de {Engineering} ou recebe {2,4,6 Heat}.",
+        "effect": "O Berserker ganha resistência ao dano do ataque e o atacante deve suceder um teste de {Engineering} ou recebe {2,4,6 Burn}.",
         "origin": {
         "type": "Class",
         "name": "Berserker",
@@ -1623,5 +1623,177 @@
         "type": "Trait", 
         "effect": "Quando o Bombard ataca com o Canhão do Bombardeiro, três peronagens à escolha com {range 3} do espaço atingido recebem {2,3,4 explosive}, acerte ou não.",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_shotgun_dupla",
+        "name": "Shotgun Dupla",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma pode realizar dois ataques de uma vez, mirando no mesmo alvo ou em dois diferentes.",
+        "tags": [],
+        "weapon_type": "Main CQB",
+        "attack_bonus": [1,2,3],
+        "accuracy": [-2,-2,-2],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [6,8,10]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_investida_implacavel",
+        "name": "Investida Implacável",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Breacher move até {6 espaços} em linha reta, ignorando engagement e passando direto - mas não parando dentro - de espaços ocupados por outros personagens. Obstruções e objetos no caminho do breacher recebem {10,20,30 Kinetic AP}. O Breacher passa por qualquer obstruções destruídas no seu caminho e continua se movendo até ter se movido {6 espaços} ou falhar em destruir algum obstrução. Qualquer personagem no caminho do Breacher deve suceder em um teste de {Agility} ou será empurrado para fora do caminho da maneira mais direta possível e recebera {Prone}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_destruidor_de_armaduras",
+        "name": "Destruidor de Armaduras",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Personagens que são atacados com sucesso mais de uma vez pela {Shotgun Dupla} se torná {Shredded} pelo resto da cena.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_painmaker",
+        "name": "PAINMAKER",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Breacher escolhe um personagem com {range 3}. O Próximo turno do Breacher é atrasado até depois desse personagem. No ínicio do turno do Breacherm, se o alvo ainda estiver em {range 3}, o Breacher pode atacá-lo quatro vezes com a {Shotgun Dupla} - ao invés de duas - como uma {Free action}.",
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_investida_superior",
+        "name": "Investida Superior",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Quando usar {Investida Implacável} o Breacher pode mover {4 espaços} a mais, e os alvos têm -1d6 no teste de {Agility}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_contagem_de_seguidores",
+        "name": "Contagem de Seguidores",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "effect": "O Breacher faz um {tech attack} contra um personagem dentro dos seus {Sensores}. Em um sucesso, o Breacher recebe {+1,+2,+3 accuracy} em todos os ataques contra aquele alvo, e pode usar Boost uma vez por turno como {Free action} contanto que se mova diretamente em direação ao alvo. Isso dura até que um dos  personagens seja destuído e não possa ser trocado para outro alvo.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_carga_termal",
+        "name": "Carga Termal",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Breacher pode gastar uma carga para jogar uma granada em um espaço com {range 5}. Personagens dentro de área {Blast 2} recebe {2,4,6 Burn} se eles falharem em um teste de {Agility}, metade em um sucesso. Objetos, terreno e {Posicionáveis} recebem {10,20,30 Kinetic AP}.", 
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_grenade"
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_tiro_de_flecha",
+        "name": "Tiro de Flecha",
+        "origin": {
+            "type": "Class",
+            "name": "Breacher",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Ataques com essa arma tomam forma de um {Cone 3} iniciando na ponta do alvo atingidom, atacando todos os personagens tanto no espaço atingido quanto na área afetada. O cone não pode trocar de direção.",
+        "tags": [],
+        "weapon_type": "Auxiliary CQB",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [2,3,4]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
     }
 ]

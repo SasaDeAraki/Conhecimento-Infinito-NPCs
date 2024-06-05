@@ -2282,5 +2282,178 @@
         "type": "Trait", 
         "effect": "Quando o Engineer usa {Torretas Posicionáveis}, ele pode escolher uma dessas modificações para a torreta:<br><ul><li>{Inferno}: O ataque da torreta se transforma em {Cone 3}, {2/3/4 Burn}</li><li>{Explosivos}: O ataque da torreta se transforma em {Range 15 Blast 1}, {2/3/4 Explosive}.</li><li>{Caçador}: O ataque da torreta ganha {Reliable 1}.</li><li>{Instável}: Quanto ou a torreta ou o Engineer é destruído, a torreta explode em {Burst 1}. Personagens dentro da área de efeito devem suceder em um teste de {Agility} ou recebem {7/9/11 Explosive}.<li></ul>",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_espingarda_de_tambor",
+        "name": "Espingarda de Tambor",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2}, essa arma pode fazer dois ataques de uma vez, atingindo ou um alvo duas vezes ou dois alvos uma vez. No {T3} podem ser feitos três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Heavy CQB",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,5,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_protecao_do_gigante",
+        "name": "Proteção do Gigante",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem dentro de linha de visão e {Sensores} recebe {+3 difficulty} contra qualquer outro personagem que não seja o Goliath até o fim do próximo turno do Goliath.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_tech"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_frame_pesado_goliath",
+        "name": "Frame Pesado",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Goliath não pode ser empurrado, puxado ou derrubado por personagens menores.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_guardiao_goliath",
+        "name": "Guardião",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens aliados poder usar o Goliath como Hard cover.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_armadura_de_cerco_goliath",
+        "name": "Armadura de Cerco",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Goliath, tem {resistência} a todo o dano de ataques originados além de {Range 3}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_punho_demolidor",
+        "name": "Punho Demolidor",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem com {Range 2} deve passar um teste de {Hull} ou recebe {4/5/6 Kinetic}, é empurrado {5 espaços} diretamente opostos ao Goliath e recebe {Prone}", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_prender",
+        "name": "Prender",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Um personagem com {Range 2} se torna {Immobilized} e {Impaired} até que ou danifique o Goliath, o Goliath seja {Stunned} ou destruído, ou o Goliath use este efeito em outro alvo. O Goliath recebe {Immobilized} pela duração deste efeito.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_agarrao_destruidor",
+        "name": "Agarrão Destruídor",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Um personagem Adjacente ao Goliath deve suceder em um teste de {Agility} ou é agarrado automáticamente pelo Goliath e recebe {Jammed} até que não estejam agarrados. O Goliath só pode agarrar um alvo deste jeito por vez.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_guardiao_atento",
+        "name": "Guardião Atento",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Aliados que se beneficiam da cobertura do Goliath recebem {resistência a todo o dano}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_retribuicao_goliath",
+        "name": "Retribuição",
+        "origin": {
+            "type": "Class",
+            "name": "Goliath",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Sempre que o Berserker receber dano, seu próximo ataque dá {+2,+3,+4 dano extra}. Esse bônus stacka até {+8}. Bônus são perdidos quando o Berserk ataca ou ao fim do seu próximo turno.",
+        "tags": []
     }
 ]

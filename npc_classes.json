@@ -527,5 +527,47 @@
             "ldc_npcf_arsenal"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_goliath",
+        "name": "Goliath",
+        "role": "defender",
+        "info": {
+            "flavor": "Ao longo da Linha Sierra Madre – o oitavo anel de território a partir do Berço – a estrutura de Dangun é uma visão familiar. Fabricado pela Park Armored Systems e popularizado pela empresa mercenária Dagger Squadron, o Dangun é popular por sua resistência, capacidade de comércio cinético e desempenho confiável em todos os teatros. O Dangun é um mecanismo para construir forças de ataque – uma estrutura da classe Golias capaz de montar tecnologia magtech poderosa, com um design que é difícil de combater em combate cinético. Com vários contratos de pequenas frotas em seu portfólio, a Park Armored Systems é um fabricante que vale a pena ficar de olho; na verdade, Harrison Armory prestou especial atenção e os rumores da omninet sugerem uma possível parceria num futuro próximo.",
+            "tactics": "Golias são defensores relativamente móveis que podem trazer inimigos até eles. Com CRUSH TARGETING, os Golias forçam inimigos perigosos a concentrar ataques neles; tudo o que precisa é de linha de visão, permitindo que os Golias atinjam até mesmo personagens rápidos ou difíceis de acertar. O tamanho prodigioso dos Golias também lhes permite dar cobertura aos seus aliados."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [25, 30, 35],
+            "armor": [0, 0, 0],
+            "evade": [6, 6, 6],
+            "edef": [6, 6, 6],
+            "heatcap": [8, 10, 12],
+            "hull": [4, 6, 6],
+            "agility": [-2, -2, -2],
+            "systems": [1, 1, 1],
+            "engineering": [0, 0, 2],
+            "speed": [3, 3, 3],
+            "sensor": [10, 10, 10],
+            "save": [11, 13, 15],
+            "size": [[3], [3], [3]]
+        },
+        "base_features": [
+            "ldc_npcf_espingarda_de_tambor",
+            "ldc_npcf_protecao_do_gigante",
+            "ldc_npcf_frame_pesado_goliath",
+            "ldc_npcf_guardiao_goliath",
+            "ldc_npcf_armadura_de_cerco_goliath"
+        ],
+        "optional_features": [
+            "ldc_npcf_punho_demolidor",
+            "ldc_npcf_prender",
+            "ldc_npcf_agarrao_destruidor",
+            "ldc_npcf_guardiao_atento",
+            "ldc_npcf_retribuicao_goliath"
+        ],
+        "power": 100
     }
 ]

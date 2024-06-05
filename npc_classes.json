@@ -282,5 +282,46 @@
             "ldc_npcf_contador_de_mortes"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_berserker",
+        "name": "Berserker",
+        "role": "striker",
+        "info": {
+            "flavor": "a produção de suas armas em ordens de magnitude. O arquétipo, mais conhecido por seu uso pelos Cavaleiros da Destruição Iminente do Gen’Dal Merlos, é preferido por organizações com foco puro no combate, PMCs e corpos de ativos negáveis ​​em estados estabelecidos.",
+            "tactics": "Berserkers são excelentes duelistas corpo a corpo que são muito assustadores de perto. Seu potencial é maior quando estão o mais próximo possível das forças inimigas. Devido ao seu terrível HEAT CAP e E-DEFENSE, os Berserkers são vulneráveis ​​a ataques tecnológicos. Oponentes experientes usarão a AGRESSÃO em seu próprio benefício, virando os Berserkers contra seus aliados, por isso é melhor mantê-los longe das forças amigas."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [12, 16, 20],
+            "armor": [1, 1, 1],
+            "evade": [8, 9, 10],
+            "edef": [6, 6, 6],
+            "heatcap": [6, 6, 6],
+            "hull": [3, 4, 6],
+            "agility": [2, 4, 4],
+            "systems": [-2, -2, -2],
+            "engineering": [-1, -1, 0],
+            "speed": [5, 5, 5],
+            "sensor": [5, 5, 5],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_machado_serra",
+            "ldc_npcf_defesa_desleixada",
+            "ldc_npcf_agressao",
+            "ldc_npcf_investida_avalanche"
+        ],
+        "optional_features": [
+            "ldc_npcf_juggernaut",
+            "ldc_npcf_harpao",
+            "ldc_npcf_pistola_de_pregos",
+            "ldc_npcf_retribuicao",
+            "ldc_npcf_pegando_fogo"
+        ],
+        "power": 100
     }
 ]

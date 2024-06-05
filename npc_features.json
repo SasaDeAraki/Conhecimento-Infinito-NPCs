@@ -1255,5 +1255,188 @@
                 "id": "tg_shield"
             }
         ] 
+    },
+    {
+        "id": "ldc_npcf_machado_serra",
+        "name": "Machado Serra",
+        "origin": {
+            "type": "Class",
+            "name": "Berserker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "{On critical hit:} O alvo se torna {Shredded} até o fim do seu próximo turno.",
+        "tags": [],
+        "weapon_type": "Heavy Melee",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [7,9,11]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_defesa_desleixada",
+        "name": "Defesa Desleixada",
+        "origin": {
+            "type": "Class",
+            "name": "Berserk",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Berserk tem {resistência} a todo o dano a menos que esteja {Impaired, Stunned, Immobilized, Shredded, Slowed} or {Exposed}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_agressao",
+        "name": "Agressão",
+        "origin": {
+            "type": "Class",
+            "name": "Berserk",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Após tomar dano pela primeira vez no roound, o Berserker deve imediatamente atacar um personagem adjacente aleatório - hostil ou aliado - com o {Machado Serra}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_investida_avalanche",
+        "name": "Investida Avalanche",
+        "origin": {
+            "type": "Class",
+            "name": "Berserk",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Berserk move espaços igual à sua {velocidade} em linha reta, ignorando reações e engagement, então atacando um personagem aleatório à frente - hostil ou aliado - com o {Machado Serra}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_juggernaut",
+        "name": "Juggernaut",
+        "origin": {
+            "type": "Class",
+            "name": "Berserk",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando o Berserk usa {Investida Avalanche}, todos os personagens adjacentes ao caminho que ele seguir até sua posição final - hostis ou aliados - devem passar em um teste de {Hull} ou ficarãp {Prone}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_harpao",
+        "name": "Harpão",
+        "origin": {
+            "type": "Class",
+            "name": "Berserker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main CQB",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [2,4,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "Alvos de {tamanho} menor ou igual ao Berserker são puxados em direção a ele em linha reta, ou o mais próximo o possível. Se são maiores, o Berserker é puxado em direção a ele ao ivés disso. Se o alvo acabar seu movimento adjacente, o Berserker pode {agarrá-lo}." 
+    },
+    {
+        "id": "ldc_npcf_pistola_de_pregos",
+        "name": "Pistola de Pregos",
+        "origin": {
+            "type": "Class",
+            "name": "Berserker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main CQB",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,7,9]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ],
+        "on_hit": "O alvo rola um teste de {Agility}. Em uma falha, eles recebem {Immobilized} até o fim do próximo turno." 
+    },
+    {
+        "id": "ldc_npcf_retribuicao",
+        "name": "Retribuição",
+        "origin": {
+            "type": "Class",
+            "name": "Berserker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Sempre que o Berserker receber dano, seu próximo ataque dá {+2,+3,+4 dano extra}. Esse bônus stacka até {+8}. Bônus são perdidos quando o Berserk ataca ou ao fim do seu próximo turno.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_pegando_fogo",
+        "name": "Pegando Fogo",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_shield"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "O Berserk recebe dano melee.",
+        "effect": "O Berserker ganha resistência ao dano do ataque e o atacante deve suceder um teste de {Engineering} ou recebe {2,4,6 Heat}.",
+        "origin": {
+        "type": "Class",
+        "name": "Berserker",
+        "base": false
+        },
+        "locked": false
     }
 ]

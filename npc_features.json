@@ -2124,7 +2124,7 @@
         ] 
     },
     {
-        "id": "ldc_npcf_exaurir",
+        "id": "ldc_npcf_exaurir_demolisher",
         "name": "Exaurir",
         "origin": {
             "type": "Class",
@@ -2144,5 +2144,143 @@
         }
         ],
         "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_canhao_flak",
+        "name": "Canhão Flak",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma tem {+2 accuracy} contra alvos voadores.",
+        "tags": [
+            {
+                "id": "tg_smart"
+            }
+        ],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 15
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_torreta_posicionavel",
+        "name": "Torreta Posicionável",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Torreta Posicionável (Size} 1/2, {HP} 5/8/10, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}<br><br>Uma dessas torretas auto-montáveis, podem se posicionar em qualquer espaço livre adjacente. No turno no Engineer, torretas poisicionadas atacam o alvo hostil mais próximo com {range 10}, Elas atacam com {+1/+2/+3} e dão {4/5/6 Kinetic}. O Engineer pode ser até seis torretas posicionadas ao mesmo tempo, todas são desativadas se o Engineer for destruído.", 
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_marca_do_engenheiro",
+        "name": "Marca do Engenheiro",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Até o fim do próximo turno do Engineer, as torretas posicionadas vão atacar um alvo à sua escolha (desde que tenha {range}) ao invés de atacar o alvo mais próximo.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": "6"
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_posicionador_nato",
+        "name": "Posicionador Nato",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Engineer pode posicionar duas torretas de uma vez com {Torretas Posicionáveis}. Se assim fizerem, o sistema conta como {Recharge +4} até sua próxima recarga.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_tatica_antiaerea",
+        "name": "Tática Antiaérea",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "{Torretas Posicionáveis} recebem {+2 accuracy} contra alvos voadores.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_protecao_do_construtor",
+        "name": "Proteção do Construtor",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "{Drones}, objetos, e pedaços de cobertura ganham {resistência} a todo o dano enquanto próximos ao Engineer.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_torretas_moveis",
+        "name": "Torretas Móveis",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Ao início do tuno do Engineer, ele pode mover todas as torretas posicionaveis em até {3 espaços} em qualquer direação.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_arsenal",
+        "name": "Arsenal",
+        "origin": {
+            "type": "Class",
+            "name": "Engineer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Quando o Engineer usa {Torretas Posicionáveis}, ele pode escolher uma dessas modificações para a torreta:<br><ul><li>{Inferno}: O ataque da torreta se transforma em {Cone 3}, {2/3/4 Burn}</li><li>{Explosivos}: O ataque da torreta se transforma em {Range 15 Blast 1}, {2/3/4 Explosive}.</li><li>{Caçador}: O ataque da torreta ganha {Reliable 1}.</li><li>{Instável}: Quanto ou a torreta ou o Engineer é destruído, a torreta explode em {Burst 1}. Personagens dentro da área de efeito devem suceder em um teste de {Agility} ou recebem {7/9/11 Explosive}.<li></ul>",
+        "tags": []
     }
 ]

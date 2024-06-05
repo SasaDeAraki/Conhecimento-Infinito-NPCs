@@ -483,8 +483,48 @@
             "ldc_npcf_compensador_cinetico",
             "ldc_npcf_misseis_de_concussao",
             "ldc_npcf_destruidor_sismico",
-            "ldc_npcf_exaurir"
+            "ldc_npcf_exaurir_demolisher"
 
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_engineer",
+        "name": "Engineer",
+        "role": "striker",
+        "info": {
+            "flavor": "Vários tipos de mechs localizados da classe Engineer são comuns em toda a galáxia, exclusivos dos mundos ou teatros em que operam. O Engenheiro existe há muito tempo como um arquétipo, mas permaneceu em grande parte indefinido até que uma doutrina de design completa foi apresentada por Corrida Isolde-Nollet, diretora do serviço público do Arsenal em Ras Shamra. Em todos os casos, a missão dos Engenheiros é a mesma: defender, manter, proteger. Os engenheiros operam melhor no meio ou na retaguarda da linha de batalha, coordenando a defesa de posições importantes e supervisionando a implantação abrangente de todos os meios operacionais. Lembre-se: se você não conseguir chegar até o inimigo, você perde.",
+            "tactics": "As TORRETAS INSTALÁVEIS dos engenheiros tornam-nas potentes multiplicadores de força, pois podem implantar uma a cada turno. Se os inimigos não lidarem com as torres de um Engenheiro rapidamente, seu dano potencial dispara rapidamente – ainda mais quando eles têm como alvo personagens com MARCA DO ENGENHEIRO. Sem a MARCA DO ENGENHEIRO, as torres atacam o alvo mais próximo, que os jogadores podem usar para controlar quem sofre o dano."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [20, 20, 20],
+            "armor": [0, 0, 0],
+            "evade": [7, 9, 11],
+            "edef": [10, 10, 12],
+            "heatcap": [10, 12, 14],
+            "hull": [-1, -1, -1],
+            "agility": [-1, -1, -1],
+            "systems": [1, 2, 3],
+            "engineering": [3, 4, 6],
+            "speed": [3, 3, 3],
+            "sensor": [15, 15, 15],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_canhao_flak",
+            "ldc_npcf_torreta_posicionavel",
+            "ldc_npcf_marca_do_engenheiro"
+        ],
+        "optional_features": [
+            "ldc_npcf_posicionador_nato",
+            "ldc_npcf_tatica_antiaerea",
+            "ldc_npcf_protecao_do_construtor",
+            "ldc_npcf_torretas_moveis",
+            "ldc_npcf_arsenal"
         ],
         "power": 100
     }

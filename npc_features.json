@@ -3228,7 +3228,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "{Envoltura} condede ao alvo {resistência a todo o dano}, mas o Priest se torna {Immobilized} enquanto linkado.",
+        "effect": "{Envoltura} concede ao alvo {resistência a todo o dano}, mas o Priest se torna {Immobilized} enquanto linkado.",
         "tags": []  
     },
     {
@@ -3290,7 +3290,7 @@
             }
         ],
         "trigger": "Um personagem linkado por Envoltura recebe dano.",
-        "effect": "O atacante deve fazer um teste de {Sysytems}. Caso falhe, estará {Stunned} até o início de seu próximo turno.",
+        "effect": "O atacante deve fazer um teste de {Systems}. Caso falhe, estará {Stunned} até o início de seu próximo turno.",
         "origin": {
             "type": "Class",
             "name": "Priest",
@@ -3486,5 +3486,175 @@
                 "id": "tg_quick_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_misses_em_capsula",
+        "name": "Mísseis em Capsula",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma pode atacar {1-3} personagens de uma vez.",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            },
+            {
+                "id": "tg_reliable",
+                "val": "{2,3,3}"
+            },
+            {
+                "id": "tg_knockback",
+                "val": 1
+            }
+        ],
+        "weapon_type": "Main Launcher",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [4,5,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 20
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_foguetes_javelin",
+        "name": "Foguetes Javelin",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Rainmaker escolhe {3 espaços livres} dentro de linha de visão e {Range 20} que não são adjacentes uns aos outros. Todos os personagens sabem os espaços que foram escolhidos. O Rainmaker dispara um voleio de foguetes teleguiados no ar: a próxima vez que um personagem hostil passar por, iniciar o seu turno, ou sobrevoar por um dos espaços escolhidos - ele é atingido por um foguet, recebendo {5/6/7 Kinetic}. Cada espaço só pode ser ativado uma vez. Esse efeito dura até o próximo turno do Rainmaker.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_cacador",
+        "name": "Caçador",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "As armas do Rainmaker recebem {Smart, Seeking,} e {AP} contra alvos com {Lock on}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_missil_de_hades",
+        "name": "Míssil de Hades",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens em {Cone 3} começando em até {Range 20} do Rainmaker recebem {4/6/8 Energy} e {2 Heat}, metade se sucederem em um teste de {Agility}. Esse sistema não precisa de linha de visão, só uma rota possível ao alvo.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_misseis_de_caca",
+        "name": "Mísseis de Caça",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Mísseis de Caça (Size} 1/2, {HP} 10/15/20, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}.<br><br>O Rainmaker posiciona um Míssel de Caça em um espaço adjacente e escolhe um alvo em {Range 20} e linha de visão. No início do turno do Rainmaker o míssil se move {3 espaços} em direção do alvo, {6} se o alvo tem {Lock on}. Ele se move diretamente, contornando cobertura e terreno se necessário. Quando colidir com um personagem ou alcançar seu alvo, ele cria uma explosão {Blast 1}. Personagens dentro da área afetada recebem {16/20/24 Energy}, metade se passarem em um teste de {Agility}.", 
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_chuva_eterna",
+        "name": "Chuva Eterna",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Rainmaker escolhe {6 espaços} para {Foguetes Javelin} ao invés de  {3}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_voleio",
+        "name": "Voleio",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Escolha um alvo em {Range 20} e linha de visão. Ele recebe {4/6/8 Explosive}, metade se sucederem em um teste de {Agility}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]  
+    },
+    {
+        "id": "ldc_npcf_missil_de_atlas",
+        "name": "Míssil de Atlase",
+        "origin": {
+            "type": "Class",
+            "name": "Rainmaker",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Rainmaker escolhe um espaço do solo em linha de visão e {Range 30}, óbvio a todos os personagens com linha de visão para o local. O Rainmaker lança um míssil que atinge o local no fim do próximo turno, causando uma explosão {Blast 2}; personagens afetados recebem {16/20/24 Explosive}, metade se sucederem em um teste de {Agility}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]  
     }
 ]

@@ -815,5 +815,45 @@
             "ldc_npcf_fervendo"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_rainmaker",
+        "name": "Rainmaker",
+        "role": "artillery",
+        "info": {
+            "flavor": "O apelido irônico de “Rainmaker” descreve mechs e pilotos especializados no uso de foguetes e mísseis. Preferidos por unidades de combate flexíveis, os Rainmakers são plataformas móveis carregadas de munições e capazes de lidar com combates a qualquer distância, contra qualquer alvo.",
+            "tactics": "Rainmakers são uma parte de artilharia e uma parte de controlador. Seus JAVELIN ROCKETS forçam os personagens a evitar certas áreas ou sofrer danos garantidos. Eles também podem causar danos retardados por meio de sistemas opcionais como HOUND MISSILES e ATLAS MISSILES. Como outros mechas de artilharia, os Rainmakers são relativamente vulneráveis ​​por si próprios."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [1, 1, 1],
+            "evade": [8, 10, 12],
+            "edef": [8, 10, 12],
+            "heatcap": [8, 8, 8],
+            "hull": [0, 0, 0],
+            "agility": [0, 1, 1],
+            "systems": [2, 3, 3],
+            "engineering": [0, 0, 1],
+            "speed": [3, 3, 3],
+            "sensor": [15, 15, 15],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_misses_em_capsula",
+            "ldc_npcf_foguetes_javelin",
+            "ldc_npcf_cacador"
+        ],
+        "optional_features": [
+            "ldc_npcf_missil_de_hades",
+            "ldc_npcf_misseis_de_caca",
+            "ldc_npcf_chuva_eterna",
+            "ldc_npcf_voleio",
+            "ldc_npcf_missil_de_atlas"
+        ],
+        "power": 100
     }
 ]

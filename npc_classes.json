@@ -935,5 +935,46 @@
             "ldc_npcf_derreter"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_scout",
+        "name": "Scout",
+        "role": "support",
+        "info": {
+            "flavor": "As estratégias de guerra mecanizada mais devastadoras exigem a aplicação ativa, próxima e agressiva de apoio de fogo orbital, atmosférico e terrestre. Conheça os mechs da classe Scout e seus pilotos. Usando sistemas avançados de mira, os Scouts são igualmente coordenadores táticos e comandantes de artilharia, trabalhando com aliados para mapear o cenário de batalha e posicionar com precisão o fogo de alvo direto e autônomo.",
+            "tactics": "Scouts são mecanismos de suporte projetados para aumentar o dano causado por seus aliados. Eles não causam nenhum dano, mas MARKER RIFLE e CLOAKING FIELD permitem que eles mantenham os personagens aliados vivos e evitem que os inimigos se escondam. Eles são especialmente adeptos de revelar personagens INVISÍVEIS, mas precisam se aproximar de seus alvos para aproveitar ao máximo essa habilidade. Como a maioria dos mechs de suporte, os Scouts não são especialmente resistentes por conta própria."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [8, 8, 8],
+            "armor": [0, 0, 0],
+            "evade": [12, 15, 18],
+            "edef": [10, 13, 16],
+            "heatcap": [6, 6, 6],
+            "hull": [-1, -2, -2],
+            "agility": [2, 4, 5],
+            "systems": [3, 4, 5],
+            "engineering": [-1, -1, 0],
+            "speed": [6, 7, 8],
+            "sensor": [20, 20, 20],
+            "save": [11, 13, 15],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_rifle_indicador",
+            "ldc_npcf_visao",
+            "ldc_npcf_ping",
+            "ldc_npcf_campo_ocultador"
+        ],
+        "optional_features": [
+            "ldc_npcf_devorador_de_sistemas",
+            "ldc_npcf_identificador",
+            "ldc_npcf_ponto_fraco",
+            "ldc_npcf_veu_de_dados_scout",
+            "ldc_npcf_ataque_orbital"
+        ],
+        "power": 100
     }
 ]

@@ -2840,7 +2840,11 @@
         "locked": false,
         "type": "System",
         "effect": "Por padrão, o Mirage é {Invisible} e pode transferir esse status a outro personagem com linha de visão como uma {Quick action}. Quando fazem isso, o Miragem deixa de ficar {Invisible}, e só recebe esse status novamente quando transfere de volta novamente com uma {Quick action} ou transfere para outro personagem; do contrário, esse efeito dura até que o Mirage seja destruído.", 
-        "tags": []
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
     },
     {
         "id": "ldc_npcf_glitch_scanners",
@@ -3960,5 +3964,161 @@
                 "id": "tg_quick_action"
             }
         ] 
+    },
+    {
+        "id": "ldc_npcf_rifle_indicador",
+        "name": "Rifle Indicador",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_smart"
+            }
+        ],
+        "weapon_type": "Main Rifle",
+        "attack_bonus": [2,4,6],
+        "accuracy": [2,2,2],
+        "damage": [],
+        "range": [
+            {
+                "type": "Range",
+                "val": 15
+            }
+        ],
+        "on_hit": "O alvo recebe {Lock on}. Enquanto eles estiverem {Lock on}, também recebem {Shredded} e não podem usar {Hide} ou ficarem {Invisible}." 
+    },
+    {
+        "id": "ldc_npcf_visao",
+        "name": "Visão",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Scout ignora {Hidden} e {Invisible} - ele sabe exatamente a posição de todos os personagens dentro de seus {Sensores}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_ping",
+        "name": "Ping",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens à escolha do Scout dentro de {Range 5} devem realizar um teste de {Systems}. Em uma falha, eles imediatamente perdem {Hidden} e {Invisible}, e não podem recuperar nenhum desses status ou se beneficiar de {cobertura} até o início do próximo turno do Scout", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_campo_ocultador",
+        "name": "Campo Ocultador",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Scout gera um campo {Burst 3} que dura até o fim do seu próximo turno. O Scout e seus aliados dentro da área se torna {Invisible}, mas o Scout está {Immobilized} enquanto isso estiver ativo.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_devorador_de_sistemas",
+        "name": "Devorador de Sistemas",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Personagens que falharem o teste contra {Ping} recebe, {Lock on} e {2/3/4 Heat}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_identificador",
+        "name": "Identificador",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Enquanto adjacente ao Scout, aliados recebem {+1 accuracy} em rolagens de ataque.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_ponto_fraco",
+        "name": "Ponto Fraco",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Personagens que forem atingidos pelo {Rifle Indicador} recebem {+4/6/8 bonus damage} da próxima vez que forem atingidos por um ataque melee ou range. Se não for ativado, esse efeito dura até o fim da cena.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_veu_de_dados_scout",
+        "name": "Véu de Dados",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Por padrão, o Scout é {Invisible} e pode transferir esse status a outro personagem com linha de visão como uma {Quick action}. Quando fazem isso, o Scout deixa de ficar {Invisible}, e só recebe esse status novamente quando transfere de volta novamente com uma {Quick action} ou transfere para outro personagem; do contrário, esse efeito dura até que o Scout seja destruído.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_ataque_orbital",
+        "name": "Ataque Orbital",
+        "origin": {
+            "type": "Class",
+            "name": "Scout",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Scout escolhe um espaço no chão com linha de visão e {Range 20}; todos os personagens sabem que o local foi escolhido. O Scout chama um Bombardeamento Orbital que atinge o local ao fim do próximo round, criando uma explosão {Burst 2}. Personagens na área afetada devem fazer um teste de {Agility}. Em uma falha, eles recebem {12/16/20 Energy} e {Prone}. Em um sucesso, recebem metade do dano e continuam de pé", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

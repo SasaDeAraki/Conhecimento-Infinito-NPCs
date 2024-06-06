@@ -569,5 +569,46 @@
             "ldc_npcf_retribuicao_goliath"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_hive",
+        "name": "Hive",
+        "role": "controller",
+        "info": {
+            "flavor": "Em teoria, os mechs desenvolvidos após o Evento Deimos não são muito diferentes dos seus primos mais velhos: eles estabelecem uma omni-rede local; fabricar e implantar um século ou meio século de drones; e coordená-los para alcançar seus objetivos. Ainda assim, as complexas relações entre treinador e treinador que permitem aos pilotos transitar entre o controle direto e a operação autônoma causam trauma psicológico após um mês de operação contínua do drone. É recomendado que eles alternem a colmeia emparelhada a cada duas semanas.",
+            "tactics": "Hives usam RAZOR SWARM para controlar o campo de batalha, garantindo cobertura suave para seus aliados e negando áreas para seus inimigos. Implante enxames e use DRONE BARRAGE para bloquear inimigos ou mova-os para o alcance de enxames e aliados."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [20, 20, 20],
+            "armor": [0, 0, 0],
+            "evade": [8, 15, 18],
+            "edef": [10, 10, 10],
+            "heatcap": [8, 8, 8],
+            "hull": [-1, -1, -2],
+            "agility": [0, 0, 6],
+            "systems": [2, 4, 3],
+            "engineering": [1, 1, 1],
+            "speed": [5, 5, 5],
+            "sensor": [10, 10, 10],
+            "save": [12, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_nexus_eliminador-de-cacador",
+            "ldc_npcf_voleio_de_drones",
+            "ldc_npcf_enxame_flamejante"
+            
+        ],
+        "optional_features": [
+            "ldc_npcf_nuvem-eletrizada-de-nanitas",
+            "ldc_npcf_enxame_movel",
+            "ldc_npcf_enxame_controlador",
+            "ldc_npcf_manipulacao_de_atrito",
+            "ldc_npcf_enxame_perseguidor"
+        ],
+        "power": 100
     }
 ]

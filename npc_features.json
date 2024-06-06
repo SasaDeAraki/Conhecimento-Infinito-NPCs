@@ -2453,7 +2453,167 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Sempre que o Berserker receber dano, seu próximo ataque dá {+2,+3,+4 dano extra}. Esse bônus stacka até {+8}. Bônus são perdidos quando o Berserk ataca ou ao fim do seu próximo turno.",
+        "effect": "Sempre que o Goliath receber dano, seu próximo ataque dá {+2,+3,+4 dano extra}. Esse bônus stacka até {+8}. Bônus são perdidos quando o Goliath ataca ou ao fim do seu próximo turno.",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_nexus_eliminador-de-cacador",
+        "name": "Nexus Eliminador de Caçador",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2}, essa arma pode fazer dois ataques de uma vez, atingindo ou um alvo duas vezes ou dois alvos uma vez. No {T3} podem ser feitos três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Main Nexus",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Burn",
+                "damage": [3,3,3]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_voleio_de_drones",
+        "name": "Voleio de Drones",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "O Hive faz um tech attack contra um alvo dentror de seus {Sensores}. Em um sucesso, o alvo escolhe: se torna {Immobilized} e {Impaired} até o fim do seu próximo turno, ou se move imediatamente até {5 espaços} em uma direção escolhida pelo Hive. Esse movimento ignora Engagement e não provoca reações.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_enxame_flamejante",
+        "name": "Enxame Flamejante",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Hive posiciona um enxame de drones {Blast 1} em um local dentro dos {Sensores}. Aliados recebem {Soft cover} contanto que permaneçam pelo menos parcialmente dentro da área afetada. Personagens hostis que começarem seus turnos pelo menos parcialmente dentro da área afetada ou se movam para dentro da área pela primeira vez recebem {2/4/6 Burn}. O Hive pode posicionar qualquer quantidade de Infestações Flamejantes, cada uma permanece até o resto da cena ou até o Hive ser destruído.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_nuvem-eletrizada-de-nanitas",
+        "name": "Nuvem Eletrizada de Nanitas",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "No início do turno, personagens hostis dentro de {Range 3} recebem {2 Burn}; Adicionalmente, até que se movam além de {Range 3}, fazem testes de {System} e qualquer tech attack com {+1/2/3 difficulty}.", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_enxame_movel",
+        "name": "Enxame Móvel",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "No início do turno do Hive, ele pode mover todos os enxames até {2 espaços} em qualquer direção, incluindo espaços ocupados por outros personagens.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_enxame_controlador",
+        "name": "Enxame Controlador",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Sempre que personagens receberem {Burn} de um enxame flamejante, devem suceder em um teste de {Systems} ou imediatamente se movem {4 espaços} em uma direção escolhida pelo Hive após receber o dano. Esse movimento ignora engagement e não provoca reações.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_manipulacao_de_atrito",
+        "name": "Manipulação de Atrito",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "effect": "O Hive libera um enxame de, pequenos, ágeis drones que fazem um tech attack contra um alvo dentro dos {Sensores} com linha de visão. Em um acerto, os drones se grudam ao alvo, fazendo-os receberem {2 Burn} sempre que fizerem uma ação ou reação até o fim de seu próximo turno.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_enxame_perseguidor",
+        "name": "Enxame Perseguidor",
+        "origin": {
+            "type": "Class",
+            "name": "Hive",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Personagens danificados por essa arma recebem {Lock on}.",
+        "tags": [
+            {
+                "id": "tg_smart"
+            }
+        ],
+        "weapon_type": "Main Nexus",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Cone",
+                "val": 5
+            }
+        ],
+        "on_hit": "" 
     }
 ]

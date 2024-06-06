@@ -3791,5 +3791,174 @@
         "type": "System",
         "effect": "A {Espada de Fibra de Carbono} do Ronin recebe {Threat 3}. A primeira vez em cada turno que o Ronin acertar um crítico com ela, todos os personagens dentro da {Threat} recebem {2/3/4 Kinetic} - incluindo o alvo.", 
         "tags": []  
+    },
+    {
+        "id": "ldc_npcf_lanca_termal",
+        "name": "Lança Termal",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_heat_self",
+                "val": 4
+            }
+        ],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [6,8,10]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_queimar",
+        "name": "Queimar",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Quando o Scourer {acerta} com a {Lança Termal}, o alvo recebe {5/7/8 Burn} adicional se também foi {acertado} pela {Lança Termal} no round passado.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_modulo_de_resfriamento",
+        "name": "Módulo de Resfriamento",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "No ínicio de seu turno, o Scourer {limpa todo o Heat} caso não tenha se movido - incluindo movimento involuntário - desde o seu último turno.", 
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_barreira_voltaica",
+        "name": "Barreira Voltaica",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Scourer tem {resitência} a {Energy}.", 
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_sobrecarregado",
+        "name": "Sobrecarregado",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Personagens afetados por {Queimar} também são {Shredded} e {Slowed} até o início de seus próximos turnos.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_saida_de_emergencia",
+        "name": "Saída de Emergência",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Quando o Scourer excede sua {Heat Cap} ou recebe {Stunned}, ele recebem {Invisible} até o início de seu próximo turno.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_pulso_laser",
+        "name": "Pulso Laser",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2-3} essa arma pode fazer dois ataque de uma vez, mirando duas vezes no mesmo alvo ou uma vez em dois alvos diferentes.",
+        "tags": [],
+        "weapon_type": "Main Cannon",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [4,4,4]
+            }
+        ],
+        "range": [
+            {
+                "type": "Line",
+                "val": 10
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_flash_solar",
+        "name": "Flash Solar",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens em {Cone 5} a partir do Scourer devem passar em um teste de {Sytems} ou se tornam {Jammed} até o início do próximo turno do Scourer.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_derreter",
+        "name": "Derreter",
+        "origin": {
+            "type": "Class",
+            "name": "Scourer",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Scourer pode fazer um ataque ranged contra um objeto, posicionavel ou {drone} dentro de {Range 10}, dando {20 Energy AP} em um sucesso.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
     }
 ]

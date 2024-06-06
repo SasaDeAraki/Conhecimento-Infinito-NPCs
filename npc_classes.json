@@ -894,5 +894,46 @@
             "ldc_npcf_lamina_expansiva"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_scourer",
+        "name": "Scourer",
+        "role": "striker",
+        "info": {
+            "flavor": "Os mechs da classe Scourer se distinguem por transportar armas de energia mortais alimentadas por usinas de energia recursivas de produção massiva. Esses mechs são encontrados em toda a galáxia em funções especializadas, apoiando tropas terrestres convencionais com poderosos ataques de feixe que detêm ameaças eletrônicas com a mesma facilidade com que detêm soldados inimigos.",
+            "tactics": "Os Scourers causam muitos danos quando se concentram em alvos únicos, atacando-os várias vezes. Eles podem ser usados ​​para quebrar oponentes difíceis ou lentos com muita facilidade. No entanto, eles são muito menos eficazes quando forçados a mudar de alvo e precisam ficar parados para aproveitar ao máximo suas armas."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 13, 15],
+            "armor": [2, 2, 2],
+            "evade": [8, 9, 10],
+            "edef": [8, 8, 8],
+            "heatcap": [8, 10, 12],
+            "hull": [1, 2, 3],
+            "agility": [0, 1, 1],
+            "systems": [0, 0, 1],
+            "engineering": [1, 2, 4],
+            "speed": [4, 4, 4],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_lanca_termal",
+            "ldc_npcf_queimar",
+            "ldc_npcf_modulo_de_resfriamento",
+            "ldc_npcf_barreira_voltaica"
+        ],
+        "optional_features": [
+            "ldc_npcf_sobrecarregado",
+            "ldc_npcf_saida_de_emergencia",
+            "ldc_npcf_pulso_laser",
+            "ldc_npcf_flash_solar",
+            "ldc_npcf_derreter"
+        ],
+        "power": 100
     }
 ]

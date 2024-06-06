@@ -52,9 +52,7 @@
         "on_hit": ""
     },
     {
-        
-    },
-    {"id": "ldc_npcf_manobras_evasivas",
+        "id": "ldc_npcf_manobras_evasivas",
         "name": "Manobras Evasivas",
         "type": "Reaction",
         "tags": [
@@ -69,11 +67,13 @@
         "trigger": "Um ataque melee ou ranged Acerta o Ace.",
         "effect": "O Ace performa Manobras Evasivas, voando 6 espaços em qualquer direção e fazendo o ataque errar. Esse movimento ignora engagement e não provoca reações.",
         "origin": {
-        "type": "Class",
-        "name": "Ace",
-        "base": true
+            "type": "Class",
+            "name": "Ace",
+            "base": true
         },
         "locked": false
+    },
+    {
         "id": "ldc_npcf_caminho_do_bombardeiro",
         "name": "Caminho do Bombardeiro",
         "origin": {
@@ -2795,5 +2795,188 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_embaralhar_sensores",
+        "name": "Embaralhar Sensores",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "effect": "O Mirage faz um {tech attack} contra um alvo dentro de seus {Sensores}. Em um sucesso, eles recebem {2/3/4 Heat} e todos os seus ataques realizados até o fim do turno conta os alvos como tendo {Soft cover}",
+        "tags": [
+            {
+                "id": "tg_quick_tech"
+            }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_flickar_realidade",
+        "name": "Flickar Realidade",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Mirage {teleporta} quando realiza um deslocamento padrão.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_veu_de_dados",
+        "name": "Véu de Dados",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Por padrão, o Mirage é {Invisible} e pode transferir esse status a outro personagem com linha de visão como uma {Quick action}. Quando fazem isso, o Miragem deixa de ficar {Invisible}, e só recebe esse status novamente quando transfere de volta novamente com uma {Quick action} ou transfere para outro personagem; do contrário, esse efeito dura até que o Mirage seja destruído.", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_glitch_scanners",
+        "name": "Glitch Scanners",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Os sistemas avançados de contra-ataque do Mirage brincam com os sensores dos adversários, fazendo com que eles registrem falsos positivos no campo de batalha. Eles podem teleportar até dois aliados dentro de seus {Sensores} em até {5 espaços} em qualquer direção - revelando suas 'verdadeiras' localizações. Esse movimento ignora engagemente e não provoca reações. O Mirage também recebe a reação {Blip}.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_blip",
+        "name": "Blip",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Um personagem hostil usa uma ação dentro da sua linha de visão.",
+        "effect": "O Mirage pode teleportar um aliado {5 espaços} em qualquer direção",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_subrotinas_ilusorias",
+        "name": "Subrotinas Ilusórias",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "O Mirage realiza um {tech attack} contra um alvo dentro dos {sensores}. Em um sucesso, o alvo considera todos os aliados do mirage como {Invisible} até o início do se próximo turno.",
+        "tags": [
+            {
+                "id": "tg_quick_tech"
+            }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_alvos_flickantes",
+        "name": "Alvos Flickantes",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Todos os aliados com {Range 50} recebem {soft cover}. Se o Mirage sofrer dano esse efeito acaba até o início de seu próximo turno.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_derrubar_na_dobra",
+        "name": "Derrubar na Dobra",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [1,2,3],
+        "effect": "O Mirage faz um {tech attack} contra um alvo hostil dentro de {Range 5}. Em um sucesso, o alvo troca de lugar com um aliado do Mirage dentro dos sentsores escolhido pelo mesmo, ambos se teleportando. Personagens voadores não podem ser teleportados com personagens que não estão voando, e vice versa.",
+        "tags": [
+            {
+                "id": "tg_quick_tech"
+            }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_manifestar_falsos_idolos",
+        "name": "Manifestar Falsos Ídolos",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "effect": "O Mirage cria três constructos de dados de {Size 1} em espaços libres em linha de visão e {Range 5}. Esses constructos proveem {soft cover} mas podem ser atravessados. Quando um personagem hostil atravessa um constructo, o constructo desaparece e o alvo deve suceder em um teste de {Syysyems} ou recebe {2 Heat} e {Jammed} até o fim de seu próximo turno. Durante qualquer momento do turno do Mirage, ele pode teleportar um aliado com linha de visão para o local de um constructo como uma {Quick action}, fazendo o constructo desaparecer, desde que tenha espaço suficiente.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_tech"
+            }
+        ],
+        "tech_type": "Full"
+    },
+    {
+        "id": "ldc_npcf_multiplicidade",
+        "name": "Multiplicidade",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Um aliado em linha de visão é acertado.",
+        "effect": "O atacante deve suceder em um teste de {Systems}. Em uma falha, o aliado do Mirage recebe {Immunity} ao dano do ataque e seus efeitos e pode {Teleportar} até {5 espaços} em uma direção de sua escolha.",
+        "origin": {
+            "type": "Class",
+            "name": "Mirage",
+            "base": false
+        },
+        "locked": false
     }
 ]

@@ -651,5 +651,47 @@
             "ldc_npcf_travar_prender_javelins"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_mirage",
+        "name": "Mirage",
+        "role": "support",
+        "info": {
+            "flavor": "Mechs da classe Mirage são frequentemente encontrados a serviço de grupos militantes alinhados ao HORIZON. Sem fabricante original, eles são um dos poucos padrões não HORUS de código aberto grupos disponíveis para células que sabem onde procurar. Mirages implanta liturgicode avançado para envolver a si mesmos e aos seus aliados em véus de ilusão e desorientação. Enquanto estiver claro que os efeitos de deformação que cercam esses mechas são causados ​​pela distorção do sensor, eles são poderosos o suficiente para afetar até mesmo sistemas orgânicos – tenha cuidado ao interagir.",
+            "tactics": "Mirages são potentes mechs de suporte, capazes de teletransportar seus aliados à vontade e encerrar atacantes de longo alcance com SENSORES WARP. Eles podem tornar os personagens aliados INVISÍVEIS, mas tornam-se vulneráveis ​​ao fazer isso. Esses pontos fortes têm um preço: armas e sistemas que ignoram a cobertura – como as armas SEEKING – podem contornar os SENSORES WARP, e os Mirages não causam nenhum dano por conta própria."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [0, 0, 0],
+            "evade": [10, 12, 14],
+            "edef": [12, 15, 18],
+            "heatcap": [6, 6, 6],
+            "hull": [-2, -2, -2],
+            "agility": [1, 2, 3],
+            "systems": [2, 3, 4],
+            "engineering": [1, 2, 3],
+            "speed": [5, 6, 7],
+            "sensor": [15, 15, 20],
+            "save": [11, 14, 17],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_embaralhar_sensores",
+            "ldc_npcf_flickar_realidade",
+            "ldc_npcf_veu_de_dados",
+            "ldc_npcf_glitch_scanners",
+            "ldc_npcf_blip"
+        ],
+        "optional_features": [
+            "ldc_npcf_subrotinas_ilusorias",
+            "ldc_npcf_alvos_flickantes",
+            "ldc_npcf_derrubar_na_dobra",
+            "ldc_npcf_manifestar_falsos_idolos",
+            "ldc_npcf_multiplicidade"
+        ],
+        "power": 100
     }
 ]

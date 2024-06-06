@@ -52,7 +52,9 @@
         "on_hit": ""
     },
     {
-        "id": "ldc_npcf_manobras_evasivas",
+        
+    },
+    {"id": "ldc_npcf_manobras_evasivas",
         "name": "Manobras Evasivas",
         "type": "Reaction",
         "tags": [
@@ -72,8 +74,6 @@
         "base": true
         },
         "locked": false
-    },
-    {
         "id": "ldc_npcf_caminho_do_bombardeiro",
         "name": "Caminho do Bombardeiro",
         "origin": {
@@ -2615,5 +2615,185 @@
             }
         ],
         "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_disparador_de_ferrao",
+        "name": "Disparador de Ferrão",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Auxiliary CQB",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [1,2,3]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "Alvos recebem {Impaired} até o fim do seu próximo turno." 
+    },
+    {
+        "id": "ldc_npcf_traje_completo_ssc",
+        "name": "Traje Completo SSC",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "A Hornet pode {Hover} sempre que se move ou usa {Boost}.", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_costurar",
+        "name": "Costurar",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Todo rodada, o primeiro ataque contra a Hornet como uma {reação} falha automaticamente.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_empalar_sistemas",
+        "name": "Empalar Sistemas",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "A Hornet faz um {tech attack} contra um alvo dentro dos seus {Sensores}. Em um acerto, o alvo recebe {3/4/5 Heat} e se torna {Jammed} ate o fim de seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_tech"
+            }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_adaptar_evadir_desengajar",
+        "name": "Adaptar/Evadir/Desengajar",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Hornet recebe {Immunity} a {Grapple} e sempre ignora engagement.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_intervencao_sombria",
+        "name": "Intervenção Sombria",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um personagem dentro dos {Sensores} e linha de visão tenta atacar.",
+        "effect": "O alvo deve suceder em um teste de {Systems} ou o ataca falha automáticamente.",
+        "origin": {
+        "type": "Class",
+        "name": "Hornet",
+        "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_supersonico",
+        "name": "Supersonico",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Hornet voa para um espaço com linha de visão e {Range 50} de uma forma tão rápida que é considerada como {teleportation}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_misseis_hex",
+        "name": "Mísseis Hex",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_smart"
+            }
+        ],
+        "weapon_type": "Auxiliary Launcher",
+        "accuracy": [1,2,3],
+        "damage": [
+            {
+                "type": "Heat",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_travar_prender_javelins",
+        "name": "Travar/Prender Javelins",
+        "origin": {
+            "type": "Class",
+            "name": "Hornet",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "A Hornet dispara um Javelin em um personagem dentro de {Range 5} e linha de visão. O alvo deve suceder em um tesde de {Hull} ou será empalado, em tal ponto que o javelin se une ao alvo e ao chão (ou qualquer outra superfície), os tornando {Immobilized} e {Shredded}. O alvo ou qualquer personagem adjacente pode tentar remover o javelin com um teste de {Hull} como uma {Full action}; do contrário, esse efeito dura pelo resto da cena, ou até a Hornet usar essa ação novamente.", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

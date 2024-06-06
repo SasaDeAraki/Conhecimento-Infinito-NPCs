@@ -610,5 +610,46 @@
             "ldc_npcf_enxame_perseguidor"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_hornet",
+        "name": "Hornet",
+        "role": "controller",
+        "info": {
+            "flavor": "A linha Espada de mecanismos de meio quadro da SatriaBarong tem sido uma escolha popular no circuito de corrida de chassis; notavelmente, os Espadas são os mechs preferidos da alardeada equipe de corrida de chassis SatriaBarong – ShimanoLUX. Recentemente, a SatriaBarong – com a bênção do SSC – decidiu criar uma variante sem licença do Espada com especificações mil, sem a marca ShimanoLUX, dando origem ao arquétipo Hornet, uma plataforma aberta para outras empresas se adaptarem e melhorarem. O mais notável desses competidores é Chandrasekhar & Herschel, o principal patrocinador do novo circuito de corridas Blueshift Grand Prix.",
+            "tactics": "Os Hornets são controladores pequenos e rápidos, extremamente difíceis de acertar e incrivelmente irritantes. Eles causam danos limitados, mas sua capacidade de infligir condições que reduzem a mobilidade é ótima para bloquear atacantes inimigos. Felizmente para seus inimigos, os Hornets têm uma E-DEFENSE baixa que os torna vulneráveis ​​a armas inteligentes e ataques tecnológicos."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [8, 8, 8],
+            "armor": [0, 0, 0],
+            "evade": [16, 18, 20],
+            "edef": [6, 7, 8],
+            "heatcap": [5, 6, 7],
+            "hull": [-2, -2, -2],
+            "agility": [2, 4, 6],
+            "systems": [2, 3, 4],
+            "engineering": [0, 0, 0],
+            "speed": [6, 8, 10],
+            "sensor": [5, 5, 10],
+            "save": [12, 14, 16],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_disparador_de_ferrao",
+            "ldc_npcf_traje_completo_ssc",
+            "ldc_npcf_costurar",
+            "ldc_npcf_empalar_sistemas"
+        ],
+        "optional_features": [
+            "ldc_npcf_adaptar_evadir_desengajar",
+            "ldc_npcf_intervencao_sombria",
+            "ldc_npcf_supersonico",
+            "ldc_npcf_misseis_hex",
+            "ldc_npcf_travar_prender_javelins"
+        ],
+        "power": 100
     }
 ]

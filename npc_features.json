@@ -3147,5 +3147,155 @@
             }
         ],
         "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_abjurar",
+        "name": "Abjurar",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "O Priest faz um {tech attack} contra um alvo dentro dos {Sensores}. Em um sucesso, o alvo recebe {2/3/4 Heat} cada vez que realizam um ataque até o fim de seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_quick_tech"
+            }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_alvo_resistente",
+        "name": "Alvo Resistente",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Priest recebe {+1 accuracy} em teste de {Systems}, e {tech attacks} contra ele recebem {+1 difficulty}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npcf_envoltura",
+        "name": "Envoltura",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Priest linka seus sistemas com o de um mecha aliado ou veículo em {Range 5}. Contanto que permaneçam linkados e com {Range 5}, o alvo recebe {+1/2/3 accuracy} em {todos os ataque} e pode usar os {Systems} do Priest ao invés dos próprios. Se algum dos dois receber {Jammed, Impaired} ou {Stunned}, o outro também recebe a condição pela duração ou até que o link acabe. O link acaba se um dos personagens por destruído ou se mover mais que {5 espaços} do outro. O Priest só pode se linkar com um personagem por vez.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]  
+    },
+    {
+        "id": "ldc_npcf_escudo_dispersor",
+        "name": "Escudo Dispersor",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Priest libera uma nuvem de drones em miniatura que se acumulam ao redor de mechas próximos, provendo proteção. O Priest ou um aliado dentro dos {Sensores} recebe {resistência a dano e calor dos próximos 1d3} ataques que acertarem. Esse efeito não acumula.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_envoltura_maior",
+        "name": "Envoltura Maior",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "{Envoltura} condede ao alvo {resistência a todo o dano}, mas o Priest se torna {Immobilized} enquanto linkado.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npcf_escudo_poderoso",
+        "name": "Escudo Poderoso",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "{Escudo Dispersor} também concede {5/6/8 Overshield}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_santuario",
+        "name": "Santuário",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "effect": "O Priest escolhe um aliado dentro dos {Sensores}. Antes de atacar o escolhido, personagens devem primeiro passar em um teste de {Sytems}. Em uma falha, o alvo não pode ser atacado novamente pelo atacante até o início de seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_full_tech"
+            }
+        ],
+        "tech_type": "Full"
+    },
+    {
+        "id": "ldc_npcf_fortaleza_priest",
+        "name": "Fortaleza",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Priest recebe {+3 accuracy} em testes de {Systems} e tech attacks contra ele recebem {+3 difficulty}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npcf_derrubar_sistemas",
+        "name": "Derrubar Sistemas",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            }
+        ],
+        "trigger": "Um personagem linkado por Envoltura recebe dano.",
+        "effect": "O atacante deve fazer um teste de {Sysytems}. Caso falhe, estará {Stunned} até o início de seu próximo turno.",
+        "origin": {
+            "type": "Class",
+            "name": "Priest",
+            "base": false
+        },
+        "locked": false
     }
 ]

@@ -734,5 +734,46 @@
             "ldc_npcf_misseis_nova"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_priest",
+        "name": "Priest",
+        "role": "support",
+        "info": {
+            "flavor": "Os mechs arquétipos de sacerdotes são encontrados entre as fileiras de cultos tecnozelotes, movimentos transumanistas e estados ou corporações que priorizam a supremacia tecnológica. Esses quadros são configurados para conectar seus sistemas centrais sensíveis com mecanismos simpáticos, criando superconstruções digitais a fim de estabelecer e manter o controle total do teatro. O uso de chassis e estratégias do arquétipo do Sacerdote foi iniciado por um pequeno grupo esotérico conhecido como Mensageiros de MAIA. Ostensivamente um grupo de mensageiros, os Mensageiros levam todos os sistemas – sintéticos e orgânicos – aos seus limites teóricos. Eles chegam ao ponto de compartilhar informações sensoriais entre pilotos interligados – uma experiência conhecida por produzir fugas de hiperpercepção e outros estados mentais ascendentes.",
+            "tactics": "Os sacerdotes são poderosos mecanismos de suporte que funcionam melhor quando em parceria com outro personagem que eles podem capacitar com INVESTITURA. Use seu DISPERSAL SHIELD para proteger alvos vulneráveis ​​e INVESTITURE para capacitar um atacante ou defensor aliado. Os inimigos podem desarmar a INVESTITURA separando os Sacerdotes dos seus parceiros, altura em que ambos se tornam vulneráveis ​​às condições."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 13, 16],
+            "armor": [0, 0, 0],
+            "evade": [10, 10, 10],
+            "edef": [12, 15, 18],
+            "heatcap": [10, 10, 10],
+            "hull": [-1, -1, -1],
+            "agility": [-1, -1, -1],
+            "systems": [2, 4, 6],
+            "engineering": [2, 3, 4],
+            "speed": [5, 5, 6],
+            "sensor": [10, 10, 10],
+            "save": [11, 13, 15],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_abjurar",
+            "ldc_npcf_alvo_resistente",
+            "ldc_npcf_envoltura",
+            "ldc_npcf_escudo_dispersor"
+        ],
+        "optional_features": [
+            "ldc_npcf_envoltura_maior",
+            "ldc_npcf_escudo_poderoso",
+            "ldc_npcf_santuario",
+            "ldc_npcf_fortaleza_priest",
+            "ldc_npcf_derrubar_sistemas"
+        ],
+        "power": 100
     }
 ]

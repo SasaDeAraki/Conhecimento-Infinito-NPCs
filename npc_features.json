@@ -3297,5 +3297,194 @@
             "base": false
         },
         "locked": false
+    },
+    {
+        "id": "ldc_npcf_lanca_chamas",
+        "name": "Lança-chamas",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma da o {dobro de Burn} para alvos que já tem algum {Burn}.",
+        "tags": [
+            {
+                "id": "tg_heat_self",
+                "val": 4
+            }
+        ],
+        "weapon_type": "Heavy CQB",
+        "attack_bonus": [1,2,3],
+        "accuracy": [2,2,2],
+        "damage": [
+            {
+                "type": "Burn",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Cone",
+                "val": 5
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_exaustor_explosivo",
+        "name": "Exaustor Explosivo",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Pyro limpa todo o {Heat}. Personagens em {Burst 1} devem passar em um teste de {Agility} ou recebem {Heat} igual à {metade da quantia que o Pyro limpou} e recebe {Prone}.", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_isolamento_termico",
+        "name": "Isolamento Térmico",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Pyro tem {Imunidade} a {Burn}",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_escudo_corta_fogo",
+        "name": "Escudo Corta-fogo",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "No fim do turno do Pyro, ele cria um campo de energia {Line 4}, com {4 espaços} de altura, em espaços livres com campo de visão e pelo menos {1 espaço} adjacente ao Pyro. Essa parede não bloqueia linha de visão mas prove {Soft cover}; quando um ataque é feito contra um personagem usando dessa cobertura, o ataque {erra} em um {+4} em {1d6}. Esse efeito dura até o inicio do próximo turno do Pyro ou se o Pyro se mover ou for {Stunned}. Esse efeito não stacka com {Invisible}", 
+        "tags": [
+            {
+                "id": "tg_shield"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_reator_exposto",
+        "name": "Reator Exposto",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens que começarem seu turno adjacentes ao Pyro ou que se tornarem adjacentes pela primeira vez no turno recebem {2/3/4 Heat}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_armadura_de_cerco_pyro",
+        "name": "Armadura de Cerco",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Pyro, tem {resistência} a todo o dano de ataques originados além de {range 3}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_bomba_napalm",
+        "name": "Bomba Napalm",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            },
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "weapon_type": "Heavy CQB",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Burn",
+                "damage": [3,4,5]
+            },
+            {
+                "type": "Heat",
+                "damage": [2,4,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_fervendo",
+        "name": "Fervendo",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_shield"
+            }
+        ],
+        "trigger": "O Pyro recebe dano de um ataque melee.",
+        "effect": "O Pyro recebe {resistência a todo o dano do ataque}. O atacante deve suceder em um teste de {Engineering} ou recebe {2/4/6 Burn}.;",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_jatos_explosivos",
+        "name": "Jatos Explosivos",
+        "origin": {
+            "type": "Class",
+            "name": "Pyro",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Inimigos em {Burst 2} devem suceder em um teste de {Hull} ou são empurrados para fora da área e recebem {Prone}. O Pyro então voa {5 espaços} em qualquer direação, mas deve pousar após terminar esse movimento.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
     }
 ]

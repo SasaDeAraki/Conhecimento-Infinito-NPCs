@@ -775,5 +775,45 @@
             "ldc_npcf_derrubar_sistemas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_pyro",
+        "name": "Pyro",
+        "role": "defender",
+        "info": {
+            "flavor": "Popularizados pela primeira vez na sequência da Crise Hercínica pelo lanceiro Flama e seu apropriadamente chamado Devil Corps, os quadros Pyro são insultados em toda a galáxia como a personificação do puro poder destrutivo mantido por estados militarizados e corporações. A sua utilização é comum em organizações onde os fins justificam os meios. Pyros são bem blindados e melhor isolados do que a maioria dos chassis de peso bruto semelhante, projetados para gerenciar um calor interno incrível enquanto projetam misturas voláteis de produtos químicos e chamas em direção aos seus inimigos. Pyros são frequentemente usados ​​em guerras urbanas e na selva, onde podem ser usados ​​para erradicar defensores entrincheirados.",
+            "tactics": "Pyros são mechs lentos e resistentes que são especialmente potentes contra personagens que já sofrem queimaduras. Se os jogadores não mantiverem distância, Pyros pode usar EXPLOSIVE VENT para despejar uma enorme quantidade de calor diretamente sobre eles. Posicione Pyros para que eles possam proteger os aliados contra o fogo com FIREBREAK SHIELD. Observe, entretanto, que os jogadores podem mover-se em torno dos escudos para reduzir sua eficácia a zero, ou podem desativá-los acertando Pyros com armas STUNNED ou KNOCKBACK."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 13, 15],
+            "armor": [3, 3, 4],
+            "evade": [8, 8, 8],
+            "edef": [8, 8, 8],
+            "heatcap": [12, 14, 16],
+            "hull": [1, 2, 3],
+            "agility": [-1, 0, 0],
+            "systems": [-1, -1, 0],
+            "engineering": [3, 4, 5],
+            "speed": [2, 2, 2],
+            "sensor": [8, 8, 8],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_lanca_chamas",
+            "ldc_npcf_exaustor_explosivo",
+            "ldc_npcf_isolamento_termico",
+            "ldc_npcf_escudo_corta_fogo"
+        ],
+        "optional_features": [
+            "ldc_npcf_reator_exposto",
+            "ldc_npcf_armadura_de_cerco_pyro",
+            "ldc_npcf_bomba_napalm",
+            "ldc_npcf_fervendo"
+        ],
+        "power": 100
     }
 ]

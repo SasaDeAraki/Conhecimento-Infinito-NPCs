@@ -693,5 +693,46 @@
             "ldc_npcf_multiplicidade"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_operator",
+        "name": "Operator",
+        "role": "artillery",
+        "info": {
+            "flavor": "Os operadores são conhecidos-desconhecidos, raramente encontrados nas linhas de frente, mas isso não deve ser confundido com fragilidade. Os operadores são perigosos e mortais em todos os sentidos. Assim como seus mechs, os corpos dos Operadores são carregados com o que há de mais avançado tecnologia disponível. Quando eles morrem em combate, não é desconhecido para seus corpos – e seus mechs – para se autoimolar, transformando qualquer tecnologia e dados em cinzas.",
+            "tactics": "Os operadores são mechas de artilharia de elite e extremamente móveis. Eles não são particularmente resistentes, mas podem usar o TRACE DRIVE para se teletransportar pelo campo de batalha e se colocar em posições vantajosas: no topo de obstruções ou terreno, ou em cobertura – em qualquer lugar onde possam atirar nos inimigos com seus RIFLES DE PLASMA RAPTOR de alta precisão."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [0, 0, 0],
+            "evade": [12, 12, 14],
+            "edef": [8, 12, 14],
+            "heatcap": [8, 8, 8],
+            "hull": [2, 3, 4],
+            "agility": [2, 3, 4],
+            "systems": [2, 3, 4],
+            "engineering": [2, 3, 4],
+            "speed": [5, 6, 7],
+            "sensor": [15, 15, 20],
+            "save": [11, 14, 17],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_rifles_de_plasma_raptor",
+            "ldc_npcf_driver_de_busca",
+            "ldc_npcf_passo",
+            "ldc_npcf_auto_apagar"
+        ],
+        "optional_features": [
+            "ldc_npcf_ocultar_gerador",
+            "ldc_npcf_possuir",
+            "ldc_npcf_fortaleza",
+            "ldc_npcf_disparada",
+            "ldc_npcf_misseis_nova"
+        ],
+        "power": 100
     }
 ]

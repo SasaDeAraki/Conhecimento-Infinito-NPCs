@@ -2978,5 +2978,174 @@
             "base": false
         },
         "locked": false
+    },
+    {
+        "id": "ldc_npcf_rifles_de_plasma_raptor",
+        "name": "Rifles de Plasma 'Raptor'",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2}, essa arma pode fazer dois ataques de uma vez, atingindo ou um alvo duas vezes ou dois alvos uma vez. No {T3} podem ser feitos três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Heavy Launcher",
+        "attack_bonus": [2,4,6],
+        "accuracy": [2,2,2],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [7,7,7]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 20
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_driver_de_busca",
+        "name": "Driver de Busca",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Operator {Teleporta} quando usa seu movimento padrão.", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_passo",
+        "name": "Passo",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Operator {Teleporta} para um espaço livre com linha de visão e {Range 50}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_auto_apagar",
+        "name": "Auto-apagar",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando o Operator é destruído, ele imediatamente se coloca em chamas gerando uma onda de plasma super-aquecido. Todos os personagens adjacentes ao Operator quando isso ocorrer devem suceder em um teste de {Agility} ou recebem {4/6/8 Energy}. Em um sucesso, recebem metade do dano. O mecha é removido do campo de batalha - completamente aniquilado.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_ocultar_gerador",
+        "name": "Ocultar Gerador",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Ao fim do turno do Operator, ele se torna {Invisible} até o começo do seu próximo turno. Esse efeito acaba se ele receber dano ou realizar uma reação.", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_possuir",
+        "name": "Possuir",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Operator {Teleporta} para um espaço ocupado por outro personagem em linha de visão e {Range 15}. O alvo deve suceder em um teste de {Agility} ou recebe {4/8/12 Energy AP} e se tornam {Jammed} até o fim de seu próximo turno. Em um sucesso o alvo recebe metade do dano. Sucesso ou falha, o Operator recebe {1d6 Energy AP} e é posicionado em um espaço adjacente ao alvo.",
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_fortaleza",
+        "name": "Fortaleza",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Operator recebe {+3 accuracy} em testes de {Systems} e tech attacks contra ele recebem {+3 difficulty}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npcf_disparada",
+        "name": "Disparada",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Uma vez por turno, a qualquer momento do turno do Operator, ele pode usar {Boost} como uma {Free action}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npcf_misseis_nova",
+        "name": "Mísseis Nova",
+        "origin": {
+            "type": "Class",
+            "name": "Operator",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_seeking"
+            }
+        ],
+        "weapon_type": "Auxiliary Launcher",
+        "attack_bonus": [1,2,3],
+        "accuracy": [2,2,2],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [4,6,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 15
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
     }
 ]

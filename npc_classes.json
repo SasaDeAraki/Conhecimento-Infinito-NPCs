@@ -855,5 +855,44 @@
             "ldc_npcf_missil_de_atlas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_ronin",
+        "name": "Ronin",
+        "role": "striker",
+        "info": {
+            "flavor": "As armações Ronin diferem daquelas preferidas pelos Berserkers e Demolishers porque não são adaptadas ou improvisadas para aplicações táticas criativas – elas são construídas especificamente para se destacarem no combate corpo a corpo por fabricantes boutique. Embora sejam vistos como antigos por muitos comentaristas, o surgimento de tecnologias defensivas baseadas em estase e mag tornou os Ronins mais viáveis ​​no combate moderno. Ronin são comuns tanto em culturas marciais quanto em empresas de combate de desempenho, onde suas excelentes habilidades corpo a corpo os elevam acima da concorrência. Eles veem menos utilidade em culturas que têm preferência pelo combate à distância, mas há um certo prestígio concedido aos pilotos que adotam armas antigas e sobrevivem para fazê-lo novamente. A mítica lanceira Susanoo elevou este arquétipo ao status de lendário quando endossou o chassi GRAMtech Strike-1, que ela pilotou ao lado de inúmeras asas de Albatross durante a Decepção Neo-Celestina.",
+            "tactics": "Ronins são atacantes corpo a corpo práticos e de alto dano. PERFECT PARRY torna perigoso para os inimigos atacarem Ronins com armas de longo alcance, mas eles tendem a sofrer contra inimigos blindados e dependem fortemente de PRECISÃO."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [18, 20, 22],
+            "armor": [0, 0, 0],
+            "evade": [10, 13, 16],
+            "edef": [7, 7, 7],
+            "heatcap": [7, 7, 7],
+            "hull": [1, 2, 4],
+            "agility": [2, 4, 5],
+            "systems": [-1, -1, -1],
+            "engineering": [-1, -1, -1],
+            "speed": [5, 5, 6],
+            "sensor": [10, 10, 10],
+            "save": [10, 13, 15],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_espada_de_fibra_de_carbono",
+            "ldc_npcf_parry"
+        ],
+        "optional_features": [
+            "ldc_npcf_corte_giratorio",
+            "ldc_npcf_propulsores_chaff",
+            "ldc_npcf_lamina_ressoante",
+            "ldc_npcf_modo_instintivo",
+            "ldc_npcf_lamina_expansiva"
+        ],
+        "power": 100
     }
 ]

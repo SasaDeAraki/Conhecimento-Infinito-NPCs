@@ -546,7 +546,7 @@
     },
     {
         "id": "ldc_npcf_lamina_fervente",
-        "name": "Lamina Fervente",
+        "name": "Lâmina Fervente",
         "origin": {
             "type": "Class",
             "name": "Assassin",
@@ -3656,5 +3656,140 @@
                 "id": "tg_full_action"
             }
         ]  
+    },
+    {
+        "id": "ldc_npcf_espada_de_fibra_de_carbono",
+        "name": "Espada de Fibra de Carbono",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "<b>On Critical Hits:</b> Dá {+1d6 Kinetic}.<br><br>No {T2}, essa arma pode realizar dois ataques de uma vez, alvejando ou um alvo duas vezes ou dois alvos uma vez cada. No {T3}, pode fazer três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [6,6,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 2
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_parry",
+        "name": "Parry",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_shield"
+            },
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "O Ronin recebe dano de um {ataque ranged}.",
+        "effect": "O Ronin rola {1d6}: em {4+}, o Ronin recebe {resistência ao dano desse ataque} e o atacante deve repetir o ataque contra ele mesmo.",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_corte_giratorio",
+        "name": "Corte Giratório",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os personagens adjacentes ao Ronin recebem {6/9/12 Kinetic}, metade se sucederem em um teste de {Agility}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]  
+    },
+    {
+        "id": "ldc_npcf_propulsores_chaff",
+        "name": "Propulsores Chaff",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "O Ronin recebe {soft cover} até o começo do seu próximo turno sempre que usar {Boost}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_lamina_ressoante",
+        "name": "Lâmina Ressoante",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Personagens que receberam dano do Ronin recebem a {Marca do Ronin}. Ao ínicio do turno do Ronin, o Ronin pode limpar todas as marcas como uma {Free action}, dando automáticamente {1d6 Kinetic AP} a todos os personagens com a marca e limpando todas elas.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_modo_instintivo",
+        "name": "Modo Instintivo",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Até o fim do próximo turno do Ronin, a primeira vez em cada turno que ele for o alvo de um ataque, o Ronin pode usar a {Espada de Fibra de Carbono} para atacar um personagem dentro da {Range} como uma {reação}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]  
+    },
+    {
+        "id": "ldc_npcf_lamina_expansiva",
+        "name": "Lâmina Expansiva",
+        "origin": {
+            "type": "Class",
+            "name": "Ronin",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "A {Espada de Fibra de Carbono} do Ronin recebe {Threat 3}. A primeira vez em cada turno que o Ronin acertar um crítico com ela, todos os personagens dentro da {Threat} recebem {2/3/4 Kinetic} - incluindo o alvo.", 
+        "tags": []  
     }
 ]

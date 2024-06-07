@@ -4966,5 +4966,185 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_ferver",
+        "name": "Ferver",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "effect": "A Witch faz um {tech attack} contra um alvo dentro dos {Sensores}. Em um sucesso, o alvo recebe {1/2/3 Heat} imediatamente e {+4 Heat} no início do próximo turno da Witch.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_cegar",
+        "name": "Cegar",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um sucesso, o alvo só tem linha de visão para espaços adjacentes até o fim de seu próximo turno.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 4
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_logica_predadora",
+        "name": "Lógica Predadora",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": true
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um sucesso, o alvo imediatamente usa uma arma escolhida pela Witch para atacar um personagem em {Range} escolhido pela Witch.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 6
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_borrao",
+        "name": "Borrão",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Durante o turno da Witch, ela é {Invisible}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_espalhar_sofrimento",
+        "name": "Espalhar Sofrimento",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "1/round, quando a Witch usar {Quick tech} ou {Full tech}, ela pode repetir a opção que ela escolheu como um {Free action} mirando qualquer alvo adjacente ao alvo primário.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_free_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_nuvem_negra",
+        "name": "Nuvem Negra",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O {Heat} adicional dado por {Ferver} aumenta para {7 Heat} se o alvo estiver na {Danger Zone}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_corrente",
+        "name": "Corrente",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um acerto, a Bruxa acorrenta os sistemas do alvo para um espaço em {Range 3} do alvo. Se o alvo se mover mais que {3 espaços} daquele ponto, voluntáriamente ou não, ele recebe {2/3/4 Heat} e {Jammed} até o fim de seu próximo turno, mas o efeito encerra. Do contrário, ficam acorrentados até que a Witch seja destruíd, {Stunned}, ou pelo resto da cena.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        }
+        ],
+        "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_petrificar",
+        "name": "Petrificar",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "A witch faz um {tech attack} contra um alvo dentro dos {Sensores}. Em um sucesso, o alvo se torna {Slowed}. Em seu próximo turno, também recebem {Immobilized. No turno seguinte, também recebem {Stunned}. Todos os efeitos acabam ao final deste turno.",
+        "tags": [
+        {
+            "id": "tg_full_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 6
+        }
+        ],
+        "tech_type": "Full"
+    },
+    {
+        "id": "ldc_npcf_transferencia_de_dor",
+        "name": "Transferência de Dor",
+        "origin": {
+            "type": "Class",
+            "name": "Witch",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um sucesso, sempre que o alvo receber {Heat} até  o  fim do próximo turno da  Witch, todos os seus aliados em {Range 5} recebem a mesma quantia de {Heat}.",
+        "tags": [
+        {
+            "id": "tg_quick_tech"
+        },
+        {
+            "id": "tg_recharge",
+            "val": 5
+        }
+        ],
+        "tech_type": "Quick"
     }
 ]

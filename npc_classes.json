@@ -1178,5 +1178,45 @@
             "ldc_npcf_drone_reparador"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_witch",
+        "name": "Witch",
+        "role": "controller",
+        "info": {
+            "flavor": "Chassi de arquétipo de bruxa sempre podem ser encontrados no olho de uma tempestade sistêmica, onde são adeptos de gerar terrores no espaço real e no espaço de legiões para cobrir os campos de batalha. A qualquer momento, é provável que estejam operando tanto no campo de batalha físico quanto na tempestade da omninet. Para lidar com o turbilhão caótico de entradas e saídas que resulta dessa percepção dividida, as Bruxas muitas vezes se unem a NHPs clones de personalidade, dividindo tarefas em trilhas paralelas para aumentar a eficácia do combate.",
+            "tactics": "As bruxas são controladoras práticas que usam TEAR DOWN para infligir calor e BLIND para desligar atacantes à distância. LÓGICA PREDATÓRIA dá a eles uma ferramenta para usar contra personagens com armas pesadas, que também pode ajudar seus aliados. Os alvos geralmente têm a oportunidade de mitigar um pouco seu calor, já que as Bruxas lidam com a maior parte de seu calor no próximo turno."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [12, 14, 14],
+            "armor": [0, 0, 0],
+            "evade": [10, 12, 14],
+            "edef": [13, 16, 20],
+            "heatcap": [8, 8, 8],
+            "hull": [-2, -2, -2],
+            "agility": [1, 2, 3],
+            "systems": [3, 5, 6],
+            "engineering": [0, 0, 0],
+            "speed": [6, 6, 6],
+            "sensor": [15, 15, 20],
+            "save": [12, 15, 18],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_ferver",
+            "ldc_npcf_cegar",
+            "ldc_npcf_logica_predadora",
+            "ldc_npcf_borrao"
+        ],
+        "optional_features": [
+            "ldc_npcf_espalhar_sofrimento",
+            "ldc_npcf_nuvem_negra",
+            "ldc_npcf_corrente",
+            "ldc_npcf_petrificar"
+        ],
+        "power": 100
     }
 ]

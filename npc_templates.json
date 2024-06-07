@@ -43,5 +43,25 @@
 
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_exotico",
+        "name": "Exótico",
+        "description": "Mesmo em uma galáxia de maravilhas, os exóticos são inimigos estranhos e perigosos. Alguns apresentam tecnologias únicas ainda não disponíveis para toda a galáxia ou empunham estilos de armas arcaicos atualizados para os dias modernos, enquanto outros carregam equipamentos ou adotam táticas que são totalmente estranhas à doutrina da União.",
+        "base_features": [
+            "ldc_npct_xenotech",
+            "ldc_npct_criptografia",
+            "ldc_npct_sistema_exotico"
+        ],
+        "optional_features": [
+            "ldc_npct_bio_frame",
+            "ldc_npct_entalhador_de_pseudo_espaço",
+            "ldc_npct_exposicao_a_realidade",
+            "ldc_npct_armamento_vivo",
+            "ldc_npct_arma_paracausal",
+            "ldc_npct_chrono_quebra",
+            "ldc_npct_regenerador"
+        ],
+        "power": 100
     }
 ]

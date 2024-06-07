@@ -5912,5 +5912,143 @@
         "type": "Trait",
         "effect": "O Elite escolhe um sistema opcional extra de sua classe.",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_xenotech",
+        "name": "Xenotech",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "{Scan} não revela nenhuma informação sobre {sistemas Exóticos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_criptografia",
+        "name": "Criptografia",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Exótico recebe {+1 accuracy} em testes de {Systems}, e {tech attacks} contra ele recebem {+1 difficulty}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sistema_exotico",
+        "name": "Sistema Exótico",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Exótico escolhe até duas opções da Lista de {Sistemas e Traços Exóticos}",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_bio_frame",
+        "name": "Bio-frame",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Esse trait só pode ser escolhido se o Exótico for um {Mech}. O Exótico se torna {Biológico}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_entalhador_de_pseudo_espaço",
+        "name": "Entalhador de Pseudo-espaço",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Exótico {teleporta} quando se move.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_exposicao_a_realidade",
+        "name": "Exposição à Realidade",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Esse Exótico é na realidade uma exposição de uma entidade superior de uma realidade não-física, e é somente parcialmente corpóreo. O Exótio recebe {Resistência a todo o dano}; entretanto, só da {metade do dano} e outros personagens podem atravessá-lo e acabar seu turno em espaços que ele ocupa, já que ele não está ali.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_armamento_vivo",
+        "name": "Armamento Vivo",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Exótico recebe {Immunity} à {Jammed}. Adicionalmente, suas armas tem componentes biotecnológios e semi-organicos que geram munição automáticamente. Quando o Exótico recarrega uma arma com a tag {Loading}, também recupera {1d6 HP}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_arma_paracausal",
+        "name": "Arma Paracausal",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Escolha uma das armas do {Exótico}. O dano dessa arma não pode ser reduzido de forma alguma - por {Armor, Resistência, Immunity} ou qualquer outra forma.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_chrono_quebra",
+        "name": "Chrono-quebra",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Exótico causa distorções no fluxo do tempo. Ele pode ou re-rolar {1d20} ou forçar outro personagem em linha de visão a re-rolar {1d20} como uma reação. O novo resultado deve ser mantido.",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_regenerador",
+        "name": "Regenerador",
+        "origin": {
+            "type": "Template",
+            "name": "Exótico",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Ao fim do turno do Exótico, ele regenera 1/4 do seu {HP} máximo. Ele não regenera {HP} se tiverem recebido dano de {Energy} esse round.",
+        "tags": []
     }
 ]

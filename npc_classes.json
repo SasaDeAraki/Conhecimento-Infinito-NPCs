@@ -1224,7 +1224,7 @@
         "name": "Humano",
         "role": "biological",
         "info": {
-            "flavor": "TTodos os tipos de pessoa acabam no campo de batalha, incluindo pilotos, VIPs e observadores.<br><br>Você vai usar <b>Humanos</b> quando alguem sair do seu mecha no meio do combate; se quiser um grupo de infantaria, use a classe <b>Squad</b> ao invés disso. Humanos nunca podem pegar outros templates, e não podem ganhar <b>Structure</b>.<br><br>É possível escolher as seguintes variações:<br><ul><li><b>Veteran:</b> +2/4/6 <b>HP</b></li><li><b>Armored:</b> +1-2 <b>ARMOR,</b></li></ul>"
+            "flavor": "Todos os tipos de pessoa acabam no campo de batalha, incluindo pilotos, VIPs e observadores.<br><br>Você vai usar <b>Humanos</b> quando alguem sair do seu mecha no meio do combate; se quiser um grupo de infantaria, use a classe <b>Squad</b> ao invés disso. Humanos nunca podem pegar outros templates, e não podem ganhar <b>Structure</b>.<br><br>É possível escolher as seguintes variações:<br><ul><li><b>Veteran:</b> +2/4/6 <b>HP</b></li><li><b>Armored:</b> +1-2 <b>ARMOR,</b></li></ul>"
         },
         "stats": {
             "activations": [1, 1, 1],
@@ -1251,6 +1251,50 @@
             "ldc_npcf_arma_ranged",
             "ldc_npcf_arma_melee",
             "ldc_npcf_arma_anti_amadura"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_squad",
+        "name": "Squad",
+        "role": "biological",
+        "info": {
+            "flavor": "Embora pilotos individuais e outros soldados não mecanizados possam não representar uma grande ameaça para a maioria dos mechas, um esquadrão de infantaria com o equipamento e o treinamento certos pode ser perigoso por si só.",
+            "tactics": "Os esquadrões são exatamente o que parecem: pequenos grupos de cinco a dez soldados armados e blindados representados como um personagem no campo de batalha."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 15, 20],
+            "armor": [0, 0, 0],
+            "evade": [8, 8, 8],
+            "edef": [8, 8, 8],
+            "heatcap": [0, 0, 0],
+            "hull": [2, 4, 6],
+            "agility": [2, 4, 6],
+            "systems": [2, 4, 6],
+            "engineering": [2, 4, 6],
+            "speed": [4, 4, 4],
+            "sensor": [5, 5, 5],
+            "save": [10, 12, 14],
+            "size": [[4, 0.5], [4, 0.5], [4, 0.5]]
+        },
+        "base_features": [
+            "ldc_npcf_soldados",
+            "ldc_npcf_bucha_de_canhao",
+            "ldc_npcf_vantagem_em_numeros",
+            "ldc_npcf_dispersar",
+            "ldc_npcf_pequeno",
+            "ldc_npcf_armamento_principal",
+            "ldc_npcf_armas_anti_armadura"
+        ],
+        "optional_features": [
+            "ldc_npcf_armadurado",
+            "ldc_npcf_emboscadores",
+            "ldc_npcf_tomar_cobertura",
+            "ldc_npcf_adentramento_veloz",
+            "ldc_npcf_diciplinados"
         ],
         "power": 100
     }

@@ -5234,5 +5234,200 @@
             }
         ],
         "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_soldados",
+        "name": "Soldados",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad age como um só personagem, mas representa um grupo de soldados agindo unidos. Quando o Squad recebe certo dano, os resultados narrativamene são a mortte de um ou mais desses soldados. Eventualmente, isso reduz o número de ataques que o Squado pode fazer a cada turno, como informado nas armas. {Por padrão}, o Squad é composto de {10 membros}, cada um com {1 HP}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_bucha_de_canhao",
+        "name": "Bucha de Canhão",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad não pode pegar os templates {Grunt, Veteran} ou {Ultra}, também não podem receber {Structure}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_vantagem_em_numeros",
+        "name": "Vantagem em Números",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad tem resistência a {todo o dano que não for Line, Cone, Burst ou Blast} e é {Immune} a {Grapple}, {Ram}, {Knockback} e {Stunned}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_dispersar",
+        "name": "Dispersar",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Ao invés manter a posição de cada soldado individual, os membros do Squad podem se mover livremente dentro do espaço que ocupam. Outros personagens podem passar por e terminar seu turno em áreas ocupadas pelo Squad e desde que o Squad ocupe pelo menos {2 espaços livres} ele pode acabar seu turno sobrepondo obstruções, cobertura, ou outros personagens.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_pequeno",
+        "name": "Pequeno",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Soldados individuais podem facilmente se abaixar atrás de cobertura, mas a força brutal das armas-mech limitam o quanto isso pode ser efetivo. O Squad sempre tem {Soft cover}, mesmo em aberto, mas não pode se beneficiar de {Hard cover}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_armamento_principal",
+        "name": "Armamento Principal",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "O Dano dessa arma pode ser {Kinetic, Explosive} ou {Energy}, escolhido ao criar esse NPC.<br><br>Essa arma pode fazer {dois} ataques de uma vez; se o Squad perder mais que metade do seu {HP}, volta a poder fazer apenas um ataque.",
+        "tags": [],
+        "weapon_type": "Main Rifle",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [3,3,4]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_armas_anti_armadura",
+        "name": "Armamento Principal",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "O Dano dessa arma pode ser {Kinetic, Explosive} ou {Energy}, escolhido ao criar esse NPC.",
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,6,7]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 20
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_armadurado",
+        "name": "Armadurado",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad recebe {+1 Armor}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_emboscadores",
+        "name": "Emboscadores",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad ganha {+2 accuracy} em todos os ataques e testes durante o primeiro round de combate.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_tomar_cobertura",
+        "name": "Tomar Cobertura",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "O Squad é atingido por um ataque.",
+        "effect": "O Squad recebe {Resistência} ao dano mas se torna {Immobilized} até o fim do seu próximo turno.",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_adentramento_veloz",
+        "name": "Adentramento Veloz",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Squad pode voar sempre que se mover ou usar {Boost}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_diciplinados",
+        "name": "Diciplinados",
+        "origin": {
+            "type": "Class",
+            "name": "Squad",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Perder {HP} não afeta o número de ataques que o Squad pode fazer por turno.",
+        "tags": [] 
     }
 ]

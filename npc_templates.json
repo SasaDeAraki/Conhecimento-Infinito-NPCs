@@ -94,5 +94,21 @@
             "ldc_npct_nigerundayo"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_pirate",
+        "name": "Pirate",
+        "description": "Os piratas vivem nas fronteiras – os buracos esquecidos do espaço ocupado. Eles vão longe, operando em torno de portões intermitentes, rotas marítimas interestelares e mundos que ainda não foram colonizados. Eles podem ser encontrados onde quer que os recursos sejam mantidos ou movidos, as pessoas estejam desesperadas e a lei seja escassa.",
+        "base_features": [
+            "ldc_npct_mortal",
+            "ldc_npct_sistemas_e_tracos_piratas"
+        ],
+        "optional_features": [
+            "ldc_npct_laco",
+            "ldc_npct_municoes_estilhacantes",
+            "ldc_npct_vermes_perfura_nucleo",
+            "ldc_npct_garras_abre_casco"
+        ],
+        "power": 100
     }
 ]

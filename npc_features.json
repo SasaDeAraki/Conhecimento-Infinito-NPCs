@@ -6208,5 +6208,115 @@
             "base": false
         },
         "locked": false
+    },
+    {
+        "id": "ldc_npct_mortal",
+        "name": "Mortal",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Pirate da {+1d6 bonus damage} em {acertos críticos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sistemas_e_tracos_piratas",
+        "name": "Sistemas e Traços Piratas",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando estiver escolhendo sistemas opcionais, o Pirate pode escolher da {Lista de Sistemas e Traços de Piratas}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_laco",
+        "name": "Laço",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Heavy Melee",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,7,9]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 5
+            }
+        ],
+        "on_hit": "O alvo deve suceder em um teste de {Hull} ou é puxado em direção ao pirata e automaticamente {Grappled}."
+    },
+    {
+        "id": "ldc_npct_municoes_estilhacantes",
+        "name": "Munições Estilhaçantes",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Pirate dá {+3 bonus damage} em {acertos críticos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_vermes_perfura_nucleo",
+        "name": "Vermes Perfura-núcleo",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{1d3} drones miniatura se fixam a um personagem com linha de visão e {Range 10} e começam a perfurar o cockpit do alvo, em {1d3+2 rounds}, se ainda houver algum verme fixado, eles chegam ao cockpit e dilaceram o piloto, os reduzindo a {0 HP}. O alvo sabe quantos rounds vai levar para que os drones atravessem o casco e quantos estão fixados.<br><br>O alvo e personagens adjacentes a ele podem remover um drone de cada vez com um teste bem sucedido de {Systems} ou {Engineering} como uma {Quick action}. Se o alvo usar {Shut Down}, os vermes ficam confusos e o contador para.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_garras_abre_casco",
+        "name": "Garras Abre-casco",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Pirate tenta abrir o cockpit de um personagem adjacente a ele. O alvo deve suceder um teste de {Hull} ou o piloto é forçado a sair de seu mecha como se tivesse usado {Dismount}.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

@@ -5429,5 +5429,259 @@
         "type": "Trait",
         "effect": "Perder {HP} não afeta o número de ataques que o Squad pode fazer por turno.",
         "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_fisiologia_unica",
+        "name": "Fisiologia Única",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Se a Monstruosidade tiver {Structure} (por ser {Elite}, {Ultra} ou similar), ela rola na {Monstrosity Structure Damage} quando receber dano de estrutura.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_jogo_mortal",
+        "name": "Jogo Mortal",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade tem pelo menos {uma mutação opcional}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_garras",
+        "name": "Garras",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "",
+        "attack_bonus": [2,4,6],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [6,8,12]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_cuspe_acido",
+        "name": "Cuspe Ácido",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": "O avlo é {Shredded} até o fim de seu próximo turno." 
+    },
+    {
+        "id": "ldc_npcf_secrecoes_adesivas",
+        "name": "Secreções Adesivas",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O primeiro personagem danificado pela Monstruosidade cada turno deve suceder em um teste de {Engineering} ou se torna {Slowed}. Esse efeito dura até que o alvo recupere {HP} ou pelo resto da cena.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_escavador",
+        "name": "Escavador",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade se enterra no chão, desde que a superfície seja maleável o suficiente. Enquanto enterrada, ela conta como {Invisible} e pode se mover livremente por espaços ocupados por personagens e outras obstruções; no entanto, so pode se mover, {Boostar} ou emergir em um espaço livre como uma {Quick action}. Quando a Monstruosidade emerge, todos os personagens adjacentes a ela devem suceder em um teste de {Hull} ou receberão {Prone}.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_mordida_corrosiva",
+        "name": "Mordida Corrosiva",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Um personagem adjacente à Monstruosidade deve suceder em um teste de {Hull} ou recebe {4/5/6 Heat}. Sucesso ou falha, recebem {Shredded} até que recuperem {HP}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_garras_prendedoras",
+        "name": "Garras Prendedoras",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade ganha {+1 accuracy} para usar {Grapple}, {+1 accuracy} quando atacando alvos {Grappled} por ela e pode usar {Boost} e {reações} enquanto estiver grappling.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_camuflagem_natural",
+        "name": "Camuflagem Natural",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade é {Invisible} enquanto estiver adjacente a qualquer terreno ou cobertura, e considera {Soft cover} como {Hard cover}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_furia",
+        "name": "Fúria",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade se move espaços iguais à sua {Speed} em linha reta, ignorando reações e engagement a passando livremente por espaços ocupados por outros personagems. Personagens que a Monstruosidade atravessar ou adjacente ao caminho devem suceder em um teste de {Agility} ou recebem {4/6/8 Kinetic}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_regenerador",
+        "name": "Regenerador",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Ao fim do seu turno, a Monstruosidade recupera 1/4 do seu {HP} total. Ela não recupera {HP} se tiver tomado dano de {Energy} nesse round.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_espinhoso",
+        "name": "Espinhoso",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Depois da Monstruosidade receber dano de uma {arma melee}, o atacante automáticamente recebe {1/2/3 Kinetic AP}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_agil",
+        "name": "Ágil",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Uma vez por round, a Monstruosidade pode usar {Boost} durante o seu turno como uma {Free action}.",
+        "tags": [
+            {
+                "id": "tg_free_action"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_couro_temperado",
+        "name": "Couro Temperado",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade ganha {resistência} a dois dos seguintes tipos de dano: {Kinetic, Energy} ou {Explosive}. Se for reduzido à {metade} do seu {HP} ou menos, ela perde essa {resistência}. Se tiver estrutura, recupera a resistência quando o {HP} retornar ao máximo.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_alado",
+        "name": "Alado",
+        "origin": {
+            "type": "Class",
+            "name": "Monstruosidade",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Monstruosidade pode voar sempre que se move, e não precisa pousar ao fim de movimentos.",
+        "tags": [] 
     }
 ]

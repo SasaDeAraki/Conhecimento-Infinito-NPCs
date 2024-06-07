@@ -1297,5 +1297,51 @@
             "ldc_npcf_diciplinados"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_monstruosidade",
+        "name": "Monstruosidade",
+        "role": "biological",
+        "info": {
+            "flavor": "Monstruosidades são predadores naturais especialmente grandes ou horríveis. Embora geralmente sejam selvagens, algumas monstruosidades podem ser domesticadas e treinadas para o combate: tais criaturas são muito procuradas nos confins da galáxia.<br><br><table><thead><tr><th>MONSTROSITY STRUCTURE DAMAGE <span>ROLL [STRUCTURE DAMAGE] D6</span></th></tr><tr> <th>Roll</th><th>Result</th><th>Description</th></tr></thead><tbody> <tr><td>5-6</td><td>Glancing Hit</td><td>The Monstrosity flinches in pain; it's <b>IMPAIRED</b> until the end of its next turn.</td></tr><tr><td>3-4</td><td>Powerful Hit</td> <td>The Monstrosity is knocked <b>PRONE</b> by the force of the blow.</td></tr><tr><td>2</td><td>Dismemberment</td><td>The attack blows a limb or chunk off the Monstrosity; it takes 1d6 Kinetic and becomes <b>SLOWED</b> for the rest of the scene.</td></tr><tr><td>1</td><td>Direct Hit</td> <td>The result depends on the Monstrosity’s remaining <b>STRUCTURE</b>:<br><b>3+ Structure:</b> The Monstrosity is smacked in the head and <b>STUNNED</b> until the end of its next turn.<br><b>2 Structure:</b> The Monstrosity must succeed on a <b>HULL</b> save or be destroyed.<br><b>1 Structure:</b> The Monstrosity is destroyed.</td></tr><tr><td><b>Multiple 1s</b> Fatal Hit</td><td>The Monstrosity is destroyed.</td></tr></tbody></table>"
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [14, 16, 18],
+            "armor": [1, 1, 1],
+            "evade": [10, 12, 15],
+            "edef": [10, 10, 10],
+            "heatcap": [0, 0, 0],
+            "hull": [3, 4, 6],
+            "agility": [2, 3, 4],
+            "systems": [-2, -2, -2],
+            "engineering": [-2, -2, -2],
+            "speed": [6, 7, 8],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 15],
+            "size": [[1,2], [1,2], [1,2,3]]
+        },
+        "base_features": [
+            "ldc_npcf_fisiologia_unica",
+            "ldc_npcf_jogo_mortal",
+            "ldc_npcf_garras"
+        ],
+        "optional_features": [
+            "ldc_npcf_cuspe_acido",
+            "ldc_npcf_secrecoes_adesivas",
+            "ldc_npcf_escavador",
+            "ldc_npcf_mordida_corrosiva",
+            "ldc_npcf_garras_prendedoras",
+            "ldc_npcf_camuflagem_natural",
+            "ldc_npcf_furia",
+            "ldc_npcf_regenerador",
+            "ldc_npcf_espinhoso",
+            "ldc_npcf_agil",
+            "ldc_npcf_couro_temperado",
+            "ldc_npcf_alado"
+        ],
+        "power": 100
     }
 ]

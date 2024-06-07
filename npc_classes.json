@@ -1057,5 +1057,45 @@
             "ldc_npcf_golpe_de_reflexo"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_sniper",
+        "name": "Sniper",
+        "role": "artillery",
+        "info": {
+            "flavor": "A razão pela qual alguns pilotos não viram um Sniper no campo de batalha é que esses pilotos estão mortos. Esses mechs são construídos para oferecer estabilidade, direcionamento e armas cinéticas de alcance extremamente longo ao custo da mobilidade, e tendem a operar em equipes pequenas e autossuficientes, distantes do combate direto. Os pilotos atiradores são uma raça orgulhosa, enfatizando a economia e a elegância em vez do poder destrutivo.",
+            "tactics": "Temidos com razão, os Snipers são devastadores quando se trata de causar dano concentrado. Usando SNIPER’S MARK, eles podem causar danos diretos à estrutura, eliminando quase qualquer personagem. Os oponentes podem evitar isso com o uso inteligente de cobertura ou descartando PRONE. A principal desvantagem dos atiradores de elite é que eles precisam estar razoavelmente parados para fazerem seu melhor trabalho, já que seu rifle requer uma ação completa para disparar."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [0, 0, 0],
+            "evade": [10, 13, 16],
+            "edef": [8, 9, 10],
+            "heatcap": [6, 6, 6],
+            "hull": [-2, -2, -2],
+            "agility": [1, 2, 3],
+            "systems": [1, 3, 4],
+            "engineering": [1, 1, 2],
+            "speed": [4, 4, 4],
+            "sensor": [15, 15, 15],
+            "save": [11, 13, 15],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_rile_anti_materia_pesado",
+            "ldc_npcf_na_mira",
+            "ldc_npcf_escalador"
+        ],
+        "optional_features": [
+            "ldc_npcf_selecao_de_municao",
+            "ldc_npcf_realocacao",
+            "ldc_npcf_projetor_de_nuvens_sniper",
+            "ldc_npcf_alvo_em_movimento_sniper",
+            "ldc_npcf_munição_perfura_casco"
+        ],
+        "power": 100
     }
 ]

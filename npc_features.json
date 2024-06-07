@@ -4455,5 +4455,193 @@
             "base": false
         },
         "locked": false
+    },
+    {
+        "id": "ldc_npcf_rile_anti_materia_pesado",
+        "name": "Rifle Anti-matéria Pesado",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_ap"
+            },
+            {
+                "id": "tg_ordnance"
+            },
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "weapon_type": "Superheavy Rifle",
+        "attack_bonus": [2,4,6],
+        "accuracy": [2,2,2],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [10,15,20]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 25
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_na_mira",
+        "name": "Na Mira",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem em linha de visão e {Range 25} recebe {'Na Mira'}. Contra alvos com {Na Mira}, o {Rifle Anti-matéria Pesado} da {1 structure} ao invés do seu dano padrão.<br><br>Personagens sabem se eles estão {Na Mira}. Eles ignoram essa condição e recebem dano padrão se estiverem em cobertura ou {Prone}. No seu turno, alvos {Na Mira} podem ficar {Prone} como uma {Free action}.<br><br>O Sniper pode marcar somente um alvo de cada vez, mas pode transferir o foco para outro alvo usando uma {Full action}", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_escalador",
+        "name": "Escalador",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Sniper pode escalar e permancer estável em qualquer superfície sem penalidade, inclusive estando pendurado ou em superfícies verticais.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_selecao_de_municao",
+        "name": "Seleção de Munição",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Sniper pode escolher um tipo de munição especial antes de atacar com o {Rifle Anti-matéria Pesado}. Ataques feitos com essa munição funcionam como o padrão, com um efeito adicional em um ataque sucedido.<br><br>O Sniper pode escolher entre os seguintes:<br><br><ul><li>{Eletromagnético:} O alvo deve suceder em um teste de {Systems} ou recebe {Jammed} até o fim de seu próximo turno.</li><li>{Sinalizadora:} Alvos perdem {Hide} ou {Invisible} e não podem recuperar esses status até o fim de seu próximo turno.</li><li>{Impacto:} Alvos devem suceder um teste de {Engineering} ou se tornam {Shredded} até o  fim de seu próximo turno.</li></ul>", 
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_gancho_evasivo",
+        "name": "Gancho Evasivo",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Sniper se puxa para qualquer ponto em {Range 5} com um grappling hook como se estivesse voando. O Sniper também recebe a reação {Realocação}.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_realocacao",
+        "name": "Realocação",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Um inimigo em linha de visão se move.",
+        "effect": "O Sniper usa {Gancho Evasivo}.",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_projetor_de_nuvens_sniper",
+        "name": "Projetor de Nuvens",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Snniper ativa uma carga, criando uma área burst 3 de fumaça, neblina ou algum outro tipo de fumaça ocultadora. O Sniper recebe Soft cover enquanto dentro da área, e os demais personagens completamente dentro ou fora da área não podem traçar linha de visão para dentro ou fora da área. Personagens parcialmente dentro do campo não são afetados. Esse efeito dura até o fim do próxito turno do Sniper ou até o Sniper receber esse sistema novamente.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_alvo_em_movimento_sniper",
+        "name": "Alvo em Movimento",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Um inimigo em linha de visão e {Range 20} se move.",
+        "effect": "O Sniper interrompe o movimento. O personagem deve ou desistir da ação/movimento ou é imediatamente atacado pelo Sniper usando o {Rifle Anti-matéria Pesado}. Se o rifle não estiver carregado, recarregue-o ao invés disso.",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_munição_perfura_casco",
+        "name": "Munição Perfura-casco",
+        "origin": {
+            "type": "Class",
+            "name": "Sniper",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Sniper carrega o {Rifle Anti-matéria Pesado} com uma munição especial, capaz de atravessar os cascos adversários: o próximo ataque se torna {Line 20}.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
     }
 ]

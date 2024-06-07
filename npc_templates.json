@@ -63,5 +63,19 @@
             "ldc_npct_regenerador"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_grunt",
+        "name": "Grunt",
+        "description": "Os grunts estão um passo acima da bucha de canhão. Eles normalmente vão para o campo em mechas produzidos em massa ou em estoque – treinados para disciplina em vez de excelência. Os grunts podem não ser ameaças por si só, mas em grupo, tornam-se uma massa esmagadora de corpos e projéteis que ameaça até os inimigos mais poderosos.",
+        "base_features": [
+            "ldc_npct_papel",
+            "ldc_npct_fraco",
+            "ldc_npct_carreira_de_piloto_grunt"
+        ],
+        "optional_features": [
+
+        ],
+        "power": 100
     }
 ]

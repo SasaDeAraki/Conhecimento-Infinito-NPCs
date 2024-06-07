@@ -6050,5 +6050,44 @@
         "type": "Trait",
         "effect": "Ao fim do turno do Exótico, ele regenera 1/4 do seu {HP} máximo. Ele não regenera {HP} se tiverem recebido dano de {Energy} esse round.",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_papel",
+        "name": "Papel",
+        "origin": {
+            "type": "Template",
+            "name": "Grunt",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Grunt tem {1 HP} e não pode receber mais. Diferente de outros personagens, eles nunca recebem dano quando sucedem em um teste - independente da arma ou sistema usado - mas do contrário recebem dano normalmente.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_fraco",
+        "name": "Fraco",
+        "origin": {
+            "type": "Template",
+            "name": "Grunt",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Grunt nunca pode ter mais de {1 Structure} e {1 Stress}, e eles são automáticamente destruídos se receberem Heat de qualquer fonte que não seja seus próprios sistemas e armas.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_carreira_de_piloto_grunt",
+        "name": "Carreira de Piloto",
+        "origin": {
+            "type": "Template",
+            "name": "Grunt",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Grunt não pode pegar os templates {Veteran, Squad, Elite} e {Ultra}.",
+        "tags": []
     }
 ]

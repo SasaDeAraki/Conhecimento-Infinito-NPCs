@@ -16,5 +16,32 @@
             "ldc_npct_disciplina_militar"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_rpvs",
+        "name": "RPVs",
+        "description": "Veículos de piloto remoto – RPVs – são quaisquer mechs pilotados por NHPs, pilotos externos ou unidades comp/con. Trocam a vulnerabilidade da guerra electrónica pela força de unidades individuais e podem operar fora das restrições impostas aos sistemas pilotados por unidades orgânicas instaladas em veículos.",
+        "base_features": [
+            "ldc_npct_hp_bonus",
+            "ldc_npct_sem_piloto",
+            "ldc_npct_vulneravel_a_hacks"
+        ],
+        "optional_features": [],
+        "power": 100
+    },
+    {
+        "id": "ldc_npct_elite",
+        "name": "Elite",
+        "description": "Os inimigos de elite são mais resistentes e poderosos do que a maioria – apenas um passo abaixo dos Ultras. Eles podem ser pilotos, forças especiais ou inimigos especialmente durões ou experientes, usando um nível mais alto de tecnologia ou equipamento de melhor qualidade do que os soldados rasos. Os Elites podem agir várias vezes a cada rodada e obter Estrutura adicional, o que efetivamente dobra seu HP e permite que eles façam verificações de danos à estrutura como os PJs.",
+        "base_features": [
+            "ldc_npct_reforcado_elite",
+            "ldc_npct_preparado",
+            "ldc_npct_carreira_de_piloto",
+            "ldc_npct_especialista"
+        ],
+        "optional_features": [
+
+        ],
+        "power": 100
     }
 ]

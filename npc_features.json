@@ -5821,5 +5821,96 @@
         "type": "Trait",
         "effect": "Aliados adjacentes ao Commander recebem {+1 accuracy} em todos os ataques e testes.",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_hp_bonus",
+        "name": "HP Bônus",
+        "origin": {
+            "type": "Template",
+            "name": "RPVs",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O RPV recebe {+5 HP} - ele pode ignorar dano que teria explodido pelo cockpit e matado um humano.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sem_piloto",
+        "name": "Sem Piloto",
+        "origin": {
+            "type": "Template",
+            "name": "RPVs",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O RPV tem {Immunity a qualquer sistema ou ação que afeta diretamente o piloto}; entretanto, também recebe {Impaired} permantentemente, incapaz de tomar decisões complexas ou julgamentos morais.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_vulneravel_a_hacks",
+        "name": "Vulnerável a Hacks",
+        "origin": {
+            "type": "Template",
+            "name": "RPVs",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "{Tech actions} hostís contra o RPV recebem {+1 accuracy}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_reforcado_elite",
+        "name": "Reforçado",
+        "origin": {
+            "type": "Template",
+            "name": "Elite",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Elite recebe {+1 Structure} e {+1 Stress}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_preparado",
+        "name": "Preparado",
+        "origin": {
+            "type": "Template",
+            "name": "Elite",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Elite tem dois turnos separados por rodada.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_carreira_de_piloto",
+        "name": "Carreira de Piloto",
+        "origin": {
+            "type": "Template",
+            "name": "Elite",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Elite não pode pegar os templates {Grunt} e {Ultra}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_especialista",
+        "name": "Especialista",
+        "origin": {
+            "type": "Template",
+            "name": "Elite",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Elite escolhe um sistema opcional extra de sua classe.",
+        "tags": []
     }
 ]

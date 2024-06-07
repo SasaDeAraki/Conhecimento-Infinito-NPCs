@@ -107,7 +107,8 @@
             "ldc_npct_laco",
             "ldc_npct_municoes_estilhacantes",
             "ldc_npct_vermes_perfura_nucleo",
-            "ldc_npct_garras_abre_casco"
+            "ldc_npct_garras_abre_casco",
+            "ldc_npct_sinal_controlador"
         ],
         "power": 100
     }

@@ -6318,5 +6318,26 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npct_sinal_controlador",
+        "name": "Sinal Controlador",
+        "origin": {
+            "type": "Template",
+            "name": "Pirate",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um mecha ou veículo em {Range 10} deve realizar um teste de {Systems}. Em uma flaha, todos os pilotos e outros personagens {Biological} dentro do alvo são atingidos pelo sinal, recebendo {Stunned}. A menos que o mecha tenha {AI}, também é {Stunned}. Se algum dos personagens afetados, ou seu mecha ou veículo, receber dano, ele perde essa condição - acabando o efeito. Personagens adjacentes a alvos afetados podem acabar com o efeito abafando o sinal com um teste bem sucedido de {Systems} como uma {Full action}. De outro modo o efeito dura até que o Pirate seja destruído.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

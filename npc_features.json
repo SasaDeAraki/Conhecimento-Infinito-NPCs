@@ -5146,5 +5146,93 @@
         }
         ],
         "tech_type": "Quick"
+    },
+    {
+        "id": "ldc_npcf_arma_ranged",
+        "name": "Arma Ranged",
+        "origin": {
+            "type": "Class",
+            "name": "Humano",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [1,2,3]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_arma_melee",
+        "name": "Arma Melee",
+        "origin": {
+            "type": "Class",
+            "name": "Humano",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [1,2,3]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_arma_anti_amadura",
+        "name": "Arma Anti-armadura",
+        "origin": {
+            "type": "Class",
+            "name": "Humano",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Dano ou {Explosive} ou {Energy}.",
+        "tags": [],
+        "weapon_type": "",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [3,4,5]
+            },
+            {
+                "type": "Energy",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            }
+        ],
+        "on_hit": "" 
     }
 ]

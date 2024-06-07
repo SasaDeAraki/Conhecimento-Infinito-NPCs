@@ -1218,5 +1218,38 @@
             "ldc_npcf_petrificar"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_humano",
+        "name": "Humano",
+        "role": "biological",
+        "info": {
+            "flavor": "TTodos os ttipos de pessoa acabam no campo de batalha, incluindo pilotos, VIPs e observadores.<br><br>Você vai usar {Humanos} quando alguem sair do seu mecha no meio do combate; se quiser um grupo de infantaria, use a classe {Squad} ao invés disso. Humanos nunca podem pegar outros templates, e não podem ganhar {Structure}.<br><br>É possível escolher as seguintes variações:<br><ul><li>{Veteran:} +2/4/6 {HP}</li><li>{Armored:} +1-2 {ARMOR}</li></ul>"
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [6, 6, 6],
+            "armor": [0, 0, 0],
+            "evade": [10, 10, 10],
+            "edef": [10, 10, 10],
+            "heatcap": [0, 0, 0],
+            "hull": [1, 2, 3],
+            "agility": [1, 2, 3],
+            "systems": [1, 2, 3],
+            "engineering": [1, 2, 3],
+            "speed": [4, 4, 4],
+            "sensor": [5, 5, 5],
+            "save": [10, 10, 10],
+            "size": [[0.5], [0.5], [0.5]]
+        },
+        "base_features": [
+
+        ],
+        "optional_features": [
+
+        ],
+        "power": 100
     }
 ]

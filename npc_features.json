@@ -7099,5 +7099,291 @@
             }
         ],
         "on_hit": ""
+    },
+    {
+       "id": "ldc_npct_reforcado_veteran",
+        "name": "Reforçado",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran recebe {+1 Structure} e {+1 Stress}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_experiencia",
+        "name": "Experiência",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran recebe {+1 accuracy} em todos os teste de uma {mech skill} (escolhida na criaçao): {Hull, Agility, Systems} ou {Engineering}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_tracos_de_veterano",
+        "name": "Traços de Veterano",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veterano recebe um {Traço de Veterano} por {tier}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_acrobata",
+        "name": "Acrobata",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Depois que o Veteran se mover ou {Boostar}, ele pode voar {3 espaços}. Esse voo ignora engagement e não provoca reações.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_mortal_veteran",
+        "name": "Acrobata",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran da {+1d6 de dano} em {acerto críticos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_fingir_de_morto",
+        "name": "Fingir de Morto",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A primeira vez que o Veteran for destruído em cada combate, ele está atualmente se fingindo de morto. - Ele aparenta estar destruído, mas tem {1 HP}. Personagens adjacentes ao Veteran pode revelar isso com um teste bem sucedido de {Systems} ou um {pilot skill check}; do contrário, o Veteran permanece despercebido até que se mova ou aja.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_hacker",
+        "name": "Hacker",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran da {+2 Heat} em {tech attacks} bem sucedidos.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_alvo_resistente_veteran",
+        "name": "Alvo Resistente",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran recebe {+1 accuracy} em teste de {Systems}, e {tech attacks} contra ele recebem {+1 difficulty}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npct_headshot",
+        "name": "Headshot",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "1/round, em um {acerto crítico},o alvo do Veteran deve passar em um teste de {Hull} ou só terá linha de visão de espaços ajacentes até o fim de seu próximo turno.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npct_isolamento_termico_veteran",
+        "name": "Isolamento Térmico",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran tem {Imunidade} a {Burn}",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_lendario_veteran",
+        "name": "Lendário",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran rola todo o dano de {Structre} e {Stress} duas vezes e escolhe o resultado que quiser.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_visao_menor",
+        "name": "Visão Menor",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran ignrora {Invisible} de personagens dentro de {Range 3}, e personagens hostis em {Range 3} não podem usar {Hide} com sucesso (mas mantem {Hide} se já tivessem esse efeito).",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_reflexos_de_relampago",
+        "name": "Reflexos de Relâmpago",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Sempre que o Veteran é atacado usando uma arma {Heavy} ou {Superheavy}, primeiro role {1d6}. Em um {5+}, o ataque falha automáticamente.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_incansavel_veteran",
+        "name": "Incansável",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran pode usar {Overcharge}. Ao invés do custo padrão, ele sempre recebe {1d6 Heat}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_co_piloto_nhp",
+        "name": "Co-piloto NHP",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran recebe a tag {AI}. Seu mecha ou veículo é autonomo e pode até mesmo funcionar sem um piloto. O NHP pode entrar em cascata, usando as mesmas regras de AIs de PCs.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_presente_de_despedida",
+        "name": "Presente de Despedida",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran pode usar {Self-Destruct} (veja a página 72).",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_mestre_do_rodeio",
+        "name": "Mestre do Rodeio",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran pode usa {Dismount}. Enquanto à pé, o Veteran usa a classe {Humano} e pode usar todas as ações disponíveis para pilotos PCs, incluindo {Jockey}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_auto_reparo",
+        "name": "Auto Reparo",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "1/cena, como um {Free action}, o Veteran recupera todo seu {HP} e limpa todas as condições.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_armadura_de_impacto",
+        "name": "Armadura de Impacto",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran ganha {Resistência} a dano de {Main weapons}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_escorregadio",
+        "name": "Escorregadio",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O movimento padrão do Veterna ignora engagement e não provoca {reações}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_mandibula_de_aco",
+        "name": "Mandíbula de Aço",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Armas {Auxiliares} não podem dar mais que {1 de dano} ao Veteran.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_velocidade_da_vibora",
+        "name": "Velocidade da Víbora",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Veteran sempre toma o primeiro turno, mesmo que aja antes de PCs. Sempre que houver a dúvida de quem agirá primeiro - tanto narrativamente quanto em combate - sempre será o Veteran. Se multiplos personagens tiverem esse trait, apenas um deles poderá usá-lo cada vez.",
+        "tags": []
     }
 ]

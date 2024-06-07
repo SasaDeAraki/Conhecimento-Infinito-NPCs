@@ -188,7 +188,39 @@
             "ldc_npct_imparavel",
             "ldc_npct_chamas_infernais",
             "ldc_npct_torreta_devastadora"
+        ],  
+        "power": 100
+    },
+    {
+        "id": "ldc_npct_veteran",
+        "name": "Veteran",
+        "description": "Os veteranos são lutadores experientes e experientes que sobreviveram a vários combates diretos. Este não é o primeiro rodeio deles, e sua capacidade de resistir a choques morais é muito maior do que a de um novato não testado. Seu valor em campo é a experiência que trazem para uma implantação e sua presença constante ao longo da linha.<br><br>Use o modelo Veterano para criar personagens mais memoráveis.",
+        "base_features": [
+            "ldc_npct_reforcado_veteran",
+            "ldc_npct_experiencia",
+            "ldc_npct_tracos_de_veterano"
         ],
+        "optional_features": [
+            "ldc_npct_acrobata",
+            "ldc_npct_mortal_veteran",
+            "ldc_npct_fingir_de_morto",
+            "ldc_npct_hacker",
+            "ldc_npct_alvo_resistente_veteran",
+            "ldc_npct_headshot",
+            "ldc_npct_isolamento_termico_veteran",
+            "ldc_npct_lendario_veteran",
+            "ldc_npct_visao_menor",
+            "ldc_npct_reflexos_de_relampago",
+            "ldc_npct_incansavel_veteran",
+            "ldc_npct_co_piloto_nhp",
+            "ldc_npct_presente_de_despedida",
+            "ldc_npct_mestre_do_rodeio",
+            "ldc_npct_auto_reparo",
+            "ldc_npct_armadura_de_impacto",
+            "ldc_npct_escorregadio",
+            "ldc_npct_mandibula_de_aco",
+            "ldc_npct_velocidade_da_vibora"
+        ],  
         "power": 100
     }
 ]

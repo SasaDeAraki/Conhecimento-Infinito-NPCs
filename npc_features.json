@@ -4816,5 +4816,155 @@
         "type": "System",
         "effect": "Quando o Specter começar seu turno {Hidden}, o seu próximo ataque (enquanto {Hidden}) recebe {+1/2/3 accuracy} e dá {+1d6 Kinetic} em {acertos críticos}.",
         "tags": []
+    },
+    {
+        "id": "ldc_npcf_extintor",
+        "name": "Extintor",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Support escolhe um personagem com linha de visão e {Range 5}, aliado ou hostil:<br><br><ul><li>{Aliado:} O alvo limpa todo o {Heat}, mas se torna {Slowed} até o fim de seu próximo turno.</li><li>{Inimigo:} O alvo deve passar em um teste de {Agility} ou recebe {Slowed} até o fim de seu próximo turno. Suceda ou não, uma área {Burst 1} em volta do alvo se torna {terreno difícil} pelo resto da cena.</li></ul>",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+       "id": "ldc_npcf_drone_reabastecedor",
+        "name": "Drone Reabastecedor",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Drone Reabastecedor (Size} 1/2, {HP} 5/8/10, {Evasion} 10/12/14, {E-Defense} 10/12/14, {Tags}: Drone{)}<br><br>Esse drone pode ser posicionado sobrevoando em um espaço dentro de {Range 5}. A próxima vez que um aliado se mover pelo drone ou ao seu lado, ele se acopla e descarrega suas reservas recuperando {6/10/15 HP}.",
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_nuvem_de_nano_reparos",
+        "name": "Nuvem de Nano-reparos",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Enquanto estiverem adjacentes ao Support, aliados rolam duas vezes todos os testes de salva-guarda e de skills de mechas e escolhem o maior valor.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_reinicializacao_remota",
+        "name": "Reinicialização Remota",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Support limpa duas das seguintes condições de um aliado em {Range 5} à escolha: {impaired, Jammed, Stunned} e {Slowed}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_nuvem_fortalecida",
+        "name": "Nuvem Fortalecida",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando iniciam o turno adjacente ao Support, aliados podem limpar uma condição.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_nuvem_remota",
+        "name": "Nuvem Remota",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Support solta uma nuvem de nanitas {Blast 2} em {Range 5}. Aliados que começarem seu turno na área ou entrarem nela pela primeira vez no turno regeneram {2/4/6 HP}. A nuvem dispersa no ínicio do próximo turno do Support.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_pulso_defensivo",
+        "name": "Pulso Defensivo",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Todos os aliados em {Range 3} limpam {Jammed} e {Lock on}.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_drone_reparador",
+        "name": "Drone Reparador",
+        "origin": {
+            "type": "Class",
+            "name": "Support",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Drone de Trava (Size} 1/2, {HP} 5/10/15, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}<br><br>Esse drone auto-posicionante se prende a outro personagem em {Range 3}, ocupando o mesmo espaço e se movendo com ele. Enquanto o drone estiver acoplado, o alvo regenera {5/8/10 HP} no início de cada um dos turnos e recebe {+1 accuracy} em  todos os testes e ataques. Inimigos podem mirar no drone com ataques.",
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

@@ -1138,5 +1138,45 @@
             "ldc_npcf_analizador_de_fraquezas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_support",
+        "name": "Support",
+        "role": "support",
+        "info": {
+            "flavor": "Os mechas de arquétipo de suporte mantêm seus aliados vivos e operacionais com uma ampla biblioteca de sistemas de triagem imediata, desde placas básicas de solda rápida até pacotes de reforço estrutural raso-médio e lama de nanita caiada. Das linhas de frente dos campos de batalha de Boundary Garden às ações de precisão realizadas pelos caçadores de mundos desonestos da ExtraSolar Acquisitions, Inc., a eficácia dos mechas do arquétipo de Suporte é incomparável quando as equipes mechas precisam permanecer vivas por mais tempo do que a implantação.",
+            "tactics": "Os suportes são mechas volumosos que não podem causar nenhum dano, mas têm acesso a poderosos efeitos de cura e eliminação de condições. Apesar da sua resiliência, não têm como se defender e precisam de se aproximar dos seus aliados para serem eficazes. Jogadores experientes atirarão e destruirão seus RESTOCK DRONES antes de serem ativados, negando a oportunidade de cura."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [15, 18, 22],
+            "armor": [1, 1, 1],
+            "evade": [8, 10, 12],
+            "edef": [8, 10, 12],
+            "heatcap": [8, 8, 8],
+            "hull": [1, 1, 1],
+            "agility": [-2, -1, -1],
+            "systems": [0, 1, 2],
+            "engineering": [2, 4, 6],
+            "speed": [4, 4, 4],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[2], [2], [2]]
+        },
+        "base_features": [
+            "ldc_npcf_extintor",
+            "ldc_npcf_drone_reabastecedor",
+            "ldc_npcf_nuvem_de_nano_reparos"
+        ],
+        "optional_features": [
+            "ldc_npcf_reinicializacao_remota",
+            "ldc_npcf_nuvem_fortalecida",
+            "ldc_npcf_nuvem_remota",
+            "ldc_npcf_pulso_defensivo",
+            "ldc_npcf_drone_reparador"
+        ],
+        "power": 100
     }
 ]

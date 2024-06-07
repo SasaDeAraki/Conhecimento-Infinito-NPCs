@@ -1097,5 +1097,46 @@
             "ldc_npcf_munição_perfura_casco"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_specter",
+        "name": "Specter",
+        "role": "striker",
+        "info": {
+            "flavor": "O princípio por trás do desenvolvimento dos mechs do arquétipo Spectre é simples: não ser atingido é melhor do que ter uma armadura mais forte. Os espectros empregam camuflagem ótico-eletrônica de última geração para desaparecer do campo de batalha e das varreduras inimigas. Eles aparecem e desaparecem da visão, confundindo o olho e o radar. É isso que os torna tão mortais, embora suas armas certamente ajudem.",
+            "tactics": "Espectros são atacantes móveis que brilham contra inimigos que cometem o erro de serem pegos sozinhos. Use PROWL junto com sua alta AMEAÇA e VELOCIDADE para levá-los através das linhas de frente para que possam encontrar alvos individuais vulneráveis, como atiradores e artilharia. Os espectros são permanentemente INVISÍVEIS, o que é fundamental para sua sobrevivência; eles não são muito resistentes, mas podem se ESCONDER a qualquer momento."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 10, 10],
+            "armor": [0, 0, 0],
+            "evade": [10, 14, 18],
+            "edef": [8, 10, 12],
+            "heatcap": [7, 7, 7],
+            "hull": [-2, -2, -2],
+            "agility": [3, 5, 6],
+            "systems": [1, 2, 3],
+            "engineering": [0, 1, 1],
+            "speed": [4, 5, 7],
+            "sensor": [5, 5, 5],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_monowire",
+            "ldc_npcf_espreitar",
+            "ldc_npcf_manto_tatico",
+            "ldc_npcf_cacar"
+        ],
+        "optional_features": [
+            "ldc_npcf_fortaleza_specter",
+            "ldc_npcf_drenar_sistemas",
+            "ldc_npcf_passo_specter",
+            "ldc_npcf_pistola_automatica",
+            "ldc_npcf_analizador_de_fraquezas"
+        ],
+        "power": 100
     }
 ]

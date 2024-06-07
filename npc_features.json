@@ -4643,5 +4643,178 @@
                 "id": "tg_quick_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_monowire",
+        "name": "Monowire",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2}, essa arma pode fazer dois ataques de uma vez, atingindo ou um alvo duas vezes ou dois alvos uma vez. No {T3} podem ser feitos três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,5,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_espreitar",
+        "name": "Espreitar",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Specter se move espaços igual ao seu deslocamento e então se torna {Hidden}. Esse movimento ignora engagement e não provoca reações.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_manto_tatico",
+        "name": "Manto Tático",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Specter é permanentemente {Invisible}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_cacar",
+        "name": "Caçar",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Os ataques melees do Specter dão {+5 de dano} quando não há outros personagens adjacentes ao alvo.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_fortaleza_specter",
+        "name": "Fortaleza",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Specter recebe {+3 accuracy} em testes de {Systems} e tech attacks contra ele recebem {+3 difficulty}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npcf_drenar_sistemas",
+        "name": "Drenar Sistemas",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": false
+        },
+        "locked": false,
+        "type": "Tech",
+        "attack_bonus": [2,4,6],
+        "effect": "O Specter faz um {tech attack} contra um alvo adjacente. Em um sucesso, o alvo se torna {Stunned}. Esse efeito dura até um outro personagem além do Specter começar seu turno adjacente ao alvo ou se mover adjacente a ele.",
+        "tags": [
+            {
+                "id": "tg_full_tech"
+            }
+        ],
+        "tech_type": "Full"
+    },
+    {
+        "id": "ldc_npcf_passo_specter",
+        "name": "Passo",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Specter {Teleporta} para um espaço livre com linha de visão e {Range 50}.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npcf_pistola_automatica",
+        "name": "Pistola Automática",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No {T2}, essa arma pode fazer dois ataques de uma vez, atingindo ou um alvo duas vezes ou dois alvos uma vez. No {T3} podem ser feitos três ataques de uma vez.",
+        "tags": [],
+        "weapon_type": "Auxiliary CQB",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [2,2,2]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_analizador_de_fraquezas",
+        "name": "Analizador de Fraquezas",
+        "origin": {
+            "type": "Class",
+            "name": "Specter",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando o Specter começar seu turno {Hidden}, o seu próximo ataque (enquanto {Hidden}) recebe {+1/2/3 accuracy} e dá {+1d6 Kinetic} em {acertos críticos}.",
+        "tags": []
     }
 ]

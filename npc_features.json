@@ -6339,5 +6339,96 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npct_voador",
+        "name": "Voador",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship se move normalmente em zero-g. Em atmosfera ela sobrevoa. Ela recebe {Immunity} a {Immobilized, Stunned} e {Prone}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_tamanho_massivo",
+        "name": "Tamanho Massivo",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship é de {Size 4}. Por mais que seja maior que muitos mechas, é pequena para padrões de aeronaves; aeronaves maiores são protegidas demais para sequer serem afetadas por armas de escala mecha.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_tripulacao",
+        "name": "Tripulação",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship tem pelo menos dois tripulantes.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_casco_protegido",
+        "name": "Casco Protegido",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship recebe {+5 HP}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sem_manipuladores",
+        "name": "Casco Protegido",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship não pode pegar objetos, manipular objetos ou o ambiente, nem usar {Grapple}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_ataques_melee_limitados",
+        "name": "Ataques Melee Limitados",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship não pode realizar outros ataques melee além de {Ram}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_transportar",
+        "name": "Transportar",
+        "origin": {
+            "type": "Template",
+            "name": "Ship",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "A Ship pode transportar um Squad ou personagens que o tamanho combinado seja maior que {Size 4}",
+        "tags": []
     }
 ]

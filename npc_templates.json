@@ -111,5 +111,23 @@
             "ldc_npct_sinal_controlador"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_ship",
+        "name": "Ship",
+        "description": "Sejam civis ou militares, as naves são definidas pela sua capacidade de voo e projetadas para viagens espaciais. Embora sejam usados ​​principalmente fora dos limites da atmosfera, a maioria pode operar mais perto do solo quando necessário.<br><br>Este modelo pode ser aplicado a qualquer NPC Mech. Eles perdem a etiqueta Mech e se tornam um navio.",
+        "base_features": [
+            "ldc_npct_voador",
+            "ldc_npct_tamanho_massivo",
+            "ldc_npct_tripulacao",
+            "ldc_npct_casco_protegido",
+            "ldc_npct_sem_manipuladores",
+            "ldc_npct_ataques_melee_limitados",
+            "ldc_npct_transportar"
+        ],
+        "optional_features": [
+
+        ],
+        "power": 100
     }
 ]

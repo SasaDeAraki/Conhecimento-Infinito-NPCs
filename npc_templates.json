@@ -129,5 +129,21 @@
 
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_spacer",
+        "name": "Spacer",
+        "description": "Espaçadores são aqueles nascidos e criados no vácuo do vazio sem fim. Eles são adeptos de manobrar dentro e ao redor de ambientes difíceis e de baixa gravidade encontrados apenas no espaço e em órbita baixa – estações espaciais e piscantes, campos de asteróides e o vazio entre naves em frotas militares e comerciais.",
+        "base_features": [
+            "ldc_npct_manobravel",
+            "ldc_npct_sistemas_de_espaconautas"
+        ],
+        "optional_features": [
+            "ldc_npct_repulsor",
+            "ldc_npct_rifle_gravitacional",
+            "ldc_npct_armadilha_imobilizadora",
+            "ldc_npct_granadas_repulsivas"
+        ],
+        "power": 100
     }
 ]

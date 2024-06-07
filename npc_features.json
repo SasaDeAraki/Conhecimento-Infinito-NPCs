@@ -6430,5 +6430,131 @@
         "type": "Trait",
         "effect": "A Ship pode transportar um Squad ou personagens que o tamanho combinado seja maior que {Size 4}",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_manobravel",
+        "name": "Manobrável",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Spacer se move normalmente em ambientes zero-g.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sistemas_de_espaconautas",
+        "name": "Sistemas de Espaçonauta",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando estiver escolhendo sistemas opcionais, o Spacer pode escolher da {Lista de Sistemas de Espaçonauta}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_repulsor",
+        "name": "Repulsor",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 3
+            }
+        ],
+        "weapon_type": "Main Rifle",
+        "attack_bonus": [1,2,3],
+        "damage": [],
+        "range": [
+            {
+                "type": "Cone",
+                "val": 3
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npct_rifle_gravitacional",
+        "name": "Rifle Gravitacional",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main Rifle",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": "Alvos devem suceder em um teste de {Hull} ou são puxados em linha reta até o Spacer, até {10 espaços} ou até colidirem com um obstrução. Se colidirem com um obstrução também recebem {Prone}."
+    },
+    {
+        "id": "ldc_npct_armadilha_imobilizadora",
+        "name": "Armadilha Imobilizadora",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando um alvo hostil se move adjacente à mina, personagens em {Burst 1} são cobertos em um spray espesso de material supressor seca-rápido e se tornam {Immobilized}. Eles permanecem presos até que o selante receba dano o suficiente para quebrar; o selante conta como tendo {5/10/15 HP} e {Evasion} 5.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_mine"
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_granadas_repulsivas",
+        "name": "Granadas Repulsivas",
+        "origin": {
+            "type": "Template",
+            "name": "Spacer",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spacer gasta uma carga pelo seguinte efeito:<br><br>{Granada Repulsiva} (Grenade, {Range 5}, {Blast 1}):<br>Personagens dentro da área de efeito devem suceder em um teste de {Agility} ou recebem {Knockback 3} a partir do ponto da explosão. Se isso fizer com que colidam contra uma obstrução, também recebem {Prone}.",
+        "tags": [
+            {
+                "id": "tg_grenade"
+            },
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
     }
 ]

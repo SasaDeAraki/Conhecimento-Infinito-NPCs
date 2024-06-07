@@ -5135,7 +5135,7 @@
         "locked": false,
         "type": "Tech",
         "attack_bonus": [2,4,6],
-        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um sucesso, sempre que o alvo receber {Heat} até  o  fim do próximo turno da  Witch, todos os seus aliados em {Range 5} recebem a mesma quantia de {Heat}.",
+        "effect": "A Witch faz um {tech attack} contra um personagem dentro dos {Sensores}. Em um sucesso, sempre que o alvo receber {Heat} até o fim do próximo turno da  Witch, todos os seus aliados em {Range 5} recebem a mesma quantia de {Heat}.",
         "tags": [
         {
             "id": "tg_quick_tech"

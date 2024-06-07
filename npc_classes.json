@@ -1224,7 +1224,7 @@
         "name": "Humano",
         "role": "biological",
         "info": {
-            "flavor": "TTodos os ttipos de pessoa acabam no campo de batalha, incluindo pilotos, VIPs e observadores.<br><br>Você vai usar {Humanos} quando alguem sair do seu mecha no meio do combate; se quiser um grupo de infantaria, use a classe {Squad} ao invés disso. Humanos nunca podem pegar outros templates, e não podem ganhar {Structure}.<br><br>É possível escolher as seguintes variações:<br><ul><li>{Veteran:} +2/4/6 {HP}</li><li>{Armored:} +1-2 {ARMOR}</li></ul>"
+            "flavor": "TTodos os tipos de pessoa acabam no campo de batalha, incluindo pilotos, VIPs e observadores.<br><br>Você vai usar <b>Humanos</b> quando alguem sair do seu mecha no meio do combate; se quiser um grupo de infantaria, use a classe <b>Squad</b> ao invés disso. Humanos nunca podem pegar outros templates, e não podem ganhar <b>Structure</b>.<br><br>É possível escolher as seguintes variações:<br><ul><li><b>Veteran:</b> +2/4/6 <b>HP</b></li><li><b>Armored:</b> +1-2 <b>ARMOR,</b></li></ul>"
         },
         "stats": {
             "activations": [1, 1, 1],

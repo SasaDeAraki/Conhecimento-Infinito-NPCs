@@ -4131,7 +4131,7 @@
         },
         "locked": false,
         "type": "System",
-        "effect": "O Seeder posiciona uma das minas abaixo em {Range 3}. Uma vez posicionada, a mina do Seeder detona quando um personagem hostil se move sobre ela, criando uma explosão {Blast 1} que afeta aliados e inimigos.<br><ul><li>{Mina de Atordoamento:} Personagens na área de efeito que falharem em um teste de {Engineering} recebe {Stunned} até o fim de seu próximo turno.</li><li>{Mina Explosiva:} Personagens na área de efeito recebem {8//12/16 Explosive}, ou {metade} se sucederem em um teste de {Agility}.</li><li>{Mina Supressora:} Personagens na área de efeito que falharem em um teste de {Hull} se tornam {Immobilized} até o fim de seu próximo turno, e então {Slowed} até o fim de seu turno subsequente.</li><li>{Mina de Choque:} Personagens na área de efeito que falharem em um teste de {Systems} recebem {Jammed} até o fim de seu próximo turno, então {Impaired} até o fim do turno subsequente.</li></ul><br>As minas do Seeder são {Invisible} e não podem ser miradas, mas personagens hostis com alcance de {Sensores} podem revelá-las ao suceder em um teste de {Systems}. Personagens podem desarmá-las sucedendo em um teste de {Systems} com uma {Quick action} enquanto estiverem no mesmo espaço; entretanto, em uma falha, a mina detona.", 
+        "effect": "O Seeder posiciona uma das minas abaixo em {Range 3}. Uma vez posicionada, a mina do Seeder detona quando um personagem hostil se move sobre ela, criando uma explosão {Blast 1} que afeta aliados e inimigos.<br><br><ul><li>{Mina de Atordoamento:} Personagens na área de efeito que falharem em um teste de {Engineering} recebe {Stunned} até o fim de seu próximo turno.</li><li>{Mina Explosiva:} Personagens na área de efeito recebem {8//12/16 Explosive}, ou {metade} se sucederem em um teste de {Agility}.</li><li>{Mina Supressora:} Personagens na área de efeito que falharem em um teste de {Hull} se tornam {Immobilized} até o fim de seu próximo turno, e então {Slowed} até o fim de seu turno subsequente.</li><li>{Mina de Choque:} Personagens na área de efeito que falharem em um teste de {Systems} recebem {Jammed} até o fim de seu próximo turno, então {Impaired} até o fim do turno subsequente.</li></ul><br>As minas do Seeder são {Invisible} e não podem ser miradas, mas personagens hostis com alcance de {Sensores} podem revelá-las ao suceder em um teste de {Systems}. Personagens podem desarmá-las sucedendo em um teste de {Systems} com uma {Quick action} enquanto estiverem no mesmo espaço; entretanto, em uma falha, a mina detona.", 
         "tags": [
             {
                 "id": "tg_mine"
@@ -4140,7 +4140,7 @@
                 "id": "tg_quick_action"
             },
             {
-                "id": "tg_round",
+                "id": "tg_turn",
                 "val": 1
             }
         ]
@@ -4261,5 +4261,199 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_shotgun_de_combate",
+        "name": "Shotgun de Combate",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main CQB",
+        "attack_bonus": [1,2,3],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [6,8,10]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_espada_retratil",
+        "name": "Espada Retrátil",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [],
+        "weapon_type": "Main Melee",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,6,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_olho_da_meia_noite",
+        "name": "Olho da Meia-noite",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Sentinel se torna {Slowed} mas pode usar {Overwatch} 1/turn ao invés de 1/round. Quando ativado, esse efeito dura até ser desativado, com uma {Quick action}.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_guardiao_sentinel",
+        "name": "Guardião",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens aliados poder usar o Sentinel como Hard cover.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_municao_debilitante",
+        "name": "Munição Debilitante",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens danificados pelo {Overwatch} do Sentinel também se tornam {Slowed} até o fim de seu turno.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_sangue_nos_olhos",
+        "name": "Sangue nos Olhos",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Sentinel ativa esse sistema. Quando ativado, o Sentinel ataca duas vezes da próxima vez que atacar com sua {Shotgun de Combate}, ao invés de uma.", 
+        "tags": [
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_empalador",
+        "name": "Empalador",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando o Sentinel usa {Overwatch}, seu alvo deve suceder em um teste de {Hull} ou recebe {Immobilized} e {Jammed} até o fim de seu próximo turno.", 
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_resposta_agil_sentinel",
+        "name": "Resposta Ágil",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Um personagem inimigo em linha de visão se move.",
+        "effect": "Após o movimento o Sentinel pode usar Boost.",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npcf_guarda_costas",
+        "name": "Guarda-costas",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Sentinel escolhe um aliando em {Range 5} como o seu {protegido} e ganha a reaction {Golpe de Reflexo}.",
+        "tags": [
+            {
+                "id": "tg_protocol"
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_golpe_de_reflexo",
+        "name": "Golpe de Reflexo",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            }
+        ],
+        "trigger": "Alguém ataca seu {protegido}.",
+        "effect": "O Sentinela ataca o alvo primeiro usando {Overwatch}.",
+        "origin": {
+            "type": "Class",
+            "name": "Sentinel",
+            "base": false
+        },
+        "locked": false
     }
 ]

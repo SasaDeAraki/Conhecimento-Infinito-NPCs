@@ -1015,5 +1015,47 @@
             "ldc_npcf_det_spike"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_sentinel",
+        "name": "Sentinel",
+        "role": "defender",
+        "info": {
+            "flavor": "Os arquétipos sentinelas são normalmente empregados como guardas e escoltas, muitas vezes nas comitivas de comandantes ou postados na defesa da artilharia. Esses mechas e seus pilotos empregam conjuntos avançados de tecnologia para garantir que suas proteções permaneçam vivas e operacionais, mesmo que isso custe seus próprios chassis – ou vidas. Ao contrário dos arquétipos mais pesados ​​dos Bastiões, os Sentinelas são rápidos e leves: eles praticam defesa ativa, atacando preventivamente com conjuntos de armamento técnico, sistêmico e direto avançado para proteger seus ataques.",
+            "tactics": "Sentinelas são defensores rápidos que se concentram em proteger seus aliados com OVERWATCH. Eles são atacantes de curto alcance, dependendo do posicionamento para aproveitar ao máximo seu kit, e não são tão resilientes quanto outros defensores."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [16, 20, 24],
+            "armor": [1, 1, 1],
+            "evade": [8, 11, 13],
+            "edef": [8, 11, 13],
+            "heatcap": [8, 8, 8],
+            "hull": [2, 3, 4],
+            "agility": [1, 2, 3],
+            "systems": [1, 2, 3],
+            "engineering": [1, 2, 3],
+            "speed": [5, 5, 6],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_shotgun_de_combate",
+            "ldc_npcf_espada_retratil",
+            "ldc_npcf_olho_da_meia_noite",
+            "ldc_npcf_guardiao_sentinel"
+        ],
+        "optional_features": [
+            "ldc_npcf_municao_debilitante",
+            "ldc_npcf_sangue_nos_olhos",
+            "ldc_npcf_empalador",
+            "ldc_npcf_resposta_agil_sentinel",
+            "ldc_npcf_guarda_costas",
+            "ldc_npcf_golpe_de_reflexo"
+        ],
+        "power": 100
     }
 ]

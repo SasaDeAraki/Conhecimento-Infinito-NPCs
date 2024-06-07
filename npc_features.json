@@ -5159,7 +5159,7 @@
         "type": "Weapon",
         "effect": "",
         "tags": [],
-        "weapon_type": "Auxiliary CQB",
+        "weapon_type": "",
         "attack_bonus": [1,2,3],
         "damage": [
             {
@@ -5187,7 +5187,7 @@
         "type": "Weapon",
         "effect": "",
         "tags": [],
-        "weapon_type": "Auxiliary Melee",
+        "weapon_type": "",
         "attack_bonus": [1,2,3],
         "damage": [
             {
@@ -5215,7 +5215,7 @@
         "type": "Weapon",
         "effect": "Dano ou {Explosive} ou {Energy}.",
         "tags": [],
-        "weapon_type": "Auxiliary Launcher",
+        "weapon_type": "",
         "attack_bonus": [1,2,3],
         "damage": [
             {

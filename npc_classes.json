@@ -1248,7 +1248,9 @@
 
         ],
         "optional_features": [
-
+            "ldc_npcf_arma_ranged",
+            "ldc_npcf_arma_melee",
+            "ldc_npcf_arma_anti_amadura"
         ],
         "power": 100
     }

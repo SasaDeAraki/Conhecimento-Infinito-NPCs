@@ -6089,5 +6089,124 @@
         "type": "Trait",
         "effect": "O Grunt não pode pegar os templates {Veteran, Squad, Elite} e {Ultra}.",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_oportunista",
+        "name": "Oportunista",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Mercenary recebe {+1 accuracy} em ataques quando seu alvo está {Engaged} por outro personagem.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sistemas_e_tracos_mercenarios",
+        "name": "Sistemas e Traços Mercenários",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando estiver escolhendo sistemas opcionais, o Mercenary pode escolher da {Lista de Sistemas e Traços de Mercenário}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_cacador_de_recompensas",
+        "name": "Caçador de Recompensas",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Antes do combate começar, o GM escolhe um PC: ele vale uma recompensa. Todos os Mercenary em campo recebem {+1 accuracy} em ataques e testes contra esse personagem - piloto e mecha.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_assassino_eficiente",
+        "name": "Assassino Eficiente",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Mercenary recebe {+1 accuracy} e {AP} em ataques contra alvos com {2 Structure} ou menos.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_favores_prestados",
+        "name": "Favores Prestados",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Mercenary pede um favor: um orbital ou bombardeamento, mirando uma área {Blast 2} em linha de visão e {Range 30}. Personagens dentro da área afetada devem suceder em um teste de {Agility} ou recebem {6/8/12 Exolosive} e {Prone}. Em um sucesso, recebem {metade do dano} e não recebem {Prone}.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_drone_olheiro",
+        "name": "Drone Olheiro",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Drone Olheiro (Size} 1/2, {HP} 10, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}<br><br>O Mercenary posiciona um drone que cria um perímetro {Burst 2}, personagens dentro do perímetro não podem ficar {Invisible} ou {Hidden} e perdem esses status se já possuírem. O Mercenary também recebe {+1 accuracy} ao atacar personagens dentro da área. O drone pode ser posicionado em uma nova posição usando um {Protocolo}.",
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_limited",
+                "val": 1
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_nigerundayo",
+        "name": "NIGERUNDAYOO",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_limited",
+                "val": 1
+            }
+        ],
+        "trigger": "O Mercenary é reduzido a menos da metade do seu {HP}.",
+        "effect": "Personagens em {Burst 1} devem suceder em um teste de {Agility} ou recebem {2 Kinetic} e se tornam {Jammed} até o fim de seu próximo turno. O Mercenary move espaços igual a sua {Speed} em qualquer direção. Esse movimento ignora engagement e não provoca reações.",
+        "origin": {
+            "type": "Template",
+            "name": "Mercenary",
+            "base": false
+        },
+        "locked": false
     }
 ]

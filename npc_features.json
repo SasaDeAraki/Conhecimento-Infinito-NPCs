@@ -5683,5 +5683,143 @@
         "type": "Trait",
         "effect": "A Monstruosidade pode voar sempre que se move, e não precisa pousar ao fim de movimentos.",
         "tags": [] 
+    },
+    {
+        "id": "ldc_npct_reforcado",
+        "name": "Reforçado",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Commander recebe {+1 Structure} e {+1 Stress}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_voz_de_autoridade",
+        "name": "Voz de Autoridade",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um aliado falha em um ataque ou teste e o Commander não está {Jammed}.",
+        "effect": "O aliado pode rerolar o dado.",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": true
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npct_tracos_do_comandante",
+        "name": "Traços do Comandante",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Commander escolhe uma opção da lista de {Traços do Comandante}. Ela não funciona se o Commander estiver {Jammed}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_reforcar_conexao",
+        "name": "Reforçar Conexão",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Um aliado em linha de visão (sem ser o Commander) recebe {+1 accuracy} em testes de {Systems} e {tech attacks} feitos contra ele recebem {+1 difficult}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_pressione_o_ataque",
+        "name": "Pressione o Ataque",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ],
+        "trigger": "Um alvo atinge um aliado.",
+        "effect": "O Commander pode atacar o alvo, e da {metade do dano} em um sucesso.",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npct_avante",
+        "name": "Avante!",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Commander limpa ou {Stunned} ou {Jammed} afetando um aliado em linha de visão.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_marcha_veloz",
+        "name": "Marcha Veloz",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Uma vez por round, como protocolo, o Commander pode permitir um aliado em linha de visão a usar {Boost}.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            },
+            {
+                "id": "tg_protocol"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_disciplina_militar",
+        "name": "Disciplina Militar",
+        "origin": {
+            "type": "Template",
+            "name": "Commander",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Aliados adjacentes ao Commander recebem {+1 accuracy} em todos os ataques e testes.",
+        "tags": []
     }
 ]

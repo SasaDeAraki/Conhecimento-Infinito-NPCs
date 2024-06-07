@@ -1,3 +1,20 @@
 [
-    
+    {
+        "id": "ldc_npct_commander",
+        "name": "Commander",
+        "description": "Os comandantes operam em grande escala, controlando frotas e exércitos em mundos e no espaço interestelar. Eles podem não ser os soldados mais mortíferos, mas destacam o que há de melhor em suas forças.",
+        "base_features": [
+            "ldc_npct_reforcado",
+            "ldc_npct_voz_de_autoridade",
+            "ldc_npct_tracos_do_comandante"
+        ],
+        "optional_features": [
+            "ldc_npct_reforcar_conexao",
+            "ldc_npct_pressione_o_ataque",
+            "ldc_npct_avante",
+            "ldc_npct_marcha_veloz",
+            "ldc_npct_disciplina_militar"
+        ],
+        "power": 100
+    }
 ]

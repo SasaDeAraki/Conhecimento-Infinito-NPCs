@@ -6556,5 +6556,548 @@
                 "id": "tg_quick_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npct_melhor_dos_melhores",
+        "name": "Melhor dos Melhores",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra não pode pegar os templates {Elite} ou {Grunt}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_espanto_e_temor",
+        "name": "Espanto e Temor",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra tem {dois turnos separados a cada round}. Ele recupera suas reações a cada turno. Se o Ultra estiver contra {cinco ou mais} personagens hostis, o Ultra recebe um {terceiro turno} por round.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_mortal_ultra",
+        "name": "Mortal",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra da {+1d6 bonus damage} em {acertos críticos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_juggernaut",
+        "name": "Juggernaut",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Ao início de cada um dos turnos do Ultra, ele limpa uma condição. Ao fim de seu turno, ele recupera uma arma ou sistema destruído.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_reforcado_ultra",
+        "name": "Reforçado",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+3 Structure} e {+3 Stress}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_lendario",
+        "name": "Lendário",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra rola todo o dano de {Structre} e {Stress} duas vezes e escolhe o resultado que quiser.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_especialista_ultra",
+        "name": "Especialista",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra escolhe 1-2 sistemas opcionais extras de sua classe.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_resiliente",
+        "name": "Resiliente",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+5 HP}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_reflexo",
+        "name": "Reflexo",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra pode usar {Overwatch} quantas vezes quiser por round.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_sistemas_e_tracos_ultra",
+        "name": "Sistemas e Traços Ultra",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra escolhe 1-3 opções da {Lista de Sistemas e Traços Ultra}",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_armadura_argus",
+        "name": "Armadura Argus",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Ultra tem {6 Armor}. Cada vez que ele marca {dano de estrutura ou de stress} ele perde {2 Armor}, até um mínimo de 0.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_propulsão_de_sobrevoo",
+        "name": "Propulsão de Sobrevoo",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Ultra pode {Hover} quando se move ou usa {Boost}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_campo_repulsor",
+        "name": "Campo Repulsor",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Quando personagens hostis iniciam seus turnos adjacentes ao Ultra ou se tornam adjacentes pela primeira vez no turno, recebem {2/4/6 Energy + 2 Heat} e devem suceder em um teste de {Systems} ou recebem {Impaired} até o fim de seu próximo turno.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_escudo_de_cerco",
+        "name": "Escudo de Cerco",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Ultra recebe {Resistência a todo o dano de ataques além de {Range 3}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_protecao_prateada",
+        "name": "Proteção Prateada",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Esse sistema substitui {Resiliente}. O Ultra se torna permanentemente {Invisible}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_disparo_fulminante",
+        "name": "Disparo Fulminante",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Trace um caminho de {Line 30}: Personagens dentro da área de efeito devem suceder em um teste de {Agility} ou recebem {1 dano de estrutura}. Em um sucesso, seu {HP} é reduzido a {1}. Objetos no caminho menores que {Size 5} são completamente aniquilados.",
+        "tags": [
+            {
+                "id": "tg_ordnance"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_modulo_de_voleio",
+        "name": "Módulo de Voleio",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Ultra entra em uma posição estável e prepara uma de suas armas. No seu próximo turno como um {Protocolo}, o Ultra usa a arma preparada para atacar qualquer número de personagens, desde que estejam dentro da {Range} e não estiverem em cobertura ou {Prone}. Todos os personagens estão cientes desse ataque e podem escolher receberem {Prone} usando uma {Free action} no seu turno para evitarem serem alvejados.<br><br>O Ultra pode atacar quantos alvos quiser com a arma preparada como parte deste efeito, mesmo se a arma tiver a tag {Loading}.",
+        "tags": [
+            {
+                "id": "tg_full_action"
+            },
+            {
+                "id": "tg_protocol"
+            }
+        ]
+    },
+    {
+       "id": "ldc_npcft_misseis_de_caca_ultra",
+        "name": "Mísseis de Caça",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "{Mísseis de Caça (Size} 1/2, {HP} 10/15/20, {Evasion} 10, {E-Defense} 10, {Tags}: Drone{)}.<br><br>O Ultra posiciona um Míssel de Caça em um espaço adjacente e escolhe um alvo em {Range 30} e linha de visão. No início do turno do Ultra o míssil se move {3 espaços} em direção do alvo, {6} se o alvo tem {Lock on}. Ele se move diretamente, contornando cobertura e terreno se necessário. Quando colidir com um personagem ou alcançar seu alvo, ele cria uma explosão {Blast 1}. Personagens dentro da área afetada recebem {16/20/28 Energy}, metade se passarem em um teste de {Agility}.<br><br>O Ultra pode posicionar somente um míssil de caça por vez, e esse sistema so pode recarregar quando o missíl for detonado.", 
+        "tags": [
+            {
+                "id": "tg_drone"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 6
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_devastador",
+        "name": "Devastador",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "1/round, quando o Ultra acertar um ataque, todos os personagens em linha de visão recebem {2/4/6 Kinetic, Explosive} ou {Energy}.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npct_evasivo",
+        "name": "Evasivo",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+4 Evasion} (até um máximo de {20}) e {-1 Structure}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_extra_mortal",
+        "name": "Extra Mortal",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Esse trait substitui {Mortal}. O primeiro {acerto crítico} do Ultra em cada turno da {+1d6/2d6/3d6 de dano}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_fortaleza_ultra",
+        "name": "Fortaleza",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+3 accuracy} em testes de {Systems} e tech attacks contra ele recebem {+3 difficulty}.",
+        "tags": []  
+    },
+    {
+        "id": "ldc_npct_liderar_investida",
+        "name": "Liderar Investida",
+        "type": "Reaction",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_unlimited"
+            }
+        ],
+        "trigger": "Um personagem hostil em linha de visão se move.",
+        "effect": "O Ultra pode usar {Boost}. Essa reação pode ser usada inlimitadas vezes por round.",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false
+    },
+    {
+        "id": "ldc_npct_legiao",
+        "name": "Legião",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+4 E-Defense} (até um máximo de {20}) e {+1 accuracy} em todos os {tech attacks}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_incansavel",
+        "name": "Incansável",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra pode usar {Overcharge}. Ao invés do custo padrão, ele sempre recebe {1d6 Heat}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_visao",
+        "name": "Visão",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra ignora {Invisible} e personagens hostis dentro dos {Sensores} não podem usar {Hide}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_construcao_superior",
+        "name": "Cosntrução Superior",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Esse trait substitui {Resiliente}. O Ultra recebe {Resistência} a um dos seguintes tipos de dano: {Kinetic, Energy} ou {Explosive}. Ele não pode receber {Resistência permanente de mais que dois tipos de dano, seja resultante desse ou de outros sistemas.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_frame_superior",
+        "name": "Frame Superior",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {Immunity} a {Slowed, Shredded} e {Immobilized}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_reator_superior",
+        "name": "Reator Superior",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra ganha {Immunity} a {Stunned} e {Exposed}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_mira_superior",
+        "name": "Mira Superior",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra ignora cobertura quando fizer um {ataque ranged}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_manutencao_suprema",
+        "name": "Manutenção Suprema",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {Immunity} a {Jammed}; adicionalmente o Ultra pode recarregar uma arma com a tag {Loading} como uma {Free action} no seu turno e podem reparar uma arma ou sistema destruído com uma {Quick action}.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_free_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npct_corpo-a-corpo-supremo",
+        "name": "Corpo-a-corpo Supremo",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {+1 accuracy} em todos os {ataques melee}; adiconalmente, uma vez no seu turno, o Ultra pode usar {Grapple, Ram} ou fazer um ataque melee como {Free action}.",
+        "tags": [
+            {
+                "id": "tg_free_action"
+            }
+        ] 
+    },
+    {
+        "id": "ldc_npct_imparavel",
+        "name": "Imparável",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Ultra recebe {Immunity a todo movimento involuntário}, incluindo {Knockback} e {Prone}.",
+        "tags": [] 
+    },
+    {
+        "id": "ldc_npct_chamas_infernais",
+        "name": "Chamas Infernais",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "No T2-3, essa arma pode fazer dois ataques de uma vez, mas a área dos dois ataques não pode se sobrepor.",
+        "tags": [],
+        "weapon_type": "Heavy CQB",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [3,3,3]
+            },
+            {
+                "type": "Burn",
+                "damage": [4,5,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Cone",
+                "val": 5
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npct_torreta_devastadora",
+        "name": "Torreta Devastadora",
+        "origin": {
+            "type": "Template",
+            "name": "Ultra",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma pode pode atacar simultaneamente todo alvo hostil dentro de {Range} e linha de visão.",
+        "tags": [],
+        "weapon_type": "Heavy Cannon",
+        "attack_bonus": [1,2,3],
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,6,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            }
+        ],
+        "on_hit": ""
     }
 ]

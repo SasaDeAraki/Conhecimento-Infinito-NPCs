@@ -145,5 +145,50 @@
             "ldc_npct_granadas_repulsivas"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npct_ultra",
+        "name": "Ultra",
+        "description": "Ultras são os inimigos individuais mais perigosos que um lanceiro pode enfrentar no campo de batalha – os campeões, soldados favoritos, escolhidos e outros guerreiros poderosos de uma força de combate. Um Ultra pode comandar uma pequena comitiva ou liderar um exército na frente, mas não são grandes estrategistas. Suas principais tarefas são sempre o envolvimento direto com o inimigo, mantendo ou rompendo linhas e garantindo, por meio de esforços heróicos, que seu lado ganhe o dia.<br><br>Ultras são inimigos poderosos capazes de enfrentar vários mechs ao mesmo tempo, nos moldes dos personagens “chefes” dos videogames. Assim como os Elites, eles têm ESTRUTURA extra, o que significa que rolam na tabela de danos à estrutura e são muito mais resistentes do que a maioria dos NPCs. Por serem muito mais poderosos que os NPCs normais (e controlá-los é muito mais complexo), é recomendado que você use apenas um Ultra em qualquer encontro de combate.",
+        "base_features": [
+            "ldc_npct_melhor_dos_melhores",
+            "ldc_npct_espanto_e_temor",
+            "ldc_npct_mortal_ultra",
+            "ldc_npct_juggernaut",
+            "ldc_npct_reforcado_ultra",
+            "ldc_npct_lendario",
+            "ldc_npct_especialista_ultra",
+            "ldc_npct_resiliente",
+            "ldc_npct_reflexo",
+            "ldc_npct_sistemas_e_tracos_ultra"
+        ],
+        "optional_features": [
+            "ldc_npct_armadura_argus",
+            "ldc_npct_propulsão_de_sobrevoo",
+            "ldc_npct_campo_repulsor",
+            "ldc_npct_escudo_de_cerco",
+            "ldc_npct_protecao_prateada",
+            "ldc_npct_disparo_fulminante",
+            "ldc_npct_modulo_de_voleio",
+            "ldc_npct_misseis_de_caca_ultra",
+            "ldc_npct_devastador",
+            "ldc_npct_evasivo",
+            "ldc_npct_extra_mortal",
+            "ldc_npct_fortaleza_ultra",
+            "ldc_npct_liderar_investida",
+            "ldc_npct_legiao",
+            "ldc_npct_incansavel",
+            "ldc_npct_visao",
+            "ldc_npct_construcao_superior",
+            "ldc_npct_frame_superior",
+            "ldc_npct_reator_superior",
+            "ldc_npct_mira_superior",
+            "ldc_npct_manutencao_suprema",
+            "ldc_npct_corpo-a-corpo-supremo",
+            "ldc_npct_imparavel",
+            "ldc_npct_chamas_infernais",
+            "ldc_npct_torreta_devastadora"
+        ],
+        "power": 100
     }
 ]

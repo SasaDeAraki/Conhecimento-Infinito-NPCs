@@ -7385,5 +7385,96 @@
         "type": "Trait",
         "effect": "O Veteran sempre toma o primeiro turno, mesmo que aja antes de PCs. Sempre que houver a dúvida de quem agirá primeiro - tanto narrativamente quanto em combate - sempre será o Veteran. Se multiplos personagens tiverem esse trait, apenas um deles poderá usá-lo cada vez.",
         "tags": []
+    },
+    {
+        "id": "ldc_npct_manobragem_limitada",
+        "name": "Manobragem Limitada",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle deve sempre se mover em linha reta, por mais que ele possa {Boostar} para direções diferentes. Adicionalmente, o Vehicle não pode escalar ou nadar, e só podem limpar {Prone} quando estiverem adjacentes a um aliado.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_tripulacao_vehicle",
+        "name": "Tripulção",
+        "origin": {
+            "type": "Template",
+            "name": "Veteran",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Se o veículo for maior do que {Size 1/2}, ele pode possuir uma tripulação; se possuir, ele tem pelo menos tantos membros quanto metade do seu {Size}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_ataques_melee_limitados_vehicle",
+        "name": "Ataques Melee Limitados",
+        "origin": {
+            "type": "Template",
+            "name": "Vehicle",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle não pode realizar outros ataques melee além de {Ram}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_tipo",
+        "name": "Tipo",
+        "origin": {
+            "type": "Template",
+            "name": "Vehicle",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle pode escolher uma ou mais das opções da {Lista de Traços de Veículos}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_voador_vehicle",
+        "name": "Voador",
+        "origin": {
+            "type": "Template",
+            "name": "Vehicle",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle pode voar quando se move ou {Boosta}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_transporte",
+        "name": "Transporte",
+        "origin": {
+            "type": "Template",
+            "name": "Vehicle",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle pode transportar um {Squad} ou personagens que o tamanho combinado seja menos que seu próprio {Size}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npct_esteiras_ou_planador",
+        "name": "Esteiras ou Planador",
+        "origin": {
+            "type": "Template",
+            "name": "Vehicle",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Vehicle ignora {terreno difícil}.",
+        "tags": []
     }
 ]

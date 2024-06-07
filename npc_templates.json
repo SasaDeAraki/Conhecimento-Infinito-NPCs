@@ -222,5 +222,21 @@
             "ldc_npct_velocidade_da_vibora"
         ],  
         "power": 100
+    },
+    {"id": "ldc_npct_vehicle",
+        "name": "Vehicle",
+        "description": "Apesar da prevalência dos mechs, a maior parte do combate blindado, transporte, reconhecimento e inúmeras outras tarefas civis e militares recai sobre os humildes veículos sobre esteiras ou rodas. Alimentados por fusão, combustão interna, eletricidade, hidrogênio, vento, pessoas, motores paracausais ou algo ainda mais incomum, os veículos podem transportar pessoas, montar armas, ser cingidos em armaduras ou de outra forma realizar rapidamente as tarefas simples para as quais foram projetados: mover pessoas e coisas rapidamente e em boas condições do ponto A ao ponto B.<br><br>Este modelo pode ser aplicado a qualquer NPC MECH. Eles perdem a etiqueta MECH e se tornam um VEÍCULO.",
+        "base_features": [
+            "ldc_npct_manobragem_limitada",
+            "ldc_npct_tripulacao_vehicle",
+            "ldc_npct_ataques_melee_limitados_vehicle",
+            "ldc_npct_tipo"
+        ],
+        "optional_features": [
+            "ldc_npct_voador_vehicle",
+            "ldc_npct_transporte"
+        ],  
+        "power": 100
+
     }
 ]

@@ -976,5 +976,44 @@
             "ldc_npcf_ataque_orbital"
         ],
         "power": 100
+    },
+    {
+        "id": "ldc_npcc_seeder",
+        "name": "Seeder",
+        "role": "controller",
+        "info": {
+            "flavor": "Os mechas do arquétipo semeador são sapadores, adeptos da implantação de redes defensivas de minas e armadilhas. Carregados de munições e repletos de conjuntos de sensores, os Seeders operam em pequenas equipes: juntos, eles cobrem os campos de batalha com armadilhas e armadilhas, plantando minas e outros sistemas de negação de área para guiar o inimigo até as caixas de morte.",
+            "tactics": "Os mechas do arquétipo semeador são sapadores, adeptos da implantação de redes defensivas de minas e armadilhas. Carregados de munições e repletos de conjuntos de sensores, os Seeders operam em pequenas equipes: juntos, eles cobrem os campos de batalha com armadilhas e armadilhas, plantando minas e outros sistemas de negação de área para guiar o inimigo até as caixas de morte."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [12, 14, 16],
+            "armor": [2, 2, 2],
+            "evade": [7, 8, 9],
+            "edef": [10, 10, 11],
+            "heatcap": [10, 10, 10],
+            "hull": [0, 1, 2],
+            "agility": [0, 0, 0],
+            "systems": [2, 3, 4],
+            "engineering": [0, 0, 0],
+            "speed": [4, 4, 4],
+            "sensor": [15, 15, 15],
+            "save": [12, 15, 18],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_posicionar_minas",
+            "ldc_npcf_lancador_de_granadas_gravitacional"
+        ],
+        "optional_features": [
+            "ldc_npcf_minas_saltitantes",
+            "ldc_npcf_tripwire",
+            "ldc_npcf_posicionador_agil",
+            "ldc_npcf_grav_spike",
+            "ldc_npcf_det_spike"
+        ],
+        "power": 100
     }
 ]

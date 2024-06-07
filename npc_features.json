@@ -4120,5 +4120,146 @@
                 "id": "tg_full_action"
             }
         ]
+    },
+    {
+        "id": "ldc_npcf_posicionar_minas",
+        "name": "Posicionar Minas",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Seeder posiciona uma das minas abaixo em {Range 3}. Uma vez posicionada, a mina do Seeder detona quando um personagem hostil se move sobre ela, criando uma explosão {Blast 1} que afeta aliados e inimigos.<br><ul><li>{Mina de Atordoamento:} Personagens na área de efeito que falharem em um teste de {Engineering} recebe {Stunned} até o fim de seu próximo turno.</li><li>{Mina Explosiva:} Personagens na área de efeito recebem {8//12/16 Explosive}, ou {metade} se sucederem em um teste de {Agility}.</li><li>{Mina Supressora:} Personagens na área de efeito que falharem em um teste de {Hull} se tornam {Immobilized} até o fim de seu próximo turno, e então {Slowed} até o fim de seu turno subsequente.</li><li>{Mina de Choque:} Personagens na área de efeito que falharem em um teste de {Systems} recebem {Jammed} até o fim de seu próximo turno, então {Impaired} até o fim do turno subsequente.</li></ul><br>As minas do Seeder são {Invisible} e não podem ser miradas, mas personagens hostis com alcance de {Sensores} podem revelá-las ao suceder em um teste de {Systems}. Personagens podem desarmá-las sucedendo em um teste de {Systems} com uma {Quick action} enquanto estiverem no mesmo espaço; entretanto, em uma falha, a mina detona.", 
+        "tags": [
+            {
+                "id": "tg_mine"
+            },
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_lancador_de_granadas_gravitacional",
+        "name": "Lançador de Granadas Gravitacional",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            },
+            {
+                "id": "tg_knockback",
+                "val": 1
+            }
+        ],
+        "weapon_type": "Main Launcher",
+        "attack_bonus": [2,4,6],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [2,3,4]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            },
+            {
+                "type": "Blast",
+                "val": 1
+            }
+        ],
+        "on_hit": "" 
+    },
+    {
+        "id": "ldc_npcf_minas_saltitantes",
+        "name": "Minas Saltitantes",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "Minas posicionadas com {Posicionar Minas} também ativam quando um personagem hostil voa ou se move até {10 espaços} acima dela, saltando até {10 espaços} para detonar próximo ao primeiro personagem que elas encontrarem.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_tripwire",
+        "name": "Tripwire",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "{Posicionar Minas} recebe {Recharge 5+}. Minas posicionadas com {Posicionar Minas} agora ocupam {Line 3} e detonam a partir do espaço mais próximo quando personagens hostis adentrarem ou crusarem a área.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_posicionador_agil",
+        "name": "Posicionador Ágil",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait", 
+        "effect": "{Posicionar Minas} posiciona {duas} minas de uma vez, não {uma}.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_grav_spike",
+        "name": "Grav Spike",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem em linha de visão e {Range 5} deve suceder em um teste de {Systems} ou um grav spike se fixa a ele. O Seeder pode detonar todos os grav spikes como um {protocolo}, fazendo com que os alvos receba, {4/6/8 Explosive AP} e sejam empurrados {3 espaços} em uma direção escolhida pelo Seeder. Uma {Quick Action} e um teste sucedido de {Systems} remove um grav spike.", 
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_det_spike",
+        "name": "Det Spike",
+        "origin": {
+            "type": "Class",
+            "name": "Seeder",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Até três personagens em linha de visão e {Range 5} devem suceder em um teste de {Systems}, ou um det spike se prende a ele. No início do próximo turno do Seeder, todos os det spikes detonam, criando uma explosão {Burst 1} que dá {3/5/7 Explosive} a todos os personagens afetados. Personagens podem receber dano de mais de um spike se estiver dentro de áreas em sobreposição.", 
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 5
+            },
+            {
+                "id": "tg_full_action"
+            }
+        ]
     }
 ]

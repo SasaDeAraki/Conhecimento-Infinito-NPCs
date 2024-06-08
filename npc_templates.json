@@ -234,7 +234,8 @@
         ],
         "optional_features": [
             "ldc_npct_voador_vehicle",
-            "ldc_npct_transporte"
+            "ldc_npct_transporte",
+            "ldc_npct_esteiras_ou_planador"
         ],  
         "power": 100
 

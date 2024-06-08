@@ -3508,7 +3508,7 @@
             },
             {
                 "id": "tg_reliable",
-                "val": "{2,3,3}"
+                "val": [2,3,3]
             },
             {
                 "id": "tg_knockback",
@@ -6723,7 +6723,7 @@
         },
         "locked": false,
         "type": "System",
-        "effect": "Quando personagens hostis iniciam seus turnos adjacentes ao Ultra ou se tornam adjacentes pela primeira vez no turno, recebem {2/4/6 Energy + 2 Heat} e devem suceder em um teste de {Systems} ou recebem {Impaired} até o fim de seu próximo turno.",
+        "effect": "Quando personagens hostis iniciam seus turnos adjacentes ao Ultra ou se tornam adjacentes pela primeira vez no turno, recebem <b>2/4/6 Energy + 2 Heat</b> e devem suceder em um teste de {Systems} ou recebem {Impaired} até o fim de seu próximo turno.",
         "tags": []
     },
     {
@@ -6939,7 +6939,7 @@
     },
     {
         "id": "ldc_npct_construcao_superior",
-        "name": "Cosntrução Superior",
+        "name": "Construção Superior",
         "origin": {
             "type": "Template",
             "name": "Ultra",

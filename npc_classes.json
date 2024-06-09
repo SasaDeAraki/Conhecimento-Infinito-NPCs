@@ -150,6 +150,7 @@
         "base_features": [
             "ldc_npcf_bioarmadura_kai",
             "ldc_npcf_lamina_fervente",
+            "ldc_npcf_marca_do_assassino",
             "ldc_npcf_salto"
         ],
         "optional_features": [

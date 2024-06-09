@@ -574,6 +574,23 @@
         "on_hit": ""
     },
     {
+        "id": "ldc_npcf_marca_do_assassino",
+        "name": "Marca do Assassino",
+        "origin": {
+            "type": "Class",
+            "name": "Assassin",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Assassin escolhe um personagem alvo em linha de visão. Pelo resto da cena, esses efeitos se aplicam:<br><ul><li>O Assassin tem <b>Resistência ao dano dado pelo alvo</b>.</li><li>Dano dado ao alvo pelo Assassin não pode ser reduzido.</li><li>O Assassin recebe <b>+1 precisão<b> em todos os testes forçados pelo alvo.</li></ul><br>O Assassin só pode escolher um novo alvo se o alvo atual for destruído.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
         "id": "ldc_npcf_salto",
         "name": "Salto",
         "origin": {
@@ -5453,7 +5470,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "A Monstruosidade tem pelo menos {uma mutação opcional}.",
+        "effect": "A Monstruosidade tem pelo menos <b>uma mutação opcional</b>.",
         "tags": [] 
     },
     {

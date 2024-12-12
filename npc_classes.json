@@ -203,6 +203,47 @@
         "power": 100
     },
     {
+        "id": "ldc_npcc_avenger",
+        "name": "Avenger",
+        "role": "striker",
+        "info": {
+            "flavor": "Os mechs da classe Avenger são tipicamente pilotados por fanáticos, guerreiros de carreira e pessoas de culturas que dão valor significativo às castas pretorianas ou guerreiras. Em batalha, esses pilotos agem como multiplicadores de força e líderes de esquadrão, mas tendem a ser mais notáveis ​​como indivíduos do que por suas máquinas. Os pilotos Avenger têm laços estreitos com seus aliados – fortes o suficiente para que as emoções intensas da batalha, perda e luta possam levá-los a feitos incríveis de heroísmo quando a maré vira a favor de seus inimigos",
+            "tactics": "Embora não sejam particularmente perigosos para começar, os Vingadores se tornam muito mais ameaçadores quando seus aliados começam a cair ao redor deles. Coloque-os perto de outros alvos de alta prioridade para tirar vantagem de sua habilidade <b>VINGAR</b>, forçando os personagens a escolher entre eliminá-los primeiro ou sofrer mais por destruir seus aliados."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [15, 18, 21],
+            "armor": [0, 0, 0],
+            "evade": [10, 12, 15],
+            "edef": [8, 10, 12],
+            "heatcap": [6, 6, 8],
+            "hull": [1, 2, 3],
+            "agility": [1, 3, 5],
+            "systems": [0, 0, 0],
+            "engineering": [0, 0, 0],
+            "speed": [5, 5, 5],
+            "sensor": [10, 10, 10],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_slug_pistol",
+            "ldc_npcf_estilhacos_explosivos",
+            "ldc_npcf_vingar",
+            "ldc_npcf_armadura_de_assalto"
+        ],
+        "optional_features": [
+            "ldc_npcf_mortal",
+            "ldc_npcf_vinganca_incessante",
+            "ldc_npcf_vinganca_contagiosa",
+            "ldc_npcf_judge",
+            "ldc_npcf_mimic_mesh"
+        ],
+        "power": 100
+    },
+    {
         "id": "ldc_npcc_barricade",
         "name": "Barricade",
         "role": "controller",
@@ -273,7 +314,7 @@
             "ldc_npcf_lancador_de_granadas_rotatorio",
             "ldc_npcf_escudo_de_assalto_pesado",
             "ldc_npcf_interacao_amigavel",
-            "ldc_npcf_guardiao"
+            "ldc_npcf_guardiao_bastion"
         ],
         "optional_features": [
             "ldc_npcf_sistema_de_negacao_de_ameacas_proximas",
@@ -654,6 +695,46 @@
         "power": 100
     },
     {
+        "id": "ldc_npcc_lurker",
+        "name": "Lurker",
+        "role": "striker",
+        "info": {
+            "flavor": "Inimigos da classe Lurker são raros, mas são visões aterrorizantes no campo de batalha. Normalmente utilizando nuvens de nanites analógicas de greywash e compressores de matéria, eles se movem de enxame em enxame, atacando com chicotes de nanites e usando seus enxames para desviar golpes tão facilmente quanto água.",
+            "tactics": "Lurkers são inimigos lentos, mas poderosos, que são muito assustadores dentro de suas <b>ZONA DE MORTALHA</b>. Jogadores astutos usarão hacking ou armas inteligentes para dispersar essas zonas e tornar os Lurkers mais vulneráveis. Os Lurkers podem usar as zonas uns dos outros, então ter vários Lurkers em um campo de batalha pode multiplicar muito seu poder."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 14, 18],
+            "armor": [1, 1, 1],
+            "evade": [10, 12, 14],
+            "edef": [6, 6, 6],
+            "heatcap": [5, 5, 8],
+            "hull": [2, 3, 4],
+            "agility": [2, 3, 4],
+            "systems": [0, 0, 0],
+            "engineering": [-1, -1, -1],
+            "speed": [3, 3, 4],
+            "sensor": [5, 5, 5],
+            "save": [12, 14, 16],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_mortalha_umbral",
+            "ldc_npcf_chicote_despedacante",
+            "ldc_npcf_troca_umbral"
+        ],
+        "optional_features": [
+            "ldc_npcf_consumir_zona",
+            "ldc_npcf_zona_defensiva",
+            "ldc_npcf_estilhaco_devorador",
+            "ldc_npcf_fortalecer_zona",
+            "ldc_npcf_garras_desmanteladoras"
+        ],
+        "power": 100
+    },
+    {
         "id": "ldc_npcc_mirage",
         "name": "Mirage",
         "role": "support",
@@ -814,6 +895,97 @@
             "ldc_npcf_armadura_de_cerco_pyro",
             "ldc_npcf_bomba_napalm",
             "ldc_npcf_fervendo"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_spite",
+        "name": "Spite",
+        "role": "defender",
+        "info": {
+            "flavor": "O Spite é um chassi de defensor de tecnologia agressivo comumente usado por cultos tecnológicos HORUS, piratas e facções insurgentes. Ao usar um liturgicode de substituição de reator, esses mechs são capazes de abrir os núcleos do reator de um mech e mantê-los assim, espetando-os com feedback cada vez que uma arma é disparada. Pilotos desavisados ​​ou imprudentes que entram em campo contra um piloto Spite experiente muitas vezes se veem cozinhando até a morte.",
+            "tactics": "O Spite pune personagens que dependem de gerenciamento de calor ou geração cuidadosa de calor para maximizar sua produção de dano. Use <b>APRISIONAR</b> para bloquear perigosos causadores de dano e <b>ENTRONIZAR</b> em algum lugar onde ele possa proteger seus aliados, mas tenha cuidado - ele é relativamente imóvel e não pode fazer muito sozinho."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [18, 20, 22],
+            "armor": [2, 3, 4],
+            "evade": [6, 6, 6],
+            "edef": [10, 14, 16],
+            "heatcap": [5, 6, 7],
+            "hull": [0, 0, 0],
+            "agility": [-2, -2, 2],
+            "systems": [2, 3, 4],
+            "engineering": [2, 3, 4],
+            "speed": [2, 2, 2],
+            "sensor": [20, 20, 20],
+            "save": [13, 15, 17],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_entronar",
+            "ldc_npcf_guardiao_spite",
+            "ldc_npcf_aprisionar",
+            "ldc_npcf_agarrar"
+        ],
+        "optional_features": [
+            "ldc_npcf_pressao_esmagadora",
+            "ldc_npcf_escudo_de_contato",
+            "ldc_npcf_prisao_insidiosa",
+            "ldc_npcf_carceri",
+            "ldc_npcf_enraizado_spite"
+        ],
+        "power": 100
+    },
+    {
+        "id": "ldc_npcc_strider",
+        "name": "Strider",
+        "role": "artillery",
+        "info": {
+            "flavor": "Striders são pilotados por batedores, lobos solitários e rebeldes - geralmente o tipo de pilotos acostumados a passar muito tempo atrás das linhas inimigas. A enorme quantidade de equipamentos que esses pilotos de elite trazem consigo lhes dá a habilidade de se adaptar a quase qualquer circunstância.",
+            "tactics": "O Strider é muito flexível, mas apenas eficaz em certas faixas de alcance. Use suas habilidades para reposicioná-lo para que ele possa aproveitar ao máximo seus vários kits. Os jogadores descobrirão que se movimentar é uma estratégia valiosa contra o Strider, pois estar muito perto ou muito longe para que ele ataque efetivamente pode torná-lo ineficaz."
+        },
+        "stats": {
+            "activations": [1, 1, 1],
+            "stress": [1, 1, 1],
+            "structure": [1, 1, 1],
+            "hp": [10, 12, 14],
+            "armor": [0, 0, 0],
+            "evade": [10, 12, 14],
+            "edef": [8, 8, 10],
+            "heatcap": [5, 5, 5],
+            "hull": [-2, 0, 0],
+            "agility": [2, 4, 4],
+            "systems": [-1, 0, 2],
+            "engineering": [1, 2, 3],
+            "speed": [4, 4, 4],
+            "sensor": [20, 20, 20],
+            "save": [10, 12, 14],
+            "size": [[1], [1], [1]]
+        },
+        "base_features": [
+            "ldc_npcf_trocar_de_kit",
+            "ldc_npcf_kit_do_atirador",
+            "ldc_npcf_kit_do_escaramucador",
+            "ldc_npcf_rifle_longo_do_atirador",
+            "ldc_npcf_abaixar",
+            "ldc_npcf_rifle_explosivo",
+            "ldc_npcf_reposicionar"
+        ],
+        "optional_features": [
+            "ldc_npcf_trainamento_CQB",
+            "ldc_npcf_determinacao",
+            "ldc_npcf_troca_de_arma_ofensiva",
+            "ldc_npcf_kit_de_cerco",
+            "ldc_npcf_kit_do_granadeiro",
+            "ldc_npcf_morteiro_de_ombro",
+            "ldc_npcf_escudo_anti_explosao",
+            "ldc_npcf_enraizado",
+            "ldc_npcf_shotgun_magnetica",
+            "ldc_npcf_granada_de_fumaca",
+            "ldc_npcf_pilar_danificador"
         ],
         "power": 100
     },

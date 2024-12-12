@@ -273,7 +273,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Personagens aliados poder usar o Aegis como <b>Hard cover</b>.",
+        "effect": "Personagens aliados adjacentes podem usar o Aegis como <b>Hard cover</b>.",
         "tags": []
     },
     {
@@ -1175,7 +1175,7 @@
         ]
     },
     {
-        "id": "ldc_npcf_guardiao",
+        "id": "ldc_npcf_guardiao_bastion",
         "name": "Guardião",
         "origin": {
             "type": "Class",
@@ -1184,7 +1184,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Personagens aliados poder usar o Bastion como <b>Hard cover</b>.",
+        "effect": "Personagens aliados adjacentes podem usar o Bastion como <b>Hard cover</b>.",
         "tags": []
     },
     {
@@ -2376,7 +2376,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Personagens aliados poder usar o Goliath como Hard cover.",
+        "effect": "Personagens aliados adjacentes podem usar o Golias como <b>Hard cover</b>.",
         "tags": []
     },
     {
@@ -4366,7 +4366,7 @@
         },
         "locked": false,
         "type": "Trait",
-        "effect": "Personagens aliados poder usar o Sentinel como Hard cover.",
+        "effect": "Personagens aliados adjacentes podem usar o Sentinel como <b>Hard cover</b>.",
         "tags": []
     },
     {
@@ -7492,6 +7492,889 @@
         "locked": false,
         "type": "Trait",
         "effect": "O Vehicle ignora <b>terreno difícil</b>.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_slug_pistol",
+        "name": "Slug Pistol",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "weapon_type": "Auxiliary CQB",
+        "attack_bonus": [2,3,4],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [4,5,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 8
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": ""
+    },
+    {
+        "id": "ldc_npcf_estilhacos_explosivos",
+        "name": "Extilhaços Explosivos",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando o ataque do Avenger danifica outro personage, o Avenger pode forçar esse personagem a realizar um teste de <b>Engineering</b> ou será coberto em estilhaços exlposivos até o começo de seu próximo turno. Até lá, eles recebem <b>3/4/5 Kinetic AP</b> após cada rolage de ataque realizada. Personagens afetados estão cientes desse efeito.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_vingar",
+        "name": "Vingar",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Se um aliado que não seja um <b>Grunt</b> é destruído em <b>5 espaços</b> do Avenger, pelo resto da cena o Avenger recebe <b>Overshield 8/12/16, +5 dano base</b> em seus ataques, e <b>+1 accuracy</b> em todos os ataques, testes e saves.",
+        "tags": [
+            {
+                "id": "tg_scene",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_armadura_de_assalto",
+        "name": "Armadura de Assalto",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Avenger tem <b>resistência a todo o dano dentro de 3 espaços.</b>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_mortal",
+        "name": "Mortal",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Avenger aplica <b>+1d6 Kinetic</b> em acertos críticos.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_vinganca_incessante",
+        "name": "Vingança Incessante",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Vingança pode ser ativada qualquer número de vezes por cena, mas após a primeira vez, ela não garante mais dano adicional. Ao invés disso garante <b>+4/5/6 Overshield.</b> Esse Overshield não subsitui <b>Overshields</b> passados, ao invés disso o aumenta essa quantidade.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_vinganca_contagiosa",
+        "name": "Vingança Contagiosa",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando <b>Vingança</b> é ativada, todos os aliados em <b>5 espaços</b> - tirando o Avenger - recebem <b>4/6/8 Overshield.<b>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_judge",
+        "name": "Judge",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_loading"
+            }
+        ],
+        "weapon_type": "Main CQB",
+        "accuracy": [-1,-1,-1],
+        "damage": [
+            {
+                "type": "Energy",
+                "damage": [10,12,14]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "O alvo deve passar em um teste de <b>Agility</b> ou recebe <b>Prone</b>.<br>Essa arma recarrega automáticamente sempre que um personagem aliado em <b>3 espaços</b> é destruído."
+    },
+    {
+        "id": "ldc_npcf_mimic_mesh",
+        "name": "Mimic Mesh",
+        "origin": {
+            "type": "Class",
+            "name": "Avenger",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "trigger": "Um personagem aliado em <b>5 espaços</b> falha em um teste ou é atingido por um ataque de um personagem hostil o qual o Avenger tenha linha de visão.",
+        "effect": "O Avenger pode se mover <b>3 espaços</b> em direção ao atacante.",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 999
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_mortalha_umbral",
+        "name": "Mortalha Umbral",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "No início de qualquer combate, quando chegar como reforço, ou como <b>protocolo 1/round</b>, o Lurker pode criar uma tempestade ondulante de nanitas - uma <b>Zona de Mortalha</b> - em uma área livre de <b>Burst 1</b> em até <b>5 espaços</b>.<br><br><b>Zonas de Mortalha</b> concedem <b>Soft Cover</b>. Adicionalmente, enquanto dentro de uma Zona de Mortalha:<br><ul><li>Lurkers (incluindo este) se tornam <b>Invisible</b> e recebem resistência a <b>todo o dano e calor</b>.</li><li>Personagens hostís recebem <b>Shredded</b> e <b>Impaired</b>.</li></ul><br>Zonas de Mortalha só podem ser atingidas por <b>Tech Attacks e armas que usam E-Defence</b> (ex.: smart weapons). A Zona tem <b>E-Defence 10/13/16</b> e dispersa após um ataque bem sucedido.<br>O Lurker não pode ter mais do que três <b>Zonas de Mortalha</b> ativas ao mesmo tempo. <b>Zonas de Mortalha</b> podem se sobrepor mas seus efeitos nao stackam.",
+        "tags": [
+            {
+                "id": "tg_protocol"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_chicote_despedacante",
+        "name": "Chicote Despedaçante",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma recebe <b>Threat 3</b> e <b>1 accuracy</b> quando usada dentro de uma <b>Zona de Mortalha</b>.",
+        "tags": [],
+        "weapon_type": "Heavy Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [8,10,12]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ],
+        "on_hit": "O alvo é puxado adjacente ao Lurker, ou o mais próximo o possível.",
+        "on_critical_hit": "Adicionalmente ao efeito acima, o alvo é imediatamente <b>Grappled</b>."
+    },
+    {
+        "id": "ldc_npcf_troca_umbral",
+        "name": "Troca Umbral",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Lurker <b>teleporta</b> para uma <b>Zona de Mortalha</b> em linha de visão.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_consumir_zona",
+        "name": "Consumir Zona",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Lurker consome uma <b>Zona de Mortalha</b> que ele esteja dentro ou adjacente, limpando todas as condições, recebendo <b>Overshield 4/6/8</b>, e se movendo espaços igual a sua <b>Speed</b>. O Lurker não pode consumir uma zona que tenha criado na mesma rodada.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            },
+            {
+                "id": "tg_recharge",
+                "val": 4
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_zona_defensiva",
+        "name": "Zona Defensiva",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "trigger": "O Lurker recebem <b>Dano</b> ou <b>Calor</b>.",
+        "effect": "Ele cria uma <b>Zona de Mortalha</b> centrada nele mesmo, mesmo que já haja três ativas.",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_estilhaco_devorador",
+        "name": "Estilhaço Devorador",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Enquanto dentro de uma <b>Zona de Mortalha</b>, o Lurker também pode cuspir uma torrente <b>Cone 3</b> de lâminas de nanitas afiadíssimas como uma quick action. Personagens dentro da área de efeito devem passar em um teste de <b>Engineering</b> ou recebem <b>4/5/6 Energy AP</b>. Em um sucesso, recebem metade do dano.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_fortalecer_zona",
+        "name": "Fortalecer Zona",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Lurker expade a <b>Zona de Mortalha</b> que está ocupando atualmente para <b>Burst 2</b> Isso pode fazer a área envolver mais personagens. Adicionalmente agora é necessário dois ataques bem sucedidos para dispersar esse efeito.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_garras_desmanteladoras",
+        "name": "Garras Desmanteladoras",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma aplica o dobro de dano quando usada dentro de uma <b>Zona de Mortalha</b>.",
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "weapon_type": "Heavy Melee",
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [5,7,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Threat",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_trocar_de_kit",
+        "name": "Trocar de Kit",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Strider troca para um dos seus Kits disponíveis, recebendo novas opções de ataque. Ele também recebe um efeito que só pode ser usado essa rodada. Por padrão, o Strider tem dois Kits, o <b>Kit do Atirador</b> e o <b>Kit do Escaramuçador</b>, e pode receber mais com sistemas opcionais.<br><br>Em um turno qualquer, ele só pode usar armas e sistemas de um kit. Quando uma das armas ou sistema do Strider é destruído, essa arma ou sistema deve ser escolhida do kit ativo.<br><br>O Strider inicia o combate com o kit de sua escolha, mas não recebe o bônus de troca até que troque para um kit diferente.",
+        "tags": [
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_trainamento_CQB",
+        "name": "Treinamento em CQB",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Strider tem <b>imunidade</b> a <b>Slowed</b> e não podem ser <b>Grappled</b>.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_determinacao",
+        "name": "Determinação",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando o Strider usa <b>Trocar de Kit</b>, ele pode se mover espaços igual a sua <b>Speed</b> como uma ação livre.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_troca_de_arma_ofensiva",
+        "name": "Troca de Arma Ofensiva",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Quando o Strider usa <b>Trocar de Kit</b>, ele pode dar <b>2 Kinetic</b> para um alvo adjacente. O alvo afetado também deve suceder em um teste de <b>Agility</b> ou é <b>Knocked 3 espaços para trás</b> e recebe <b>Prone</b>.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_kit_do_atirador",
+        "name": "Kit do Atirador",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "<b>Bônus de troca:</b>Apenas nesse turno, o dano do <b>Rifle Longo do Atirador</b> não pode ser reduzido por qualquer maneira e ele ignora a tag de <b>Ordnance</b>.<br><br>Recebe as seguintes armas e sistemas:<br><ul><li><b>Rifle Longo do Atirador</b></li><li><b>Abaixar</b></li></ul>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_kit_do_escaramucador",
+        "name": "Kit do Escaramuçador",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "<b>Bônus de troca:</b>Apenas nesse turno, o Strider se torna <b>Invisible</b> e seu movimento ignora <b>terreno difícil</b> e <b>engagement</b>, e não provova reações.<br><br>Recebe as seguintes armas e sistemas:<br><ul><li><b>Rifle Explosivo</b></li><li><b>Reposicionar</b></li></ul>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_kit_de_cerco",
+        "name": "Kit de Cerco",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "<b>Bônus de troca:</b>O Strider espalha estrepes em uma área de <b>Blast 1</b> em <b>Range 5</b>, transformando o terreno em <b>terreno difícil</b> até o fim da cena. Ele pode posicionar uma peça <b>Size 1</b> que serve de <b>Heavy Cover</b> em qualquer espaço adjacente, que também permanece pelo resto da cena.<br><br>Recebe as seguintes armas e sistemas:<br><ul><li><b>Morteiro de Ombro</b></li><li><b>Escudo anti-explosão</b></li><li><b>Enraizado</b></li></ul>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_kit_do_granadeiro",
+        "name": "Kit do Granadeiro",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "<b>Bônus de troca:</b>O Strider lança uma flashbang em um alvo em linha de visão e <b>Range 5</b>. O Alvo deve suceder em um teste de <b>Agility</b> ou recebe <b>Jammed</b> até o fim do seu próximo turno.<br><br>Recebe as seguintes armas e sistemas:<br><ul><li><b>Shotgun Magnética</b></li><li><b>Granada de Fumaça</b></li><li><b>Pilar Danificador</b></li></ul>",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_rifle_longo_do_atirador",
+        "name": "Rifle Longo do Atirador",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "Essa arma dá <b>9/10/12 Kinetic</b> ao invés do dano padrão se o alvo está além de <b>Range 8</b>.",
+        "tags": [
+            {
+                "id": "tg_ordnance"
+            }
+        ],
+        "weapon_type": "Heavy Rifle",
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [3,4,5]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 20
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_abaixar",
+        "name": "Abaixar",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "trigger": "Um ataque ranged originado de além de <b>Range 8</b> acerta o Strider.",
+        "effect": "O ataque erra e o strider recebe <b>resistência a todo o dano</b> aaté o fim do turno.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_reaction"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_morteiro_de_ombro",
+        "name": "Morteiro de Ombro",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_arcing"
+            }
+        ],
+        "weapon_type": "Main Launcher",
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [4,5,6]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 10
+            },
+            {
+                "type": "Blast",
+                "val": 2
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_escudo_anti_explosao",
+        "name": "Escudo Anti-Explosão",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Strider tem <b>resistência a todo o dano e calor de efeitos vindos de line, cone, blast e burst</b> e recebe <b>+1 accuracy</b> em todos os testes para evitar efeitos que usem esses tipos de alcance.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_enraizado",
+        "name": "Enraizado",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Strider tem <b>imunidade a movimento involuntário</b> forçado por personagens hostis.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_rifle_explosivo",
+        "name": "Rifle Explosivo",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": true
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_knockback",
+                "val": 3
+            }
+        ],
+        "weapon_type": "Heavy CQB",
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Explosive",
+                "damage": [6,7,8]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 3
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_reposicionar",
+        "name": "Reposicionar",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "trigger": "O início do turno.",
+        "effect": "O Strider pode se mover sua <b>Speed</b> em espaços.",
+        "tags": [
+            {
+                "id": "tg_reaction"
+            },
+            {
+                "id": "tg_round",
+                "val": 1
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_shotgun_magnetica",
+        "name": "Shotgun Magnética",
+        "origin": {
+            "type": "Class",
+            "name": "Lurker",
+            "base": false
+        },
+        "locked": false,
+        "type": "Weapon",
+        "effect": "",
+        "tags": [
+            {
+                "id": "tg_ap"
+            }
+        ],
+        "weapon_type": "Main CQB",
+        "accuracy": [1,1,1],
+        "damage": [
+            {
+                "type": "Kinetic",
+                "damage": [2,3,4]
+            }
+        ],
+        "range": [
+            {
+                "type": "Range",
+                "val": 5
+            },
+            {
+                "type": "Threat",
+                "val": 3
+            }
+        ],
+        "on_hit": "O alvo recebe <b>Lock On</b>."
+    },
+    {
+        "id": "ldc_npcf_granada_de_fumaca",
+        "name": "Granada de Fumaça",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Strider lança uma granada de fumaça em um espaço em linha de visão e <b>Range 5</b>, criando uma camada de fumaça <b>Blast 1</b>. Essa área provê <b>soft cover</b> até o fim da cena.",
+        "tags": [
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_pilar_danificador",
+        "name": "Pilar Danificador",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "<b>Pilar Danificador (Size 1, 5/6/8 HP, Tags: Deployable)</b><br><br>Quando posicionado, esse pilar cria uma zona <b>Burst 2 </b> de estática. Personagens hostis dentro da área afetada recebem <b>Jammed</b> até que saiam. O Pilar permanece mesmo se o Strider trocar de kit.",
+        "tags": [
+            {
+                "id": "tg_deployable"
+            },
+            {
+                "id": "tg_limited",
+                "val": 2
+            },
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_entronar",
+        "name": "Entronar",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spite se torna <b>Imobilizado</b> e ativa um escudo crepitante defensivo. Enquanto esse escudo está ativo, quaisquer personagens que fizerem ataques mellee ou ranged contra o Spite ou seus aliados adjacentes recebem <b>3/4/5 Energy AP</b> antes da rolagem de ataque ser feita. Esse efeito dura até o fim do próximo turno do Spite, ou até que ele termine esse efeito com uma <b>Quick Action</b>.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            },
+            {
+                "id": "tg_shield"
+            },  
+            {
+                "id": "tg_quick_action"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_guardiao_spite",
+        "name": "Guardião",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": true
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens aliados adjacentes podem usar o Spite como <b>Hard cover</b>.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_aprisionar",
+        "name": "Aprisionar",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spite escolhe um alvo dentro de seus <b>Sensores</b> e linha de visão: O alvo deve passar em um teste de <b>Systems</b> ou recebem <b>4/5/6 Energy</b> e se tornam infectados por um vírus catalizador. Enquanto afetados por esse vírus, o alvo não pode limpar nenhum <b>calor</b> de nenhum modo (exeto por sobreaquecer). Esse efeito dura pelo resto da cena, até que o Spite seja destruído, ou até que o alvo se mova adjacente ao Spite. Enquanto pelo menos um personagem estiver sendo afetado pelo vírus, o Spite é <b>Imobilizado</b>.<br><br>Alvos que ja estiverem sofrendo do vírus recebem o <b>dobro de dano</b> se aprisionados de novo.",
+        "tags": [
+            {
+                "id": "tg_quick_tech"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_agarrar",
+        "name": "Agarrar",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": true
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "Um personagem hostil dentro dos <b>Sensores</b> e linha de visão deve suceder um teste de <b>Systems</b> ou recebem <b>2/3/4 Heat</b> e se tornam <b>Imobilizados</b> até o fim do seu próximo turno. Em um sucesso, não recebem calor e são <b>Slowed</b> ao invés de Imobilizados até o início do seu próximo turno.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            }, 
+            {
+                "id": "tg_quick_tech"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_pressao_esmagadora",
+        "name": "Pressão Esmagadora",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spite escolhe um alvo dentro de seus <b>Sensores</b> e linha de visão: O alvo recebe <b>+3 difficulty</b> para atacar qualquer personagem além do Spite até o início do próximo turno do Spite.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 4
+            }, 
+            {
+                "id": "tg_quick_tech"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_escudo_de_contato",
+        "name": "Escudo de Contato",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spite escolhe um aliado dentro de linha de visão e <b>Range 5</b>. Qualquer personagem que acerte com sucesso esse o portador do escudo imediatamente se torna <b>Jammed</b> até o fim do seu próximo turno. Esse efeito dura até que seja ativado, ou pelo resto da cena.",
+        "tags": [
+            {
+                "id": "tg_round",
+                "val": 1
+            }, 
+            {
+                "id": "tg_shield"
+            },
+            {
+                "id": "tg_quick_tech"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_prisao_insidiosa",
+        "name": "Prisão Insidiosa",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "Personagens afetados por <b>Aprisionar</b> recebem <b>5/7/9 Energy AP</b> imediatamente após usarem <b>Overcharge</b>. Personagens afetados estão cientes desse efeito, esse dano não pode ser previnido ou reduzido de modo algum.",
+        "tags": []
+    },
+    {
+        "id": "ldc_npcf_carceri",
+        "name": "Carceri",
+        "origin": {
+            "type": "Class",
+            "name": "Spite",
+            "base": false
+        },
+        "locked": false,
+        "type": "System",
+        "effect": "O Spite usa <b>Aprisionar</b> em todos os personagens a sua escolha dentro de linha de visão e <b>Sensores</b>.",
+        "tags": [
+            {
+                "id": "tg_recharge",
+                "val": 6
+            }, 
+            {
+                "id": "tg_full_tech"
+            }
+        ]
+    },
+    {
+        "id": "ldc_npcf_enraizado_spite",
+        "name": "Enraizado",
+        "origin": {
+            "type": "Class",
+            "name": "Strider",
+            "base": false
+        },
+        "locked": false,
+        "type": "Trait",
+        "effect": "O Spite tem <b>imunidade a movimento involuntário</b> forçado por personagens hostis.",
         "tags": []
     }
 ]
